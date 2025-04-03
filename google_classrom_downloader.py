@@ -3,7 +3,6 @@ import os
 import time
 import csv
 import email
-import io
 import argparse
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
@@ -12,13 +11,11 @@ from google.oauth2.credentials import Credentials
 from google_auth_oauthlib.flow import InstalledAppFlow
 from google.auth.transport.requests import Request
 from email.generator import BytesGenerator
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from io import BytesIO
 import shutil
 
 # Configuration
-MHTML_FILE = 'GoogleDriveLinksTest.mhtml'
+MHTML_FILE = 'LumikotSuomenKieli.mhtml'
 DOWNLOAD_FOLDER = 'downloads'
 UPLOAD_FOLDER = 'uploaded_files'
 SCOPES = ['https://www.googleapis.com/auth/drive']
@@ -166,7 +163,7 @@ def download_file(service, file_info, download_folder):
             filepath = os.path.join(download_folder, f"{name}_{counter}{ext}")
             counter += 1
         
-        with io.FileIO(filepath, 'wb') as fh:
+        with open(filepath, 'wb') as fh:
             downloader = MediaIoBaseDownload(fh, request)
             done = False
             while not done:
@@ -221,46 +218,25 @@ def upload_file(service, file_info):
         print(f"Error uploading file {file_name}: {str(e)}")
         return None
 
-def create_new_mhtml(original_path, updated_html):
-    """Create new MHTML file with updated HTML content"""
-    with open(original_path, 'rb') as f:
-        original_msg = email.message_from_binary_file(f)
+def create_new_html(original_path, updated_html):
+    """Create new HTML file with updated HTML content"""
+    base_name = os.path.splitext(os.path.basename(original_path))[0]
+    new_path = os.path.join(UPLOAD_FOLDER, f'updated_{base_name}.html')
     
-    # Create a new multipart message
-    new_msg = MIMEMultipart('related')
+    # Ensure the directory exists
+    os.makedirs(os.path.dirname(new_path), exist_ok=True)
     
-    # Copy headers (excluding Content-Type and Content-Transfer-Encoding)
-    for header, value in original_msg.items():
-        if header.lower() not in ['content-type', 'content-transfer-encoding']:
-            new_msg[header] = value
+    # Write the HTML content with pretty formatting
+    soup = BeautifulSoup(updated_html, 'html.parser')
+    pretty_html = soup.prettify()
     
-    # Create HTML part
-    html_part = MIMEText(updated_html, 'html', 'utf-8')
-    html_part.add_header('Content-Transfer-Encoding', 'quoted-printable')
-    
-    # Add HTML part first
-    new_msg.attach(html_part)
-    
-    # Add other parts (images, attachments) unchanged
-    for part in original_msg.walk():
-        if part.get_content_type() != 'text/html':
-            # Create a new part with the same content
-            new_part = email.message.Message()
-            new_part.set_type(part.get_content_type())
-            for header, value in part.items():
-                new_part[header] = value
-            new_part.set_payload(part.get_payload(decode=True))
-            new_msg.attach(new_part)
-    
-    # Save new file
-    os.makedirs(UPLOAD_FOLDER, exist_ok=True)
-    new_path = os.path.join(UPLOAD_FOLDER, 'updated_' + os.path.basename(original_path))
-    with open(new_path, 'wb') as f:
-        gen = email.generator.BytesGenerator(f)
-        gen.flatten(new_msg)
-    
-    return new_path
-
+    try:
+        with open(new_path, 'w', encoding='utf-8') as f:
+            f.write(pretty_html)
+        return new_path
+    except IOError as e:
+        print(f"Error writing HTML file: {str(e)}")
+        return None
 
 def load_progress():
     """Load progress from checkpoint files"""
@@ -409,7 +385,7 @@ def main():
     print(f"\nProcessing complete. Total: {len(file_infos)}, Success: {processed_count}, Failed: {len(error_data)}")
     
     if processed_count > 0:
-        print("\nUpdating MHTML with new links...")
+        print("\nUpdating HTML with new links...")
         soup = BeautifulSoup(html_content, 'html.parser')
         url_mapping = {m['original_url']: m['new_url'] for m in mapping_data}
         
@@ -417,8 +393,9 @@ def main():
             if a['href'] in url_mapping:
                 a['href'] = url_mapping[a['href']]
         
-        new_mhtml_path = create_new_mhtml(MHTML_FILE, str(soup))
-        print(f"Updated MHTML created: {new_mhtml_path}")
+        new_html_path = create_new_html(MHTML_FILE, str(soup))
+        if new_html_path:
+            print(f"Updated HTML created: {new_html_path}")
     
     save_checkpoint(mapping_data, error_data)
     

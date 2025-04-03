@@ -1,5 +1,9 @@
 # Google Classroom Resource Downloader
 
+display: block !important;
+overflow: auto !important;
+max-height: 100% !important;
+
 A tool to download files from Google Classroom (via MHTML export) and transfer them to another Google Drive account.
 
 ## Features

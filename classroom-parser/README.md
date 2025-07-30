@@ -14,7 +14,7 @@ This tool parses exported Google Classroom HTML files and converts them into str
 
 1. Clone repository:
 ```bash
-git clone https://github.com/your-repo/classroom-parser.git
+git clone https://github.com/SanjayKhatiChhetri/finnish-language-class/tree/tools/classroom-parser.git
 cd classroom-parser
 ```
 2. Install dependencies:

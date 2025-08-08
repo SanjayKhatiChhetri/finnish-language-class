@@ -4,16 +4,16 @@
 // Total items: 350
 
 export enum StreamItemType {
-  ANNOUNCEMENT = 'ANNOUNCEMENT',
-  ASSIGNMENT = 'ASSIGNMENT',
+  ANNOUNCEMENT = "ANNOUNCEMENT",
+  ASSIGNMENT = "ASSIGNMENT",
 }
 
 export enum AttachmentType {
-  PDF = 'PDF',
-  VIDEO = 'VIDEO',
-  DOCS = 'DOCS',
-  IMAGE = 'IMAGE',
-  LINK = 'LINK',
+  PDF = "PDF",
+  VIDEO = "VIDEO",
+  DOCS = "DOCS",
+  IMAGE = "IMAGE",
+  LINK = "LINK",
 }
 
 export interface Attachment {
@@ -42,3324 +42,7007 @@ export const parser_stats = {
   total_weeks: 33,
   total_items: 350,
   total_attachments: 693,
-  generated_at: '2025-07-30T00:48:00.237519',
+  generated_at: "2025-07-30T00:48:00.237519",
 };
 
 export const classroom_data: Record<string, WeeklyData> = {
-  '2023-02-06': {
-    display_name: 'Week 1 (Feb 06 - Feb 12)',
+  "2023-02-06": {
+    display_name: "Week 1 (Feb 06 - Feb 12)",
     items: [
       {
-        id: '542395969481',
+        id: "542395969481",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '10 Feb 2023',
+        date: "10 Feb 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! - Friday announcements!\n**\nEvery Friday I'll inform you about next week's things, like schedules and materials.\nI'll send materials for the upcoming week on previous Friday because I need you to do some\nindependent studying of the topics.\nThe lesson materials are posted on Classroom. Go there: classroom.google.com (You need to\nlog in with your edu.arffman-account for access.)\nRemember to also read and study materials from the independent sites!\nhttps://sites.google.com/edu.arffman.fi/kvmodule1\n**\nOn Monday\n**\nwe'll have orientation and we'll start the first lesson. Topic of that is Letters of Finnish\nLanguage. We will continue that\n**\non Tuesday\n**\n. Both Mon and Tue lessons are at 9:00AM (FIN time!)\n**\nOn Wednesday\n**\nwe'll talk about numbers.\n**\nYou need to study the numbers from Sites before this lesson\n**\n, since we are only talking about different uses of numbers in the lesson. You'll see that\nfrom the slides.\n**\nOn Thursday\n**\nwe'll learn about questions. Wed and Thu lessons are at 10:30AM (FIN time!)\nRemember that attending these lessons is not mandatory. After the lesson, I will upload a\nrecording of it to the Classroom. You can watch the recording, study the topic afterwards\nand then do the assignment of the topic.\nIt is important to study first and complete the assignments after. Assignments have\ndeadlines, you usually have about a week to complete them and if you are a little late, it\nis okay too... But just a little!\nI hope you are as excited as I am! If you have any questions, you'll find me in here bright\nand early on Monday morning! I'll answer all the messages that I have received during the\nweekend first thing then. Don't hesitate to message me!\nYou will find my Zoom-link here on Monday morning.\nHyvää viikonloppua, nähdään maanantaina! (Do you know what these phrases mean?)`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento1kirjaimet CLASS.pdf`, url: `https://drive.google.com/file/d/10b5sDX9pMp85NTSaMOyjBYY0cpW62LCd/view` }, { type: AttachmentType.PDF, title: `luento2numerot CLASS.pdf`, url: `https://drive.google.com/file/d/12gBQfAfGVggKaNMXEVOJBBa9eBHOwd4n/view` }, { type: AttachmentType.PDF, title: `luento3kysymykset CLASS.pdf`, url: `https://drive.google.com/file/d/1ozNYAnsybV8-jV396e7I1Bc3iKfoKDYW/view` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmodule1?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento1kirjaimet CLASS.pdf`,
+            url: `https://drive.google.com/file/d/10b5sDX9pMp85NTSaMOyjBYY0cpW62LCd/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento2numerot CLASS.pdf`,
+            url: `https://drive.google.com/file/d/12gBQfAfGVggKaNMXEVOJBBa9eBHOwd4n/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento3kysymykset CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1ozNYAnsybV8-jV396e7I1Bc3iKfoKDYW/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmodule1?authuser=0`,
+          },
+        ],
       },
       {
-        id: '542304683988',
+        id: "542304683988",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Feb 2023',
+        date: "8 Feb 2023",
         deleted: false,
         content: `Assignment: "00 Practise practise"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '591785011206',
+        id: "591785011206",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '8 Feb 2023',
+        date: "8 Feb 2023",
         deleted: false,
         content: `Instructions how to do and submit homework here in Classroom. Read these and then pracitice\nwith the 00: Practice practice -assignment. :)\nInstructions how to change langauge in Google from Finnish.\nInstructions how to find correct classes in Quizlet.\nIndependent studies of Moduuli 1\nQuizlet of Moduuli 1`,
-        attachments: [{ type: AttachmentType.VIDEO, title: `How to change your language from FIN to ENG.mp4`, url: `https://drive.google.com/file/d/1pcY8w-dXqImKYV_k6TKBvUiAnSyzhh3q/view` }, { type: AttachmentType.VIDEO, title: `How to find correct Quizlet classes.mp4`, url: `https://drive.google.com/file/d/1OJvZbB-BilK44Whv4AQoBvjFhwJgMtDx/view` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmodule1?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 1 | Quizlet`, url: `https://quizlet.com/join/tPeHSzGGF?i=466rp4&x=1bqt&authuser=0` }, { type: AttachmentType.PDF, title: `Finding, doing and returning your homework at Classroom..pdf`, url: `https://drive.google.com/file/d/1p7PylCeImPod7prfV7C03Lo1DL52q4Cm/view` }]
+        attachments: [
+          {
+            type: AttachmentType.VIDEO,
+            title: `How to change your language from FIN to ENG.mp4`,
+            url: `https://drive.google.com/file/d/1pcY8w-dXqImKYV_k6TKBvUiAnSyzhh3q/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `How to find correct Quizlet classes.mp4`,
+            url: `https://drive.google.com/file/d/1OJvZbB-BilK44Whv4AQoBvjFhwJgMtDx/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmodule1?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 1 | Quizlet`,
+            url: `https://quizlet.com/join/tPeHSzGGF?i=466rp4&x=1bqt&authuser=0`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Finding, doing and returning your homework at Classroom..pdf`,
+            url: `https://drive.google.com/file/d/1p7PylCeImPod7prfV7C03Lo1DL52q4Cm/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-02-13': {
-    display_name: 'Week 2 (Feb 13 - Feb 19)',
+  "2023-02-13": {
+    display_name: "Week 2 (Feb 13 - Feb 19)",
     items: [
       {
-        id: '593363778624',
+        id: "593363778624",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '17 Feb 2023',
+        date: "17 Feb 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla / Next week...\n**\n**\nmaanantai (Monday):\n**\nSpoken skills 1: Kuka sinä olet? I\n**\ntiistai (Tuesday)\n**\n: Verbtyyppi 1 (verb type 1)\n**\nkeskiviikko (Wednesday):\n**\nVerbityyppi 1 ja KPT (consonant gradation)\n**\ntorstai (Thursday):\n**\nSpoken skills 2: Kuka sinä olet? II\nBefore the spoken skills lessons, read, translate and understand the questions. Think about\nhow you answer, you can write your answers down. We'll check the material together, then\nyou'll speak in small groups and then we check answers together too.\nBefore grammar lessons read and study the slides a bit, so you have some idea what we are\ngoing to study.\nAll the lessons are in my Zoom.\nHyvää viikonlppua, nähdään maanantaina!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 1_ Kuka sinä olet, osa1 - Google Docs.pdf`, url: `https://drive.google.com/file/d/10abZT9NHcA6OymaSY5QaoBRC-EyUv7bQ/view` }, { type: AttachmentType.PDF, title: `luento4vt1eikpt CLASS.pdf`, url: `https://drive.google.com/file/d/1WF5kuMkP3MHbPtqAChx1JgEZAYpmCmle/view` }, { type: AttachmentType.PDF, title: `Luento 5 VT1kpt CLASS.pdf`, url: `https://drive.google.com/file/d/1myP-m1TtarC_ch31EGm-mJxTtQlOAPGQ/view` }, { type: AttachmentType.PDF, title: `Viikko 2_ Kuka sinä olet, osa2 - Google Docs.pdf`, url: `https://drive.google.com/file/d/1fz-rw-OgfkA9s5SHmaloDTxJhgZ6_RPp/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 1_ Kuka sinä olet, osa1 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/10abZT9NHcA6OymaSY5QaoBRC-EyUv7bQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento4vt1eikpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1WF5kuMkP3MHbPtqAChx1JgEZAYpmCmle/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento 5 VT1kpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1myP-m1TtarC_ch31EGm-mJxTtQlOAPGQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 2_ Kuka sinä olet, osa2 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1fz-rw-OgfkA9s5SHmaloDTxJhgZ6_RPp/view`,
+          },
+        ],
       },
       {
-        id: '593341880538',
+        id: "593341880538",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '16 Feb 2023',
+        date: "16 Feb 2023",
         deleted: false,
         content: `Assignment: "3. Kysymykset"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '593320613757',
+        id: "593320613757",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 Feb 2023',
+        date: "16 Feb 2023",
         deleted: false,
         content: `Torstain tallenne ja materiaalit. Thursday's recording and materials.`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento3kysymykset CLASS.pdf`, url: `https://drive.google.com/file/d/1fWyQfUCYrV-O18hgntYvnhVFGh4IeG1e/view` }, { type: AttachmentType.PDF, title: `suulliset ihmiset.pdf`, url: `https://drive.google.com/file/d/1aL7PpDQ0hqgxWi-ng5IMPlcuPP6tdNeM/view` }, { type: AttachmentType.PDF, title: `kysymystehtävä.v2.pdf`, url: `https://drive.google.com/file/d/12jbXsP5Px4Cok9wocqlCx2qZzfM2yIpd/view` }, { type: AttachmentType.DOCS, title: `Kysymykset, lumikot`, url: `https://docs.google.com/document/d/1N9WnEQMpeThHf5wz30fB2MxuAzCd7Qm57dbqAeithWM/edit` }, { type: AttachmentType.VIDEO, title: `kysymykset lumikot.mp4`, url: `https://drive.google.com/file/d/17aHvhavb9kyg4_PfzafCnDiR9l56UjCI/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento3kysymykset CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1fWyQfUCYrV-O18hgntYvnhVFGh4IeG1e/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `suulliset ihmiset.pdf`,
+            url: `https://drive.google.com/file/d/1aL7PpDQ0hqgxWi-ng5IMPlcuPP6tdNeM/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `kysymystehtävä.v2.pdf`,
+            url: `https://drive.google.com/file/d/12jbXsP5Px4Cok9wocqlCx2qZzfM2yIpd/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Kysymykset, lumikot`,
+            url: `https://docs.google.com/document/d/1N9WnEQMpeThHf5wz30fB2MxuAzCd7Qm57dbqAeithWM/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `kysymykset lumikot.mp4`,
+            url: `https://drive.google.com/file/d/17aHvhavb9kyg4_PfzafCnDiR9l56UjCI/view`,
+          },
+        ],
       },
       {
-        id: '592194881875',
+        id: "592194881875",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '15 Feb 2023',
+        date: "15 Feb 2023",
         deleted: false,
         content: `Assignment: "2. Numerot"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '542553117768',
+        id: "542553117768",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '15 Feb 2023',
+        date: "15 Feb 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.\nHere are today's materials and the recording,`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Numerot, lumikot`, url: `https://docs.google.com/document/d/15n3n-yd5f8TZN6HwhsDz188BE5lDnoC9jjl7ak81RYU/edit` }, { type: AttachmentType.PDF, title: `luento2numerot CLASS (1).pdf`, url: `https://drive.google.com/file/d/1lWGlx9wVenMro8YcAENh9zQfYM8jqznZ/view` }, { type: AttachmentType.PDF, title: `persons with numbers.pdf`, url: `https://drive.google.com/file/d/17feEh5bddXtLI4Pr60Awa3e2lH84114Z/view` }, { type: AttachmentType.VIDEO, title: `numerot lumikot.mp4`, url: `https://drive.google.com/file/d/1bU1M7wB-AopKWCCNmU6vX3zdKjGAhsY1/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Numerot, lumikot`,
+            url: `https://docs.google.com/document/d/15n3n-yd5f8TZN6HwhsDz188BE5lDnoC9jjl7ak81RYU/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento2numerot CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1lWGlx9wVenMro8YcAENh9zQfYM8jqznZ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `persons with numbers.pdf`,
+            url: `https://drive.google.com/file/d/17feEh5bddXtLI4Pr60Awa3e2lH84114Z/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `numerot lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1bU1M7wB-AopKWCCNmU6vX3zdKjGAhsY1/view`,
+          },
+        ],
       },
       {
-        id: '592826546564',
+        id: "592826546564",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Feb 2023',
+        date: "14 Feb 2023",
         deleted: false,
         content: `Tiistain materiaali. The recording and all the materials of today. Remember to also do the\nassingment.`,
-        attachments: [{ type: AttachmentType.VIDEO, title: `vokaaliharmonia lumikot.mp4`, url: `https://drive.google.com/file/d/1Ro3AOjX2_o9gwk-lCULJmLAofh7BaJN9/view` }, { type: AttachmentType.DOCS, title: `Lesson 1 ja 2, lumikot`, url: `https://docs.google.com/document/d/1D_w1oCDA_cR-Ix1w4RZlqFqYeJaGlfPK8X4eB77R25E/edit` }, { type: AttachmentType.PDF, title: `luento1kirjaimet CLASS.pdf`, url: `https://drive.google.com/file/d/11gtFMlm8wULYnEhdEIf1T0mVuVjs19e6/view` }, { type: AttachmentType.PDF, title: `vokaaliharmoniatehtävä.pdf`, url: `https://drive.google.com/file/d/1pCTKA6KPz0cu_k6_sLn2C6KcJ2nfVaXI/view` }]
+        attachments: [
+          {
+            type: AttachmentType.VIDEO,
+            title: `vokaaliharmonia lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Ro3AOjX2_o9gwk-lCULJmLAofh7BaJN9/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lesson 1 ja 2, lumikot`,
+            url: `https://docs.google.com/document/d/1D_w1oCDA_cR-Ix1w4RZlqFqYeJaGlfPK8X4eB77R25E/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento1kirjaimet CLASS.pdf`,
+            url: `https://drive.google.com/file/d/11gtFMlm8wULYnEhdEIf1T0mVuVjs19e6/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `vokaaliharmoniatehtävä.pdf`,
+            url: `https://drive.google.com/file/d/1pCTKA6KPz0cu_k6_sLn2C6KcJ2nfVaXI/view`,
+          },
+        ],
       },
       {
-        id: '592194211904',
+        id: "592194211904",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '14 Feb 2023',
+        date: "14 Feb 2023",
         deleted: false,
         content: `Assignment: "1. Vokaaliharmonia"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '592810774197',
+        id: "592810774197",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Feb 2023',
+        date: "14 Feb 2023",
         deleted: false,
         content: `Hyvää huomenta! Nähdään mun Zoomissa kello 9:00.\nSee you again in my Zoom 9 am.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '592576778672',
+        id: "592576778672",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Feb 2023',
+        date: "13 Feb 2023",
         deleted: false,
         content: `Maanantain materiaalit!\nHere are today's slides, notes and the recording.`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento1kirjaimet CLASS.pdf`, url: `https://drive.google.com/file/d/1z9pqj2C2Zi0bqVHjo-HxgCYZNJSyvfDm/view` }, { type: AttachmentType.DOCS, title: `Lesson 1 ja 2, lumikot`, url: `https://docs.google.com/document/d/1D_w1oCDA_cR-Ix1w4RZlqFqYeJaGlfPK8X4eB77R25E/edit` }, { type: AttachmentType.VIDEO, title: `orientaatio lumikot.mp4`, url: `https://drive.google.com/file/d/1B2KeJLm4sHjSE0ELQpgftpYqpLF1youO/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento1kirjaimet CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1z9pqj2C2Zi0bqVHjo-HxgCYZNJSyvfDm/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lesson 1 ja 2, lumikot`,
+            url: `https://docs.google.com/document/d/1D_w1oCDA_cR-Ix1w4RZlqFqYeJaGlfPK8X4eB77R25E/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `orientaatio lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1B2KeJLm4sHjSE0ELQpgftpYqpLF1youO/view`,
+          },
+        ],
       },
       {
-        id: '592562565737',
+        id: "592562565737",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Feb 2023',
+        date: "13 Feb 2023",
         deleted: false,
         content: `Tässä on mun Zoom-linkki. Here is my Zoom-link:\nhttps://arffman.zoom.us/my/tiinalampen\nIf you join straight with desktop/mobile app, just type\ntiinalampen\n(Mun etunimi ja sukunimi, my names without spaces) to Personal Link Name.\nMy Meeting ID is 806 378 7231\n**\nRemember to name yourself with your first name (the name you wish to be called) and last\nname, so I can identify you.\n**`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-02-20': {
-    display_name: 'Week 3 (Feb 20 - Feb 26)',
+  "2023-02-20": {
+    display_name: "Week 3 (Feb 20 - Feb 26)",
     items: [
       {
-        id: '594432450478',
+        id: "594432450478",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '24 Feb 2023',
+        date: "24 Feb 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla / Next week…\n**\n**\nmaanantai (Monday)\n**\n: Verbityypit 2 ja 5, Tiina\n**\ntiistai (Tuesday)\n**\n: ko/kö-kysymys, Tiina\n**\nkeskiviikko (Wednesday):\n**\nSpoken skills: Mikä päivä? Millainen sää?, Tiina\n(Before this it is very very important that you have studied week 2 on independents!\nEspecially pay attention to how to talk about the weather!)\n**\ntorstai (Thursday):\n**\nKello, Netta!\nNext week you will meet my colleague Netta! She will post her Zoom link in Skype and\nClassroom before her lesson. Be sure to click her link and not mine on Thursday.\nFrom now on I will post the name of the teacher next to your lesson topic in these Friday\nannouncements, so you will know who will be teaching each lesson.\nNetta will teach you guys sometimes, but I am the primary teacher of this group, so if you\nhave any concerns, contact me.\nHyvää viikonloppua, nähdään maanantaina!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento 6 VT25 CLASS.pdf`, url: `https://drive.google.com/file/d/168HOgijM0yow5LxxiHskeWGr6ke5o6IM/view` }, { type: AttachmentType.PDF, title: `luento7 kO-kys CLASS (1).pdf`, url: `https://drive.google.com/file/d/1m76x2TnSbCPYCgar1VMZepm8dM-ALS7C/view` }, { type: AttachmentType.PDF, title: `Viikko 3_ Millainen sää_ Mikä päivä tänään on_.pdf`, url: `https://drive.google.com/file/d/1tPlieOdKmo-8vxImq1TuhvEkcuAfz87r/view` }, { type: AttachmentType.PDF, title: `lesson.kello cl.pdf`, url: `https://drive.google.com/file/d/1n9kzH89LwnzanWbOU_W7uE6MN6ecPiJe/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento 6 VT25 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/168HOgijM0yow5LxxiHskeWGr6ke5o6IM/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento7 kO-kys CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1m76x2TnSbCPYCgar1VMZepm8dM-ALS7C/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 3_ Millainen sää_ Mikä päivä tänään on_.pdf`,
+            url: `https://drive.google.com/file/d/1tPlieOdKmo-8vxImq1TuhvEkcuAfz87r/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson.kello cl.pdf`,
+            url: `https://drive.google.com/file/d/1n9kzH89LwnzanWbOU_W7uE6MN6ecPiJe/view`,
+          },
+        ],
       },
       {
-        id: '594418054664',
+        id: "594418054664",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '23 Feb 2023',
+        date: "23 Feb 2023",
         deleted: false,
         content: `Torstain tallenne ja muistiinpanot.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Kuka sinä olet? 2, lumikot`, url: `https://docs.google.com/document/d/1PU4QcNq7-iTf0R52MoFz66iMi6_mzUDHu3PJrpocymc/edit` }, { type: AttachmentType.VIDEO, title: `kuka sinä olet 2 lumikot.mp4`, url: `https://drive.google.com/file/d/1xg2k61Y_DDbuxhTeuqwXt4T02dgkOTPA/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Kuka sinä olet? 2, lumikot`,
+            url: `https://docs.google.com/document/d/1PU4QcNq7-iTf0R52MoFz66iMi6_mzUDHu3PJrpocymc/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `kuka sinä olet 2 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1xg2k61Y_DDbuxhTeuqwXt4T02dgkOTPA/view`,
+          },
+        ],
       },
       {
-        id: '594177553863',
+        id: "594177553863",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '22 Feb 2023',
+        date: "22 Feb 2023",
         deleted: false,
         content: `Assignment: "5. Verbityyppi 1 ja KPT-vaihtelu"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '594374891236',
+        id: "594374891236",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 Feb 2023',
+        date: "22 Feb 2023",
         deleted: false,
         content: `Keskiviikon tallenne ja materiaalit.\nThe recording and materials of today.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbityyppi 1 ja KPT, lumikot`, url: `https://docs.google.com/document/d/1SW7TyfrPSN4XTrmjMBF8y2MTsMWiiAB0qrJKPaw8qKM/edit` }, { type: AttachmentType.PDF, title: `Luento 5 VT1kpt CLASS (1).pdf`, url: `https://drive.google.com/file/d/1HRNA7lhvjWdbQgIGyd575HLbmdCsXnea/view` }, { type: AttachmentType.PDF, title: `vt1kpt muodostus.pdf`, url: `https://drive.google.com/file/d/1jiQi3ZQeeTZ3KrmbCU1jHYvl6-E4fn0n/view` }, { type: AttachmentType.IMAGE, title: `KPT.png`, url: `https://drive.google.com/file/d/1I52-3jvt0o9sEV7KZn0KbC_pZJ06ssQF/view` }, { type: AttachmentType.VIDEO, title: `vt1 ja kpt, lumikot.mp4`, url: `https://drive.google.com/file/d/1xEaTycv9LdgLw6-ai-Bs5hhUj0OjtwlU/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityyppi 1 ja KPT, lumikot`,
+            url: `https://docs.google.com/document/d/1SW7TyfrPSN4XTrmjMBF8y2MTsMWiiAB0qrJKPaw8qKM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento 5 VT1kpt CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1HRNA7lhvjWdbQgIGyd575HLbmdCsXnea/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `vt1kpt muodostus.pdf`,
+            url: `https://drive.google.com/file/d/1jiQi3ZQeeTZ3KrmbCU1jHYvl6-E4fn0n/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `KPT.png`,
+            url: `https://drive.google.com/file/d/1I52-3jvt0o9sEV7KZn0KbC_pZJ06ssQF/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `vt1 ja kpt, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1xEaTycv9LdgLw6-ai-Bs5hhUj0OjtwlU/view`,
+          },
+        ],
       },
       {
-        id: '593939254329',
+        id: "593939254329",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Feb 2023',
+        date: "21 Feb 2023",
         deleted: false,
         content: `Assignment: "4. Verbityyppi 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '594115119428',
+        id: "594115119428",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Feb 2023',
+        date: "21 Feb 2023",
         deleted: false,
         content: `Tiistain tallenne ja materiaalit.\nTuesday's recording and materials.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbien taivutus, lumikot`, url: `https://docs.google.com/document/d/19bxeAEYNfJ-dz5dRLV-Rx6PjwJyVO9AgsXXX0pVuXbc/edit` }, { type: AttachmentType.PDF, title: `luento4vt1eikpt CLASS (1).pdf`, url: `https://drive.google.com/file/d/1f5YKiuDpxXnWxNuSFXiI1Ri6bdHV0NER/view` }, { type: AttachmentType.PDF, title: `vt1 pos ja neg ei kpt.pdf`, url: `https://drive.google.com/file/d/1NeK6fQRPplFcj37zCT8x2xJ74Ul88KQx/view` }, { type: AttachmentType.VIDEO, title: `verbityyppi1 lumikot.mp4`, url: `https://drive.google.com/file/d/1JS_darASUCPsffkf2iIroykjOMX1Ky2T/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbien taivutus, lumikot`,
+            url: `https://docs.google.com/document/d/19bxeAEYNfJ-dz5dRLV-Rx6PjwJyVO9AgsXXX0pVuXbc/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento4vt1eikpt CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1f5YKiuDpxXnWxNuSFXiI1Ri6bdHV0NER/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `vt1 pos ja neg ei kpt.pdf`,
+            url: `https://drive.google.com/file/d/1NeK6fQRPplFcj37zCT8x2xJ74Ul88KQx/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `verbityyppi1 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1JS_darASUCPsffkf2iIroykjOMX1Ky2T/view`,
+          },
+        ],
       },
       {
-        id: '593946353570',
+        id: "593946353570",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '20 Feb 2023',
+        date: "20 Feb 2023",
         deleted: false,
         content: `Here are the materials and recording of today's spoken skills. There is no homework\nassignment for today, but remember to complete the first three, if you already have not done\nthat. :)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Kuka sinä olet, lumikot`, url: `https://docs.google.com/document/d/1-1bBvUV5D5yA36o1Px1tOcWkNhTAunx9jFP8jk2dxbU/edit` }, { type: AttachmentType.PDF, title: `ihmiset.pdf`, url: `https://drive.google.com/file/d/13LBYKuch66_ZQvmhDAKW5KIu60_S0Ki0/view` }, { type: AttachmentType.VIDEO, title: `Kuka sinä olet 1 lumikot.mp4`, url: `https://drive.google.com/file/d/1fmPgl48MLn_OO3IgcLkvwH96kFbPpPIu/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Kuka sinä olet, lumikot`,
+            url: `https://docs.google.com/document/d/1-1bBvUV5D5yA36o1Px1tOcWkNhTAunx9jFP8jk2dxbU/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `ihmiset.pdf`,
+            url: `https://drive.google.com/file/d/13LBYKuch66_ZQvmhDAKW5KIu60_S0Ki0/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Kuka sinä olet 1 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1fmPgl48MLn_OO3IgcLkvwH96kFbPpPIu/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-02-27': {
-    display_name: 'Week 4 (Feb 27 - Mar 05)',
+  "2023-02-27": {
+    display_name: "Week 4 (Feb 27 - Mar 05)",
     items: [
       {
-        id: '543130570200',
+        id: "543130570200",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '3 Mar 2023',
+        date: "3 Mar 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\nSorry about all the confusion this week! I should be ok now and back teaching next week.\n**\nEnsi viikolla…\n**\n**\nmaanantai\n**\n: Spoken skills: Mihin aikaan? Netta\ntiistai: Partitiivi, Tiina\n**\nkeskiviikko\n**\n: Omistus , Tiina\n**\ntorstai:\n**\nGenetiivi, Tiina\nAll the materials are in Classroom.\n****\n**\nOur first check point is approaching...**\nModuuli 1 checkpoint is on\n**\nMonday 13th of March\n**\n. You need to have all your homework assigments done by then.\nWe'll have our scheduled lesson that day, but you also have to complete the Skill Check\nAssignment some time during the Monday (13th). It is\n**\nnot a test,\n**\nyou can't fail that, results will not affect your future in the training. It is for me to\nsee how we are doing! It is a bad thing you don't complete the Skill Check or cheat your way\nthrough it, it is meant for us to check what you know already, so it is very important that\nDO NOT USE DICTIONARY, NOTES, MATERIALS OR LEAST OF ALL GOOGLE TRANSLATE.\nSkill Check will be open all day and you should use about an hour to complete it.\nI'll give you a bit more info about this closer to the day.\n****\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 4_ Mihin aikaan_ - Google Docs.pdf`, url: `https://drive.google.com/file/d/12btQw5zeABReOCndnEyEOiFHdXVKxxrR/view` }, { type: AttachmentType.PDF, title: `lesson partitiivi CLASS.pdf`, url: `https://drive.google.com/file/d/1pU6A77dfNFIu1BV8Ic49UEywcE4ftzYc/view` }, { type: AttachmentType.PDF, title: `lesson possession CLASS.pdf`, url: `https://drive.google.com/file/d/1oWTz_9D9PEt794v5h9exZP1Q6VGvPhhv/view` }, { type: AttachmentType.PDF, title: `lesson genetiivi CLASS (1).pdf`, url: `https://drive.google.com/file/d/1jZJwQQpLGbXOIHjiRzAwlIR9quwN_Chk/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 4_ Mihin aikaan_ - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/12btQw5zeABReOCndnEyEOiFHdXVKxxrR/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson partitiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1pU6A77dfNFIu1BV8Ic49UEywcE4ftzYc/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson possession CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1oWTz_9D9PEt794v5h9exZP1Q6VGvPhhv/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson genetiivi CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1jZJwQQpLGbXOIHjiRzAwlIR9quwN_Chk/view`,
+          },
+        ],
       },
       {
-        id: '596204045616',
+        id: "596204045616",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '2 Mar 2023',
+        date: "2 Mar 2023",
         deleted: false,
         content: `Assignment: "9. Kello"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '596205252227',
+        id: "596205252227",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '2 Mar 2023',
+        date: "2 Mar 2023",
         deleted: false,
         content: `Here are today's material!\nI posted two homeworks. The number 8. Milloin? is for independent studies of week 2 and 9.\nKello is for the lesson we just had.\nIt was very nice working with you today and I'll see you on Monday for time themed spoken\nskills. :)`,
-        attachments: [{ type: AttachmentType.PDF, title: `digiajat.pdf`, url: `https://drive.google.com/file/d/16YmkjGwfTHJvBT8SOh_haLiNPGVP4X50/view` }, { type: AttachmentType.PDF, title: `Luento kello ope.pdf`, url: `https://drive.google.com/file/d/1hDi7M6O3KtcWMRGCum86zL8FtScFZgTO/view` }, { type: AttachmentType.DOCS, title: `Kello`, url: `https://docs.google.com/document/d/1W8V4bJSYvTfjQzD0mfy_TlzmP39xOyR8MgtNeRuR2tQ/edit` }, { type: AttachmentType.VIDEO, title: `Kello Lumikot.mp4`, url: `https://drive.google.com/file/d/1vNposics1wD346UlYdw0FPXtQPtOTkwI/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `digiajat.pdf`,
+            url: `https://drive.google.com/file/d/16YmkjGwfTHJvBT8SOh_haLiNPGVP4X50/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento kello ope.pdf`,
+            url: `https://drive.google.com/file/d/1hDi7M6O3KtcWMRGCum86zL8FtScFZgTO/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Kello`,
+            url: `https://docs.google.com/document/d/1W8V4bJSYvTfjQzD0mfy_TlzmP39xOyR8MgtNeRuR2tQ/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Kello Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1vNposics1wD346UlYdw0FPXtQPtOTkwI/view`,
+          },
+        ],
       },
       {
-        id: '596203991456',
+        id: "596203991456",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '2 Mar 2023',
+        date: "2 Mar 2023",
         deleted: false,
         content: `Assignment: "8. Milloin? (itsenäiset)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '595914720542',
+        id: "595914720542",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '1 Mar 2023',
+        date: "1 Mar 2023",
         deleted: false,
         content: `Keskiviikon tallenne ja muistiinpanot.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Lumikot_ Viikko 3_ Mikä päivä millainen sää.pdf`, url: `https://drive.google.com/file/d/1Zoz6_qymkvGrMhIT4AZNzZN2HpjAqBJD/view` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/qdWEG0qTLihDgs7Cs4OQLASjGLNSh57_ZfLKTQyN1f2z5RTMFYhwefkMcQ0uIJvC.Zh2txQJ25t8u_Xzt?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Lumikot_ Viikko 3_ Mikä päivä millainen sää.pdf`,
+            url: `https://drive.google.com/file/d/1Zoz6_qymkvGrMhIT4AZNzZN2HpjAqBJD/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/qdWEG0qTLihDgs7Cs4OQLASjGLNSh57_ZfLKTQyN1f2z5RTMFYhwefkMcQ0uIJvC.Zh2txQJ25t8u_Xzt?authuser=0`,
+          },
+        ],
       },
       {
-        id: '595900444466',
+        id: "595900444466",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '1 Mar 2023',
+        date: "1 Mar 2023",
         deleted: false,
         content: `Hyvää huomenta! I'm your teacher today at Spoken skills lesson at 10.30. See you in my Zoom,\nlink below.\nhttps://arffman.zoom.us/my/hilmareittola\nMeeting ID: 543 854 6032`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/my/hilmareittola?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/my/hilmareittola?authuser=0`,
+          },
+        ],
       },
       {
-        id: '595579195166',
+        id: "595579195166",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '28 Feb 2023',
+        date: "28 Feb 2023",
         deleted: false,
         content: `Assignment: "7. kO-kysymys"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '595603461238',
+        id: "595603461238",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '28 Feb 2023',
+        date: "28 Feb 2023",
         deleted: false,
         content: `I am sorry, but I am sick and cannot teach today. We can’t arrange a substitute with such a\nshort notice, so you won’t have a lesson today.\nHere is a recording of me teaching this topic to a previous group one month ago and also a\nlink to their notes. Watch the recording and study the topic independantly today. There will\nbe homework in your Classroom later.\nI am also sorry that yesterday's homework didn’t appear to Classroom until today. I had\naccidentally timed it wrong and didn’t notice it yesterday.\nWe didn’t have time to check yesterday's exercise fully, so I have added the correct answers\nto yesterday’s notes.\nI am sorry about the inconvenience. I will inform you guys as soon as I know how we can\narrange the rest of the week.`,
-        attachments: [{ type: AttachmentType.VIDEO, title: `ko-kysymys ahmat.mp4`, url: `https://drive.google.com/file/d/17h8Md_VbgjKBsKzuaGPGBlDbGyznuLLt/view` }, { type: AttachmentType.DOCS, title: `Verbin kysymysmuoto kO Ahmat`, url: `https://docs.google.com/document/d/1-eW5bBzyRM3hjfsiBQEaLAcACTDA61rW6WWnUuy9NK4/edit` }, { type: AttachmentType.PDF, title: `peruslauseesta ko ja taivuta ko (1).pdf`, url: `https://drive.google.com/file/d/1_xbwErbHCsScKkw1MW1StML03YfxQhVv/view` }, { type: AttachmentType.PDF, title: `luento7 kO-kys CLASS (1).pdf`, url: `https://drive.google.com/file/d/1Y-i3aakbPMJRbqkcvXXEYJJU6BmOGd7B/view` }]
+        attachments: [
+          {
+            type: AttachmentType.VIDEO,
+            title: `ko-kysymys ahmat.mp4`,
+            url: `https://drive.google.com/file/d/17h8Md_VbgjKBsKzuaGPGBlDbGyznuLLt/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbin kysymysmuoto kO Ahmat`,
+            url: `https://docs.google.com/document/d/1-eW5bBzyRM3hjfsiBQEaLAcACTDA61rW6WWnUuy9NK4/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `peruslauseesta ko ja taivuta ko (1).pdf`,
+            url: `https://drive.google.com/file/d/1_xbwErbHCsScKkw1MW1StML03YfxQhVv/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento7 kO-kys CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1Y-i3aakbPMJRbqkcvXXEYJJU6BmOGd7B/view`,
+          },
+        ],
       },
       {
-        id: '595286669568',
+        id: "595286669568",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '28 Feb 2023',
+        date: "28 Feb 2023",
         deleted: false,
         content: `Assignment: "6. Verbityypit 2 ja 5"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '595289535479',
+        id: "595289535479",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '27 Feb 2023',
+        date: "27 Feb 2023",
         deleted: false,
         content: `Maanantain tallenne ja materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento 6 VT25 CLASS (1).pdf`, url: `https://drive.google.com/file/d/1MgO6Fc-O1syHKxBm3HxfdfAo1IE5QlL_/view` }, { type: AttachmentType.DOCS, title: `Verbityypit 2 ja 5, lumikot`, url: `https://docs.google.com/document/d/17EilI92qtl4rfajQabZKQtNN8ghL5d31BqdWRvU65eM/edit` }, { type: AttachmentType.PDF, title: `VT25taivutus.pdf`, url: `https://drive.google.com/file/d/1D04yuSOGC0oNcqKe77hw5afIMQPLeeZJ/view` }, { type: AttachmentType.VIDEO, title: `verbityypit 2 ja 5 lumikot.mp4`, url: `https://drive.google.com/file/d/1DrvkStzhLAcJfnEKb__Ww3QVCUEQBPFb/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento 6 VT25 CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1MgO6Fc-O1syHKxBm3HxfdfAo1IE5QlL_/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityypit 2 ja 5, lumikot`,
+            url: `https://docs.google.com/document/d/17EilI92qtl4rfajQabZKQtNN8ghL5d31BqdWRvU65eM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `VT25taivutus.pdf`,
+            url: `https://drive.google.com/file/d/1D04yuSOGC0oNcqKe77hw5afIMQPLeeZJ/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `verbityypit 2 ja 5 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1DrvkStzhLAcJfnEKb__Ww3QVCUEQBPFb/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-03-06': {
-    display_name: 'Week 5 (Mar 06 - Mar 12)',
+  "2023-03-06": {
+    display_name: "Week 5 (Mar 06 - Mar 12)",
     items: [
       {
-        id: '598113638149',
+        id: "598113638149",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '10 Mar 2023',
+        date: "10 Mar 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!**\n**\nEnsi viikolla…\n**\n**\nmaanantai:\n**\nSpoken skills: Miten sä voit?,  + Skill Check open all day!, Tiina\n**\ntiistai:\n**\nVerbityyppi 3 ja 4, Tiina\n**\nkeskiviikko:\n**\nVerbityyppi 3 ja 4 KPT-gradation, Tiina\n**\ntorstai:\n**\nNesessiivi - Minun täytyy…, Tiina\n**\nSpoken skills to the MAX\n**\nStarting next week we will start offering extra Spoken skills lessons for you guys. These\nlessons are offered to you and our another group (Ahmat), so you might meet some new people.\nThese lessons are completely voluntary but highly recommended. You won't learn speaking any\nother way than speaking. The system is the same as in basic spoken skills lessons; we will\ngive you a list of questions, and before coming to the lesson you'll read them, understand\nthem and think how to answer them. After each lesson we will post a link to the recording\nand it will be watchable for five days.\n**\nLessons are on Wednesday and Thursday 12:15-13:30.\n**\nThe questions are same on both days, so you can participate just once, or if you want\nextra-practice, you can participate twice.\n**\nkeskiviikko:\n**\nMinä, Netta\n**\ntorstai:\n**\nMinä, Tiina\nAll the materials are in the Classroom.\n**\nSkill Check of Moduuli 1 on Monday open all day!\n**\nYou need to complete it some time during Monday (13th). It is\n**\nnot a test,\n**\nyou can't fail that, results will not affect your future in the training. It is for me to\nsee how we are doing! It is a bad thing not to complete the Skill Check or cheat your way\nthrough it, it is meant for us to check what you know already, so it is very important that\nyou\n**\nDO NOT USE DICTIONARY, NOTES, MATERIALS OR LEAST OF ALL GOOGLE TRANSLATE.\n**\nUse about one hour to complete the assignment. I can't monitor your time use, so it is\nbetween you and your conscience. Don't stress, this is just a big homework assignment that\nyou have to do without any help. Just do your best, that is enough.\nI'll open the assignment at 8am. It will close late Monday evening. (FInnish times).\nRemember that all the other homework assignments from Moduuli 1 need to be completed by\nMonday.\n**\nModuuli 2 starts officially on Tuesday, so I'll post the links for independent studies and\nQuizlet here already.\n**\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 5_ Miten sä voit - Google Docs.pdf`, url: `https://drive.google.com/file/d/1zY1-CKgc3WALES2rmZqqk-FGxpwKwD2y/view` }, { type: AttachmentType.PDF, title: `Verbityypit 3 ja 4 - ei kpt CLASS.pdf`, url: `https://drive.google.com/file/d/155UNA7EIFvfkO-vJsMlyBSDjFwQut2yi/view` }, { type: AttachmentType.PDF, title: `Luento VT34kpt CLASS.pdf`, url: `https://drive.google.com/file/d/1CN1TIqkPlANe3xlIBZTDSUryJ47R84c9/view` }, { type: AttachmentType.PDF, title: `luento15nesessiivi CLASS.pdf`, url: `https://drive.google.com/file/d/1lPWK7XLd3X9sLQWEKgzmeaoYW3MVga2E/view` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/front-page?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 2 | Quizlet`, url: `https://quizlet.com/join/zgaM8gawK?i=466rp4&x=1bqt&authuser=0` }, { type: AttachmentType.PDF, title: `01A. Minä - Google Docs.pdf`, url: `https://drive.google.com/file/d/1vE7leTYddJOgkGu4079xokefth0Www2L/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 5_ Miten sä voit - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1zY1-CKgc3WALES2rmZqqk-FGxpwKwD2y/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Verbityypit 3 ja 4 - ei kpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/155UNA7EIFvfkO-vJsMlyBSDjFwQut2yi/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento VT34kpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1CN1TIqkPlANe3xlIBZTDSUryJ47R84c9/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento15nesessiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1lPWK7XLd3X9sLQWEKgzmeaoYW3MVga2E/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/front-page?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 2 | Quizlet`,
+            url: `https://quizlet.com/join/zgaM8gawK?i=466rp4&x=1bqt&authuser=0`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `01A. Minä - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1vE7leTYddJOgkGu4079xokefth0Www2L/view`,
+          },
+        ],
       },
       {
-        id: '597816664875',
+        id: "597816664875",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '9 Mar 2023',
+        date: "9 Mar 2023",
         deleted: false,
         content: `Assignment: "12. Genetiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '597817716249',
+        id: "597817716249",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '9 Mar 2023',
+        date: "9 Mar 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Genetiivi, lumikot`, url: `https://docs.google.com/document/d/1XyVxFE0RQIM8sowkajubexqUTVR8y5P5Oz4tYH2vPO4/edit` }, { type: AttachmentType.PDF, title: `lesson genetiivi CLASS.pdf`, url: `https://drive.google.com/file/d/145_UngEDq1j0fCCc0POQ2UuXxyw24tVM/view` }, { type: AttachmentType.PDF, title: `1_ Genetiivilauseke kuvasta.pdf`, url: `https://drive.google.com/file/d/1WnJYoXm0cMNiDnZ4_BLesHC00_GhTnLP/view` }, { type: AttachmentType.VIDEO, title: `genetiivi lumikot.mp4`, url: `https://drive.google.com/file/d/1V4q3LRiXf4qVWagfyBaciFUDid7zIBLP/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Genetiivi, lumikot`,
+            url: `https://docs.google.com/document/d/1XyVxFE0RQIM8sowkajubexqUTVR8y5P5Oz4tYH2vPO4/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson genetiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/145_UngEDq1j0fCCc0POQ2UuXxyw24tVM/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `1_ Genetiivilauseke kuvasta.pdf`,
+            url: `https://drive.google.com/file/d/1WnJYoXm0cMNiDnZ4_BLesHC00_GhTnLP/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `genetiivi lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1V4q3LRiXf4qVWagfyBaciFUDid7zIBLP/view`,
+          },
+        ],
       },
       {
-        id: '597567103974',
+        id: "597567103974",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Mar 2023',
+        date: "8 Mar 2023",
         deleted: false,
         content: `Assignment: "11. Omistuslause"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '597542835879',
+        id: "597542835879",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '8 Mar 2023',
+        date: "8 Mar 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Omistuslause, lumikot`, url: `https://docs.google.com/document/d/1MLzSTJwlciTYF__n2quvfLUrSIoi66z-AfQzJIWXAwU/edit` }, { type: AttachmentType.PDF, title: `lesson possession CLASS.pdf`, url: `https://drive.google.com/file/d/13CT5p8zCa0kgfZKn3yEICiFj5zw5r3hY/view` }, { type: AttachmentType.PDF, title: `Mitä hänellä on Mitä hänellä ei ole.pdf`, url: `https://drive.google.com/file/d/15pJiPcWTJExIDI0coJi0lgO4e6RDYvIk/view` }, { type: AttachmentType.VIDEO, title: `omistuslause, lumikot.mp4`, url: `https://drive.google.com/file/d/1rTM6AWGOc99tqJ0YXLMU4pC_OOg7FsAX/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Omistuslause, lumikot`,
+            url: `https://docs.google.com/document/d/1MLzSTJwlciTYF__n2quvfLUrSIoi66z-AfQzJIWXAwU/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson possession CLASS.pdf`,
+            url: `https://drive.google.com/file/d/13CT5p8zCa0kgfZKn3yEICiFj5zw5r3hY/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Mitä hänellä on Mitä hänellä ei ole.pdf`,
+            url: `https://drive.google.com/file/d/15pJiPcWTJExIDI0coJi0lgO4e6RDYvIk/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `omistuslause, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1rTM6AWGOc99tqJ0YXLMU4pC_OOg7FsAX/view`,
+          },
+        ],
       },
       {
-        id: '597259343923',
+        id: "597259343923",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '7 Mar 2023',
+        date: "7 Mar 2023",
         deleted: false,
         content: `Assignment: "10. Partitiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '597241765996',
+        id: "597241765996",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '7 Mar 2023',
+        date: "7 Mar 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Partitiivi, lumikot`, url: `https://docs.google.com/document/d/1RNZCYp-1h0I0rYCOH7YqH-goCbSgR8KPl2dD_Hw7WQs/edit` }, { type: AttachmentType.PDF, title: `lesson partitiivi CLASS.pdf`, url: `https://drive.google.com/file/d/1zBOrIrp8hkVtLDkwrbWuFC0krlucgGTC/view` }, { type: AttachmentType.PDF, title: `partitiivin muodostus.pdf`, url: `https://drive.google.com/file/d/12OEOnpI9izLJIOSu0kNCBhpcEidRWvD5/view` }, { type: AttachmentType.VIDEO, title: `partitiivi, lumikot.mp4`, url: `https://drive.google.com/file/d/1MrueaGQ0GxAmM79flf41_qee3ziUA_du/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Partitiivi, lumikot`,
+            url: `https://docs.google.com/document/d/1RNZCYp-1h0I0rYCOH7YqH-goCbSgR8KPl2dD_Hw7WQs/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `lesson partitiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1zBOrIrp8hkVtLDkwrbWuFC0krlucgGTC/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `partitiivin muodostus.pdf`,
+            url: `https://drive.google.com/file/d/12OEOnpI9izLJIOSu0kNCBhpcEidRWvD5/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `partitiivi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1MrueaGQ0GxAmM79flf41_qee3ziUA_du/view`,
+          },
+        ],
       },
       {
-        id: '596937035662',
+        id: "596937035662",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '6 Mar 2023',
+        date: "6 Mar 2023",
         deleted: false,
         content: `Here are today's materials. :)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Mihin aikaan ja milloin Lumikot`, url: `https://docs.google.com/document/d/120njH95SktBseHh5zmzgZqnzaGUSFwQZ4ffdyxviI1s/edit` }, { type: AttachmentType.VIDEO, title: `Mihin aikaan Lumikot.mp4`, url: `https://drive.google.com/file/d/1pp4VK2bSvTqtm3ojx5xC6-ZbupHIMHTt/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Mihin aikaan ja milloin Lumikot`,
+            url: `https://docs.google.com/document/d/120njH95SktBseHh5zmzgZqnzaGUSFwQZ4ffdyxviI1s/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Mihin aikaan Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1pp4VK2bSvTqtm3ojx5xC6-ZbupHIMHTt/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-03-13': {
-    display_name: 'Week 6 (Mar 13 - Mar 19)',
+  "2023-03-13": {
+    display_name: "Week 6 (Mar 13 - Mar 19)",
     items: [
       {
-        id: '599589703410',
+        id: "599589703410",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '17 Mar 2023',
+        date: "17 Mar 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\nmaanantai: Spoken skills: Vaatteet ja ulkonäkö, Tiina\ntiistai: Missä, mistä, mihin 1, Tiina\nkeskiviikko: Missä, mistä, mihin 2, Tiina\ntorstai: Eksistentiaalilause, Netta\n**\nSpoken skills to the MAX!\n**\nLessons Wednesday and Thursday  between\n**\n12:15-13:30.\n**\nThe theme is the same next week, but questions are different!\nkeskiviikko: Minä, Tiina\ntorstai: Minä, Netta\nAll the materials are in the Classroom.\n**\nModuuli 2 has started.\n**\nRemember that everyone needs to complete homework assignments of this module. Since lessons\nare not mandatory to attend, assignments keep us posted on your progress.\nHere is again the link to the independent studies and Quizlet.\n**\nKesäaika - Daylight savings\n**\nWe have this super annoying thing in Finland called Daylight savings. It means that in the\nautumn we switch to winter time and in the  spring we switch to summer time. This will\nhappen on 26th of March. The time difference between Finland and Philippines will be 5 hours\n(if you are somewhere else, check your local time). So, starting Monday 27th if our lesson\nstarts at 9 am Finnish time, it will be 2 pm in the Philippines.\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 7_ Vaatteet, ulkonäkö, ammatit - Google Docs.pdf`, url: `https://drive.google.com/file/d/1dPKXNkmE4c2YRg4u9tdJTqmJgtjH-neZ/view` }, { type: AttachmentType.PDF, title: `luento missä, mistä, mihin 1 class (1).pdf`, url: `https://drive.google.com/file/d/1ABzKfuWN9dHZKBaiue2ZceHiY27NrQcQ/view` }, { type: AttachmentType.PDF, title: `luento missä, mistä, mihin 2 class (1).pdf`, url: `https://drive.google.com/file/d/1hhIQlp87aR8mpO4IhsZGFutcIBm7SS9b/view` }, { type: AttachmentType.PDF, title: `luento18paikkalause CLASS.pdf`, url: `https://drive.google.com/file/d/1lQJTpnVcvAbi5Y5H5eaebZxAWU9IG8uY/view` }, { type: AttachmentType.PDF, title: `01B. Minä - Google Docs.pdf`, url: `https://drive.google.com/file/d/1esxftfXMtjYm_7jRY__insfupU0IL8d_/view` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/front-page?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 2 | Quizlet`, url: `https://quizlet.com/join/zgaM8gawK?i=466rp4&x=1bqt&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 7_ Vaatteet, ulkonäkö, ammatit - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1dPKXNkmE4c2YRg4u9tdJTqmJgtjH-neZ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento missä, mistä, mihin 1 class (1).pdf`,
+            url: `https://drive.google.com/file/d/1ABzKfuWN9dHZKBaiue2ZceHiY27NrQcQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento missä, mistä, mihin 2 class (1).pdf`,
+            url: `https://drive.google.com/file/d/1hhIQlp87aR8mpO4IhsZGFutcIBm7SS9b/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento18paikkalause CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1lQJTpnVcvAbi5Y5H5eaebZxAWU9IG8uY/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `01B. Minä - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1esxftfXMtjYm_7jRY__insfupU0IL8d_/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/front-page?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 2 | Quizlet`,
+            url: `https://quizlet.com/join/zgaM8gawK?i=466rp4&x=1bqt&authuser=0`,
+          },
+        ],
       },
       {
-        id: '599321503006',
+        id: "599321503006",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '16 Mar 2023',
+        date: "16 Mar 2023",
         deleted: false,
         content: `Assignment: "15. Nesessiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '599348833676',
+        id: "599348833676",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 Mar 2023',
+        date: "16 Mar 2023",
         deleted: false,
         content: `Tässä Spoken MAX -tunnin materiaali! Here are the materials of today's Spoken Skills to the\nMAX -lesson.\nTallenne on olemassa vai 5 päivää. Recording exists only five days.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `to 16.3. 01A. Minä`, url: `https://docs.google.com/document/d/1aBdc2h3yIF0wnfFuSAFiyQ0g3nW_klUUmOjc8G9zvf0/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/9wuGK2GvxzXZyT3qJxCF4SUHeAwJadgy86Q7mQfeRgRn0EIgOIK3XHj8QMXHQHyD.MiFQ3BnrpzMF5R1q?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `to 16.3. 01A. Minä`,
+            url: `https://docs.google.com/document/d/1aBdc2h3yIF0wnfFuSAFiyQ0g3nW_klUUmOjc8G9zvf0/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/9wuGK2GvxzXZyT3qJxCF4SUHeAwJadgy86Q7mQfeRgRn0EIgOIK3XHj8QMXHQHyD.MiFQ3BnrpzMF5R1q?authuser=0`,
+          },
+        ],
       },
       {
-        id: '599321897686',
+        id: "599321897686",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 Mar 2023',
+        date: "16 Mar 2023",
         deleted: false,
         content: `Torstain materiaalit. I accidentally uploaded wrong recording yesterday, but now it should\nbe the correct one.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Nesessiivi, lumikot`, url: `https://docs.google.com/document/d/19Fg2igfNQuUPrSEoEB3ZM42WEJsRGXc9FVfj9wSkPkA/edit` }, { type: AttachmentType.PDF, title: `luento15nesessiivi CLASS.pdf`, url: `https://drive.google.com/file/d/147twZ5ikzDPcTwv6e8f2knWMRioeQzEp/view` }, { type: AttachmentType.PDF, title: `Nesessiivi - t1.pdf`, url: `https://drive.google.com/file/d/1PjUpbKrnLIsWuVEBdd5HnzMro_Bi_1C9/view` }, { type: AttachmentType.PDF, title: `Nesessiivi t2 ja 3.pdf`, url: `https://drive.google.com/file/d/1ZR2Lqp9unzIl-CMnM3AEPzPV2rUPJb7U/view` }, { type: AttachmentType.VIDEO, title: `nesessiivi, lumikot.mp4`, url: `https://drive.google.com/file/d/1uRTC1WdORONb242QIntP5vsNDCAmcwKP/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Nesessiivi, lumikot`,
+            url: `https://docs.google.com/document/d/19Fg2igfNQuUPrSEoEB3ZM42WEJsRGXc9FVfj9wSkPkA/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento15nesessiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/147twZ5ikzDPcTwv6e8f2knWMRioeQzEp/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Nesessiivi - t1.pdf`,
+            url: `https://drive.google.com/file/d/1PjUpbKrnLIsWuVEBdd5HnzMro_Bi_1C9/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Nesessiivi t2 ja 3.pdf`,
+            url: `https://drive.google.com/file/d/1ZR2Lqp9unzIl-CMnM3AEPzPV2rUPJb7U/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `nesessiivi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1uRTC1WdORONb242QIntP5vsNDCAmcwKP/view`,
+          },
+        ],
       },
       {
-        id: '599120768253',
+        id: "599120768253",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '15 Mar 2023',
+        date: "15 Mar 2023",
         deleted: false,
         content: `Tässä Spoken MAX -tunnin materiaali! Here are the materials of today's Spoken Skills to the\nMAX -lesson.\nTallenne on olemassa vai 5 päivää. Recording exists only five days.\nJoin tomorrow to Tiina's Zoom at 12.15 to train your spoken skills more! Material is the\nsame.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `15.3. ke 01A. Minä`, url: `https://docs.google.com/document/d/1EPCmBqv9Sad2csS7KUwTQOIDeJGIFK0CeaIo2CLCbIA/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/7f-Eci_jHSykhMeoEkG4CPAOBN5BMAyrPjS4j2uYJVNatz7OkgB9H95UhbCENBVQ.4zs_zPDC6GpMllBB?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `15.3. ke 01A. Minä`,
+            url: `https://docs.google.com/document/d/1EPCmBqv9Sad2csS7KUwTQOIDeJGIFK0CeaIo2CLCbIA/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/7f-Eci_jHSykhMeoEkG4CPAOBN5BMAyrPjS4j2uYJVNatz7OkgB9H95UhbCENBVQ.4zs_zPDC6GpMllBB?authuser=0`,
+          },
+        ],
       },
       {
-        id: '598153181700',
+        id: "598153181700",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '15 Mar 2023',
+        date: "15 Mar 2023",
         deleted: false,
         content: `Assignment: "14. Verbityypit 3 ja 4, KPT"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '599093785174',
+        id: "599093785174",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '15 Mar 2023',
+        date: "15 Mar 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -session today in my Zoom at 12.15! Here is the link to the notes.\nMeeting ID: 260788 2009\nRemember, this is not mandatory lesson, but highly recommended to participate!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `15.3. ke 01A. Minä`, url: `https://docs.google.com/document/d/1EPCmBqv9Sad2csS7KUwTQOIDeJGIFK0CeaIo2CLCbIA/edit` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `15.3. ke 01A. Minä`,
+            url: `https://docs.google.com/document/d/1EPCmBqv9Sad2csS7KUwTQOIDeJGIFK0CeaIo2CLCbIA/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0`,
+          },
+        ],
       },
       {
-        id: '599067984153',
+        id: "599067984153",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '15 Mar 2023',
+        date: "15 Mar 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbityypit 3 ja 4, lumikot`, url: `https://docs.google.com/document/d/1bcUh9a1NNXoPNHfYYrMFG-OHtTza_XWdNEpQNLD-UhM/edit` }, { type: AttachmentType.PDF, title: `Luento VT34kpt CLASS.pdf`, url: `https://drive.google.com/file/d/1eAknzkds0ZL48vdfMkSC4kopkBrfKarh/view` }, { type: AttachmentType.PDF, title: `Verbityyppi 3 vai 4 - Google Docs.pdf`, url: `https://drive.google.com/file/d/11Fp6bdcNb-64UkOf0NXloBUanxAonIVs/view` }, { type: AttachmentType.VIDEO, title: `vt3 ja 4, kpt, lumikot.mp4`, url: `https://drive.google.com/file/d/1SE6L8kO-9n8DojAjkL7ObXwsfZcPeVnv/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityypit 3 ja 4, lumikot`,
+            url: `https://docs.google.com/document/d/1bcUh9a1NNXoPNHfYYrMFG-OHtTza_XWdNEpQNLD-UhM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento VT34kpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1eAknzkds0ZL48vdfMkSC4kopkBrfKarh/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Verbityyppi 3 vai 4 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/11Fp6bdcNb-64UkOf0NXloBUanxAonIVs/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `vt3 ja 4, kpt, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1SE6L8kO-9n8DojAjkL7ObXwsfZcPeVnv/view`,
+          },
+        ],
       },
       {
-        id: '598154300364',
+        id: "598154300364",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '14 Mar 2023',
+        date: "14 Mar 2023",
         deleted: false,
         content: `Assignment: "13. Verbityypit 3 ja 4"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '543518780977',
+        id: "543518780977",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Mar 2023',
+        date: "14 Mar 2023",
         deleted: false,
         content: `Tiistain materiaalit`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbityypit 3 ja 4, lumikot`, url: `https://docs.google.com/document/d/1bcUh9a1NNXoPNHfYYrMFG-OHtTza_XWdNEpQNLD-UhM/edit` }, { type: AttachmentType.PDF, title: `Verbityypit 3 ja 4 - ei kpt CLASS.pdf`, url: `https://drive.google.com/file/d/1R9LNhJ1jBCd1G2EMMqkfY9j4ulQ-9dOw/view` }, { type: AttachmentType.VIDEO, title: `vt3ja4 lumikot.mp4`, url: `https://drive.google.com/file/d/1hp9vVgHcEZFWmAEWjRn1z7T2VTtiKK0d/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityypit 3 ja 4, lumikot`,
+            url: `https://docs.google.com/document/d/1bcUh9a1NNXoPNHfYYrMFG-OHtTza_XWdNEpQNLD-UhM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Verbityypit 3 ja 4 - ei kpt CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1R9LNhJ1jBCd1G2EMMqkfY9j4ulQ-9dOw/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `vt3ja4 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1hp9vVgHcEZFWmAEWjRn1z7T2VTtiKK0d/view`,
+          },
+        ],
       },
       {
-        id: '598517074837',
+        id: "598517074837",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Mar 2023',
+        date: "13 Mar 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 5: Miten sä voit`, url: `https://docs.google.com/document/d/1v0aWBViM883kT-0cVtq2JHyJtMYXghTYL5u-oVWpu8w/edit` }, { type: AttachmentType.VIDEO, title: `spoken miten voit, lumikot.mp4`, url: `https://drive.google.com/file/d/106_yXZ7rBKkICTLNtbgUyQO3LxNG-lfJ/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 5: Miten sä voit`,
+            url: `https://docs.google.com/document/d/1v0aWBViM883kT-0cVtq2JHyJtMYXghTYL5u-oVWpu8w/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `spoken miten voit, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/106_yXZ7rBKkICTLNtbgUyQO3LxNG-lfJ/view`,
+          },
+        ],
       },
       {
-        id: '597858063976',
+        id: "597858063976",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '13 Mar 2023',
+        date: "13 Mar 2023",
         deleted: false,
         content: `Assignment: "Skill Check I"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-03-20': {
-    display_name: 'Week 7 (Mar 20 - Mar 26)',
+  "2023-03-20": {
+    display_name: "Week 7 (Mar 20 - Mar 26)",
     items: [
       {
-        id: '600783322211',
+        id: "600783322211",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '24 Mar 2023',
+        date: "24 Mar 2023",
         deleted: false,
         content: `Perjantaikuulutukset! Friday Announcements!\n**\nEnsi viikolla / Next week...\n**\nmaanantai: Spoken Skills: Asuminen\n**\nNetta\n**\ntiistai: Sanatyyppien perusteet I\nkeskiviikko: Sanatyyppien perusteet II\ntorstai: Mielipide\nWe'll post the teacher's to the rest of the week on Monday.\n****\n**\nSpoken skills to the MAX!\n**\nLessons Wednesday and Thursday at\n**\n12:15-13:30.\n**\nSInce the Spoken MAX -lessons got cancelled this week, we'll have the same topic next week,\nso the same\n**\nMinä B\n**\nquestions are still valid.\n**\nKesäaika - Daylight savings\n**\nWe have this super annoying thing in Finland called Daylight savings. It means that in the\nautumn we switch to winter time and in the  spring we switch to summer time. This will\nhappen on upcoming weekend, 26th of March. The time difference between Finland and\nPhilippines will be 5 hours (if you are somewhere else, check your local time).\nSo, starting next Monday if our lesson starts at 9 am Finnish time, it will be 2 pm in the\nPhilippines.\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Spoken 6.pdf`, url: `https://drive.google.com/file/d/14y4UL3AvWWvJ-F3WMasr3MHs0hH3J8ga/view` }, { type: AttachmentType.PDF, title: `Luento19anatyypit1 CLASS.pdf`, url: `https://drive.google.com/file/d/1RK7nDlHZ8hXUeJLKSpW2SlS4Zz_LiuRs/view` }, { type: AttachmentType.PDF, title: `luento20sanatyypit2 CLASS.pdf`, url: `https://drive.google.com/file/d/1MtYIZ0FXREwsdRLJUv5muoHYFuGLR1lY/view` }, { type: AttachmentType.PDF, title: `Luento23mielipide CLASS.pdf`, url: `https://drive.google.com/file/d/1wqfz0TDoNPaM6AdF2XyYVNp4IrlwVG_x/view` }, { type: AttachmentType.DOCS, title: `01B. Minä`, url: `https://docs.google.com/document/d/1WjXb5kIljDWu89AImlZA6sYWFdJz8JrCBdVuRMvPkVM/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Spoken 6.pdf`,
+            url: `https://drive.google.com/file/d/14y4UL3AvWWvJ-F3WMasr3MHs0hH3J8ga/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento19anatyypit1 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1RK7nDlHZ8hXUeJLKSpW2SlS4Zz_LiuRs/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento20sanatyypit2 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1MtYIZ0FXREwsdRLJUv5muoHYFuGLR1lY/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento23mielipide CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1wqfz0TDoNPaM6AdF2XyYVNp4IrlwVG_x/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `01B. Minä`,
+            url: `https://docs.google.com/document/d/1WjXb5kIljDWu89AImlZA6sYWFdJz8JrCBdVuRMvPkVM/edit`,
+          },
+        ],
       },
       {
-        id: '600749426422',
+        id: "600749426422",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '23 Mar 2023',
+        date: "23 Mar 2023",
         deleted: false,
         content: `Assignment: "18. Paikkalause"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '600732624044',
+        id: "600732624044",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '23 Mar 2023',
+        date: "23 Mar 2023",
         deleted: false,
         content: `Thursday's materials! Sorry for the delay!`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento18paikkalause.pdf`, url: `https://drive.google.com/file/d/1lZBHGlY3WBMkPzzjt0g_XOWW8hucb2Bl/view` }, { type: AttachmentType.DOCS, title: `Paikkalauseessa on Lumikko`, url: `https://docs.google.com/document/d/1WIs376wE1jdgtW813Fks8KSBA_lR3fqiQqHfQxtcQxc/edit` }, { type: AttachmentType.PDF, title: `paikkalausetehtävä.pdf`, url: `https://drive.google.com/file/d/1mjXV4kd-CG7jduBFQnlt1rLLmq8PPO_M/view` }, { type: AttachmentType.VIDEO, title: `Lumikot Paikkailause.mp4`, url: `https://drive.google.com/file/d/112eEERW9Rbp3r1tCsVXtIv0KLlG7y-As/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento18paikkalause.pdf`,
+            url: `https://drive.google.com/file/d/1lZBHGlY3WBMkPzzjt0g_XOWW8hucb2Bl/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Paikkalauseessa on Lumikko`,
+            url: `https://docs.google.com/document/d/1WIs376wE1jdgtW813Fks8KSBA_lR3fqiQqHfQxtcQxc/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `paikkalausetehtävä.pdf`,
+            url: `https://drive.google.com/file/d/1mjXV4kd-CG7jduBFQnlt1rLLmq8PPO_M/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot Paikkailause.mp4`,
+            url: `https://drive.google.com/file/d/112eEERW9Rbp3r1tCsVXtIv0KLlG7y-As/view`,
+          },
+        ],
       },
       {
-        id: '600533902111',
+        id: "600533902111",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '22 Mar 2023',
+        date: "22 Mar 2023",
         deleted: false,
         content: `Hi! Here are today's material!`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento missä, mistä, mihin 2 class.pdf`, url: `https://drive.google.com/file/d/1StA94IOEE80u_uBBYhdMI5FEzvbU_xVg/view` }, { type: AttachmentType.PDF, title: `Mikä pääte_ - Google Docs.pdf`, url: `https://drive.google.com/file/d/1_4ox3hrSkc5rBZjdwXbnaQwA-k1eJedm/view` }, { type: AttachmentType.PDF, title: `Mikä on oikea mihin-muoto - Google Docs.pdf`, url: `https://drive.google.com/file/d/1S04NQdkXBfaA1Phr_uDjWNvfc0KdnGTX/view` }, { type: AttachmentType.PDF, title: `Puhu ryhmässä ja kirjoita lauseita - Google Docs.pdf`, url: `https://drive.google.com/file/d/1xHRY2kW9V6mlPRBIITdmat1zu_92bA4o/view` }, { type: AttachmentType.DOCS, title: `Missä mistä mihin 2 Lumikot`, url: `https://docs.google.com/document/d/1Uew6rSiMg_zY3KfMoCHd-L-EzCFCzHhlsEOhK4QzTms/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot mismistmih2.mp4`, url: `https://drive.google.com/file/d/1uIGmWlnSnWkIy8r_CSMIw6U5HvJizXO2/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento missä, mistä, mihin 2 class.pdf`,
+            url: `https://drive.google.com/file/d/1StA94IOEE80u_uBBYhdMI5FEzvbU_xVg/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Mikä pääte_ - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1_4ox3hrSkc5rBZjdwXbnaQwA-k1eJedm/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Mikä on oikea mihin-muoto - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1S04NQdkXBfaA1Phr_uDjWNvfc0KdnGTX/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Puhu ryhmässä ja kirjoita lauseita - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1xHRY2kW9V6mlPRBIITdmat1zu_92bA4o/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Missä mistä mihin 2 Lumikot`,
+            url: `https://docs.google.com/document/d/1Uew6rSiMg_zY3KfMoCHd-L-EzCFCzHhlsEOhK4QzTms/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot mismistmih2.mp4`,
+            url: `https://drive.google.com/file/d/1uIGmWlnSnWkIy8r_CSMIw6U5HvJizXO2/view`,
+          },
+        ],
       },
       {
-        id: '599632005848',
+        id: "599632005848",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '22 Mar 2023',
+        date: "22 Mar 2023",
         deleted: false,
         content: `Assignment: "17. Missä, mistä, mihin 2"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '600493353282',
+        id: "600493353282",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '22 Mar 2023',
+        date: "22 Mar 2023",
         deleted: false,
         content: `Today's lesson in my Zoom!\nMeeting ID 260788 2009`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0`,
+          },
+        ],
       },
       {
-        id: '599630148161',
+        id: "599630148161",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Mar 2023',
+        date: "21 Mar 2023",
         deleted: false,
         content: `Assignment: "16. Missä, mistä mihin 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '600209163386',
+        id: "600209163386",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Mar 2023',
+        date: "21 Mar 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Missä, mistä, mihin, lumikot`, url: `https://docs.google.com/document/d/1byn-S0dbvFlHF8I-VtQDov1mN3hDSmh-WCkO2BOj_6U/edit` }, { type: AttachmentType.PDF, title: `luento missä, mistä, mihin 1 class (2).pdf`, url: `https://drive.google.com/file/d/1SnXrpaDy5gBy_PtPbxVjizQiblV_ZTRS/view` }, { type: AttachmentType.PDF, title: `Missä hän on_ - Google Docs.pdf`, url: `https://drive.google.com/file/d/1tpk0KBP8a3DmKcBF9aqQWRWOmpxyIXy7/view` }, { type: AttachmentType.PDF, title: `Tehtävä_ tee sanoista lause - Google Docs.pdf`, url: `https://drive.google.com/file/d/1fm-mnAU792bty4IoMHFyQaoUqxXCRMt1/view` }, { type: AttachmentType.PDF, title: `Missä hän on_ 2 - Google Docs.pdf`, url: `https://drive.google.com/file/d/1ahcSihWdczpawsv1Zzf0QFeQCGfDs_0O/view` }, { type: AttachmentType.PDF, title: `Tehtävä_ tee sanoista lause2 - Google Docs.pdf`, url: `https://drive.google.com/file/d/1UWn2QPmaZQ8Eipt9xJSumLAkzNIo_jsg/view` }, { type: AttachmentType.VIDEO, title: `missä,mistä,mihin 1 lumikot.mp4`, url: `https://drive.google.com/file/d/1hO0uFfojP550ck85WifeFIB2JRRIRdhg/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Missä, mistä, mihin, lumikot`,
+            url: `https://docs.google.com/document/d/1byn-S0dbvFlHF8I-VtQDov1mN3hDSmh-WCkO2BOj_6U/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento missä, mistä, mihin 1 class (2).pdf`,
+            url: `https://drive.google.com/file/d/1SnXrpaDy5gBy_PtPbxVjizQiblV_ZTRS/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Missä hän on_ - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1tpk0KBP8a3DmKcBF9aqQWRWOmpxyIXy7/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Tehtävä_ tee sanoista lause - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1fm-mnAU792bty4IoMHFyQaoUqxXCRMt1/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Missä hän on_ 2 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1ahcSihWdczpawsv1Zzf0QFeQCGfDs_0O/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Tehtävä_ tee sanoista lause2 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1UWn2QPmaZQ8Eipt9xJSumLAkzNIo_jsg/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `missä,mistä,mihin 1 lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1hO0uFfojP550ck85WifeFIB2JRRIRdhg/view`,
+          },
+        ],
       },
       {
-        id: '543720091063',
+        id: "543720091063",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '20 Mar 2023',
+        date: "20 Mar 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Vaatteet, ulkonäkö, ammatit`, url: `https://docs.google.com/document/d/1_cx7yT6CeKSnu6WMU32imJswb8vb2B2LyglgmNN3rJ4/edit` }, { type: AttachmentType.VIDEO, title: `vaatteet ja ulkonäkö, lumikot.mp4`, url: `https://drive.google.com/file/d/1slqEjRsNJzgqqtZi4I-Df5WsvF-lj7C1/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Vaatteet, ulkonäkö, ammatit`,
+            url: `https://docs.google.com/document/d/1_cx7yT6CeKSnu6WMU32imJswb8vb2B2LyglgmNN3rJ4/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `vaatteet ja ulkonäkö, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1slqEjRsNJzgqqtZi4I-Df5WsvF-lj7C1/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-03-27': {
-    display_name: 'Week 8 (Mar 27 - Apr 02)',
+  "2023-03-27": {
+    display_name: "Week 8 (Mar 27 - Apr 02)",
     items: [
       {
-        id: '602178988170',
+        id: "602178988170",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '31 Mar 2023',
+        date: "31 Mar 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n****\n**\nEnsi viikolla…\n**\n**\nmaanantai\n**\n: Spoken skills: Lemppareita ja tunteita, Tiina\n**\ntiistai\n**\n: Imperfekti 1, Netta\n**\nkeskiviikko\n**\n:Imperatiivi, Netta\n**\ntorstai:\n**\nma-muodot, Tiina\n**\nSpoken skills to the MAX!\n**\nLessons Wednesday and Thursday  between\n**\n12:15-13:30.\n**\n**\nkeskiviikko:\n**\nPerhe, Netta\n**\ntorstai:\n**\nPerhe, Tiina\nAll the materials are in the Classroom.\n**\nEaster time is here!\n**\nWe have a small Easter holiday on the 7th-10th of April. This is a national holiday in\nFinland, so me and Netta will be out of office and we will not have lessons on Monday the\n10th.\n**\nOur second Skill Check is approaching…\n**\nThe Skill Check of module 2 will be on 11th of April. Same as before, it will be open all\nday in Classroom. You have to complete it to be able to move on to Module 3. Also all the\nassignments of Module 2 must be completed by 12th of April  9 am. I will remove inactive\npeople from the course.\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 9_ Lemppareita ja tunteita - Google Docs.pdf`, url: `https://drive.google.com/file/d/1v7lc_t1UZA_Mbv2GkIj3OPqYoViFLMJU/view` }, { type: AttachmentType.PDF, title: `luento24imperfekti1 CLASS (2).pdf`, url: `https://drive.google.com/file/d/1OSGfJsUXb83rmo6jqUjPEn9GvzLZnNoj/view` }, { type: AttachmentType.PDF, title: `Imperatiivi CLASS.pdf`, url: `https://drive.google.com/file/d/15c2VTIP4kE_4S8oYu-qt9bpRCmmqdwXR/view` }, { type: AttachmentType.PDF, title: `Lesson massa_masta_maan CLASS.pdf`, url: `https://drive.google.com/file/d/1YEETZaBNU4-hI9pkVCzz9A3hCJ9Pydha/view` }, { type: AttachmentType.PDF, title: `02A. Perhe - Google Docs.pdf`, url: `https://drive.google.com/file/d/14EJGcafEbq87gpW1y00vJLiffJ0YMW0U/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 9_ Lemppareita ja tunteita - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1v7lc_t1UZA_Mbv2GkIj3OPqYoViFLMJU/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento24imperfekti1 CLASS (2).pdf`,
+            url: `https://drive.google.com/file/d/1OSGfJsUXb83rmo6jqUjPEn9GvzLZnNoj/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Imperatiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/15c2VTIP4kE_4S8oYu-qt9bpRCmmqdwXR/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lesson massa_masta_maan CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1YEETZaBNU4-hI9pkVCzz9A3hCJ9Pydha/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `02A. Perhe - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/14EJGcafEbq87gpW1y00vJLiffJ0YMW0U/view`,
+          },
+        ],
       },
       {
-        id: '601992566826',
+        id: "601992566826",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '30 Mar 2023',
+        date: "30 Mar 2023",
         deleted: false,
         content: `Spoken MAX -materiaalit. Muista, että tallenne on olemassa vain viisi päivää, recording only\nexsists 5 days.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `30.3. to 01B. Minä`, url: `https://docs.google.com/document/d/1uZ01jOjoHlFXVXZ8KtcTRXw-8SjRK_7m_MagwtQS3tM/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/Gxc7Ep4GLQcCSni_1_zpNUo8st0e5ixgTuNOYgoBAMRHGbGUurDQXxsveNpafhix.Aux9ctdnr6cAu9xu?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `30.3. to 01B. Minä`,
+            url: `https://docs.google.com/document/d/1uZ01jOjoHlFXVXZ8KtcTRXw-8SjRK_7m_MagwtQS3tM/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/Gxc7Ep4GLQcCSni_1_zpNUo8st0e5ixgTuNOYgoBAMRHGbGUurDQXxsveNpafhix.Aux9ctdnr6cAu9xu?authuser=0`,
+          },
+        ],
       },
       {
-        id: '601375294446',
+        id: "601375294446",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '30 Mar 2023',
+        date: "30 Mar 2023",
         deleted: false,
         content: `Assignment: "22. Mielipide"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '601994356316',
+        id: "601994356316",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '30 Mar 2023',
+        date: "30 Mar 2023",
         deleted: false,
         content: `Tämän päivän materiaali, today's materials.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento23mielipide.pdf`, url: `https://drive.google.com/file/d/1nd1WhuHfT__liB3SRQoIxieVdhq49m15/view` }, { type: AttachmentType.PDF, title: `ryhmässä lempi ja tykkää.pdf`, url: `https://drive.google.com/file/d/1CHCyBxzQpa41tpLbwWx8KMWig30s6DWb/view` }, { type: AttachmentType.PDF, title: `kirjoita sanat mielipide.pdf`, url: `https://drive.google.com/file/d/1z7vrFkUzYLxpSsMKbtixwIeTq4SLlAX8/view` }, { type: AttachmentType.DOCS, title: `Mielipide Lumikot`, url: `https://docs.google.com/document/d/1OEjGvyOWhffSnffJq1v3Yjyq8aCX6ORf4awjA2klPRo/edit` }, { type: AttachmentType.VIDEO, title: `Mitä mieltä lumikoista.mp4`, url: `https://drive.google.com/file/d/1hD3PSkffd3XErFnpF1iKcynmdahETGMm/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento23mielipide.pdf`,
+            url: `https://drive.google.com/file/d/1nd1WhuHfT__liB3SRQoIxieVdhq49m15/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `ryhmässä lempi ja tykkää.pdf`,
+            url: `https://drive.google.com/file/d/1CHCyBxzQpa41tpLbwWx8KMWig30s6DWb/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `kirjoita sanat mielipide.pdf`,
+            url: `https://drive.google.com/file/d/1z7vrFkUzYLxpSsMKbtixwIeTq4SLlAX8/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Mielipide Lumikot`,
+            url: `https://docs.google.com/document/d/1OEjGvyOWhffSnffJq1v3Yjyq8aCX6ORf4awjA2klPRo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Mitä mieltä lumikoista.mp4`,
+            url: `https://drive.google.com/file/d/1hD3PSkffd3XErFnpF1iKcynmdahETGMm/view`,
+          },
+        ],
       },
       {
-        id: '563299648007',
+        id: "563299648007",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '29 Mar 2023',
+        date: "29 Mar 2023",
         deleted: false,
         content: `Assignment: "21. Sanatyypit"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '601790711708',
+        id: "601790711708",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '29 Mar 2023',
+        date: "29 Mar 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `ke 29.3. 01B. Minä`, url: `https://docs.google.com/document/d/1hcp3TQrl8m2auiwpIGeXa2G9BcL-R1vX0Q_z5UNVjKg/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/REmiZrlIGudicuKMhMtuqmjkmFtDBJE3Z9KjCiCkudbP1h_6gjnP7NZEcFK0Hedb.B5n4GTCXDdTMtv6I?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `ke 29.3. 01B. Minä`,
+            url: `https://docs.google.com/document/d/1hcp3TQrl8m2auiwpIGeXa2G9BcL-R1vX0Q_z5UNVjKg/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/REmiZrlIGudicuKMhMtuqmjkmFtDBJE3Z9KjCiCkudbP1h_6gjnP7NZEcFK0Hedb.B5n4GTCXDdTMtv6I?authuser=0`,
+          },
+        ],
       },
       {
-        id: '563352695976',
+        id: "563352695976",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '28 Mar 2023',
+        date: "28 Mar 2023",
         deleted: false,
         content: `Here are today's materias, tässä tämän päivän materiaalit! Also yesterday's, myös eiliset!\nI'll continud the same notes.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento19sanatyypit1.pdf`, url: `https://drive.google.com/file/d/1uqULGBNHT9nLpyr8x1PZbYHM8h63o8do/view` }, { type: AttachmentType.PDF, title: `tavalliset e nen ja asäs.pdf`, url: `https://drive.google.com/file/d/1WZQ3XrtX94eNSLl58mrcd3PUMzWvqt4c/view` }, { type: AttachmentType.VIDEO, title: `Sanatyypit 1 Lumikot.mp4`, url: `https://drive.google.com/file/d/1m386nuqso1EC5QE-pnkQ0eOJyOPZtmZ_/view` }, { type: AttachmentType.DOCS, title: `Sanatyyppien perusteet Lumikot`, url: `https://docs.google.com/document/d/1uPF9mhxkNwjbyd2_9iFS4oXbgxAPCi31q6Y1yN5CwRI/edit` }, { type: AttachmentType.PDF, title: `luento20sanatyypit2 CLASS.pdf`, url: `https://drive.google.com/file/d/1qK_jMED8hHuMatPrU40-3Adj6fwISkXT/view` }, { type: AttachmentType.PDF, title: `i tyypit.pdf`, url: `https://drive.google.com/file/d/1EJtoVGmWrD61NNnVH1zY5DhdfreFbt99/view` }, { type: AttachmentType.VIDEO, title: `Sanatyypit 2 Lumikot.mp4`, url: `https://drive.google.com/file/d/1j5rc4LXTFcBXPQH8hFKgFdpNOkRQO8ef/view` }, { type: AttachmentType.PDF, title: `sanatyypit.pdf`, url: `https://drive.google.com/file/d/1VbqIXAwKnZOfZi-y76uhZsEbAfa5UF6f/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento19sanatyypit1.pdf`,
+            url: `https://drive.google.com/file/d/1uqULGBNHT9nLpyr8x1PZbYHM8h63o8do/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `tavalliset e nen ja asäs.pdf`,
+            url: `https://drive.google.com/file/d/1WZQ3XrtX94eNSLl58mrcd3PUMzWvqt4c/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Sanatyypit 1 Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1m386nuqso1EC5QE-pnkQ0eOJyOPZtmZ_/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Sanatyyppien perusteet Lumikot`,
+            url: `https://docs.google.com/document/d/1uPF9mhxkNwjbyd2_9iFS4oXbgxAPCi31q6Y1yN5CwRI/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento20sanatyypit2 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1qK_jMED8hHuMatPrU40-3Adj6fwISkXT/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `i tyypit.pdf`,
+            url: `https://drive.google.com/file/d/1EJtoVGmWrD61NNnVH1zY5DhdfreFbt99/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Sanatyypit 2 Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1j5rc4LXTFcBXPQH8hFKgFdpNOkRQO8ef/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `sanatyypit.pdf`,
+            url: `https://drive.google.com/file/d/1VbqIXAwKnZOfZi-y76uhZsEbAfa5UF6f/view`,
+          },
+        ],
       },
       {
-        id: '601375085538',
+        id: "601375085538",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '28 Mar 2023',
+        date: "28 Mar 2023",
         deleted: false,
         content: `Assignment: "20. Kuuntelu"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '601340611444',
+        id: "601340611444",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '27 Mar 2023',
+        date: "27 Mar 2023",
         deleted: false,
         content: `Assignment: "19. Postpositiot"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '601359902976',
+        id: "601359902976",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '27 Mar 2023',
+        date: "27 Mar 2023",
         deleted: false,
         content: `Moikka!\nHere are materials for today! There is also a homework assignment for you to complete. Study\nPostpositiot from Moduuli 2, Week 5 before doing the assigmemnt`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Asuminen Lumikot`, url: `https://docs.google.com/document/d/18YcSlPAYLL83xYI0EvpEzqQ-RVdJzc4Qu00OgLbE3dM/edit` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/independent-studies/viikko-week-5?authuser=0#h.tmgezqgvv7h0` }, { type: AttachmentType.VIDEO, title: `Lumikot Asuminen spoken.mp4`, url: `https://drive.google.com/file/d/1BFLEaKdelw6wb8EgqGeXJgRijK-m3wUq/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Asuminen Lumikot`,
+            url: `https://docs.google.com/document/d/18YcSlPAYLL83xYI0EvpEzqQ-RVdJzc4Qu00OgLbE3dM/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli2/independent-studies/viikko-week-5?authuser=0#h.tmgezqgvv7h0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot Asuminen spoken.mp4`,
+            url: `https://drive.google.com/file/d/1BFLEaKdelw6wb8EgqGeXJgRijK-m3wUq/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-04-03': {
-    display_name: 'Week 9 (Apr 03 - Apr 09)',
+  "2023-04-03": {
+    display_name: "Week 9 (Apr 03 - Apr 09)",
     items: [
       {
-        id: '603013115591',
+        id: "603013115591",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Apr 2023',
+        date: "6 Apr 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n****\n**\nPääsiäisloma - Easter holiday\n**\nRemember, that me and Netta will be out of office tomorrow and Monday because Easter is a\nnational holiday in Finland. We will continue studying normally on Tuesday\n**\nEnsi viikolla…\n**\n**\ntiistai:\n**\nKonditionaali ja Skill Check 2\n**\nkeskiviikko:\n**\nSpoken skills: Vapaa-aika\n**\ntorstai:\n**\nImperfekti 2\nAll the lessons are with me.\n**\nSpoken skills to the MAX!\n**\nWe will start another MAX-group which will be on Monday and Tuesday between  12:15-13:30.\nThis group is offered to you and the group Saukot,  which started a month after you guys and\nare currently starting Module 2. If you missed the first topics of MAX or want to review or\npractice speaking as much as possible, you are welcome to join. Of course you can and should\nalso continue attending the MAX-lessons on Wednesday and Thursday with Ahmat-group. These\nlessons are still voluntary but highly recommended.\nTopics and teachers for next week (lessons 12:15-13:30):\n**\ntiistai:\n**\nMinä, Tiina\n**\nkeskiviikko:\n**\nRuoka, Netta\n**\ntorstai:\n**\nRuoka, Tiina\nAll the materials are in the Classroom.\n**\nSkill Check 2 tiistaina 11.4.\n**\nThe Skill Check of module 2 will be on Tuesday 11th of April. Same as before, it will be\nopen all day in Classroom. You have to complete it to be able to move on to Module 3. Also\nall the assignments of Module 2 must be completed by 12th of April  9 am. I will remove\ninactive people from the course.\nHyvää viikonloppua ja hyvää pääsiäistä! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Konditionaali CLASS.pdf`, url: `https://drive.google.com/file/d/1SbNc2TYYs0uNXd2wHeliIt-WKdW29duD/view` }, { type: AttachmentType.PDF, title: `Viikko 10_ Vapaa-aika, konditionaali - Google Docs.pdf`, url: `https://drive.google.com/file/d/1nO5z4Tn4SVwBXTdLntbRT8jDixmwW8vA/view` }, { type: AttachmentType.PDF, title: `Imperfekti 2 CLASS.pdf`, url: `https://drive.google.com/file/d/1OzZxnQuspzHAKLWVTYsCGCwGBtsTuhoA/view` }, { type: AttachmentType.PDF, title: `01A. Minä.pdf`, url: `https://drive.google.com/file/d/17iQ-uWzfpEp8YNSpzEyf_CinrhPNX4bG/view` }, { type: AttachmentType.PDF, title: `03A. Ruoka - Google Docs.pdf`, url: `https://drive.google.com/file/d/1azE7YbjpL58b0bLU3wYTWgXjwIgLRv2f/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Konditionaali CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1SbNc2TYYs0uNXd2wHeliIt-WKdW29duD/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 10_ Vapaa-aika, konditionaali - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1nO5z4Tn4SVwBXTdLntbRT8jDixmwW8vA/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Imperfekti 2 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1OzZxnQuspzHAKLWVTYsCGCwGBtsTuhoA/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `01A. Minä.pdf`,
+            url: `https://drive.google.com/file/d/17iQ-uWzfpEp8YNSpzEyf_CinrhPNX4bG/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `03A. Ruoka - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1azE7YbjpL58b0bLU3wYTWgXjwIgLRv2f/view`,
+          },
+        ],
       },
       {
-        id: '602185457117',
+        id: "602185457117",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '6 Apr 2023',
+        date: "6 Apr 2023",
         deleted: false,
         content: `Assignment: "25. ma-muodot"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '603008664136',
+        id: "603008664136",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Apr 2023',
+        date: "6 Apr 2023",
         deleted: false,
         content: `Spoken skills to the MAX tänään mun Zoomissa kello 12:15.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1AAi3RHGCBb7FTv-AJhnB6ZFyb9MDKxOSbywwhCeI66s/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1AAi3RHGCBb7FTv-AJhnB6ZFyb9MDKxOSbywwhCeI66s/view`,
+          },
+        ],
       },
       {
-        id: '602996149034',
+        id: "602996149034",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Apr 2023',
+        date: "6 Apr 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `massa/masta/maan, lumikot`, url: `https://docs.google.com/document/d/16237hUfBR4Sz0x6v8yt-G0HtZkT9pleJ3SoAgK3BCxE/edit` }, { type: AttachmentType.PDF, title: `Lesson massa_masta_maan CLASS.pdf`, url: `https://drive.google.com/file/d/10fjdkwYnFGaWoxBwz2odIBXbHTN3WOXU/view` }, { type: AttachmentType.PDF, title: `25_massa_masta_maan_T1.pdf`, url: `https://drive.google.com/file/d/15laxK1DkwvZEWJ4qOa2En02_P9OpR1ZC/view` }, { type: AttachmentType.VIDEO, title: `ma-muodot, lumikot.mp4`, url: `https://drive.google.com/file/d/1wbqKE0uAjrg_Af1BiGmJ9jR6QUDbkUFk/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `massa/masta/maan, lumikot`,
+            url: `https://docs.google.com/document/d/16237hUfBR4Sz0x6v8yt-G0HtZkT9pleJ3SoAgK3BCxE/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lesson massa_masta_maan CLASS.pdf`,
+            url: `https://drive.google.com/file/d/10fjdkwYnFGaWoxBwz2odIBXbHTN3WOXU/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `25_massa_masta_maan_T1.pdf`,
+            url: `https://drive.google.com/file/d/15laxK1DkwvZEWJ4qOa2En02_P9OpR1ZC/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `ma-muodot, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1wbqKE0uAjrg_Af1BiGmJ9jR6QUDbkUFk/view`,
+          },
+        ],
       },
       {
-        id: '602829037803',
+        id: "602829037803",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '5 Apr 2023',
+        date: "5 Apr 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1rpEwwuwZgKId9XsK2HMauxVV7_mCh6tsPTKIcQSf6iI/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/play/d_RbYK86lBUr3IjtnjIuEIu00Z7HNUy2-h0WnDGBop-DID3yva1ALQsqnms9Jgaf-c9rdnngGd_n3eMa.-dWgGJ4cWV25fo1L?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1rpEwwuwZgKId9XsK2HMauxVV7_mCh6tsPTKIcQSf6iI/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/play/d_RbYK86lBUr3IjtnjIuEIu00Z7HNUy2-h0WnDGBop-DID3yva1ALQsqnms9Jgaf-c9rdnngGd_n3eMa.-dWgGJ4cWV25fo1L?authuser=0`,
+          },
+        ],
       },
       {
-        id: '602833157034',
+        id: "602833157034",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '5 Apr 2023',
+        date: "5 Apr 2023",
         deleted: false,
         content: `Päivän materiaali!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento26imperatiivi.pdf`, url: `https://drive.google.com/file/d/1A-TKTeVzxN6i0HHlgoW2Lt93X007nNkt/view` }, { type: AttachmentType.PDF, title: `Mitä he sanovat.pdf`, url: `https://drive.google.com/file/d/1Zag7AAShysIkZeSwLgBIx8vyb6GXoTdD/view` }, { type: AttachmentType.DOCS, title: `Imperatiivi`, url: `https://docs.google.com/document/d/1h7eIhhmfyCrhcWsOyL5NExNw7b3BSP7If4y7asFkXxY/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot imperatiivi.mp4`, url: `https://drive.google.com/file/d/1W2OaJbmV3lvXkxTodC4TWAkOQUCyUYU3/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento26imperatiivi.pdf`,
+            url: `https://drive.google.com/file/d/1A-TKTeVzxN6i0HHlgoW2Lt93X007nNkt/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Mitä he sanovat.pdf`,
+            url: `https://drive.google.com/file/d/1Zag7AAShysIkZeSwLgBIx8vyb6GXoTdD/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Imperatiivi`,
+            url: `https://docs.google.com/document/d/1h7eIhhmfyCrhcWsOyL5NExNw7b3BSP7If4y7asFkXxY/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot imperatiivi.mp4`,
+            url: `https://drive.google.com/file/d/1W2OaJbmV3lvXkxTodC4TWAkOQUCyUYU3/view`,
+          },
+        ],
       },
       {
-        id: '602458318667',
+        id: "602458318667",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '5 Apr 2023',
+        date: "5 Apr 2023",
         deleted: false,
         content: `Assignment: "24. Imperatiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '602459162033',
+        id: "602459162033",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '4 Apr 2023',
+        date: "4 Apr 2023",
         deleted: false,
         content: `Assignment: "23. Imperfekti 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '602654144474',
+        id: "602654144474",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '4 Apr 2023',
+        date: "4 Apr 2023",
         deleted: false,
         content: `Tiistain materiaali!`,
-        attachments: [{ type: AttachmentType.PDF, title: `luento24imperfekti1 CL.pdf`, url: `https://drive.google.com/file/d/1fkMsz0B49Q-P2PMe5Uk___aWxe8oHcUu/view` }, { type: AttachmentType.PDF, title: `Tehtävä 1 - imperfekti.pdf`, url: `https://drive.google.com/file/d/1ign3RS9oYx-5jo9DQN8RSTL2BoL-UqCI/view` }, { type: AttachmentType.PDF, title: `Tehtävä 2 - imperfekti.pdf`, url: `https://drive.google.com/file/d/1taoXUZ3eMTmNeyc_F60ZQaLk6IQyXolH/view` }, { type: AttachmentType.DOCS, title: `Imperfekti 1`, url: `https://docs.google.com/document/d/1wMhBUqxYB9_PYbezYW_xx_IZwjHqVk_G0o4JG81MMqA/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot imperfekti 1.mp4`, url: `https://drive.google.com/file/d/1H3g7EH58it0Q_c0jgEn3oq3uA2Xz_oH1/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `luento24imperfekti1 CL.pdf`,
+            url: `https://drive.google.com/file/d/1fkMsz0B49Q-P2PMe5Uk___aWxe8oHcUu/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Tehtävä 1 - imperfekti.pdf`,
+            url: `https://drive.google.com/file/d/1ign3RS9oYx-5jo9DQN8RSTL2BoL-UqCI/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Tehtävä 2 - imperfekti.pdf`,
+            url: `https://drive.google.com/file/d/1taoXUZ3eMTmNeyc_F60ZQaLk6IQyXolH/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Imperfekti 1`,
+            url: `https://docs.google.com/document/d/1wMhBUqxYB9_PYbezYW_xx_IZwjHqVk_G0o4JG81MMqA/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot imperfekti 1.mp4`,
+            url: `https://drive.google.com/file/d/1H3g7EH58it0Q_c0jgEn3oq3uA2Xz_oH1/view`,
+          },
+        ],
       },
       {
-        id: '602448947962',
+        id: "602448947962",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '3 Apr 2023',
+        date: "3 Apr 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 9: Lemppareita ja tunteita, lumikot`, url: `https://docs.google.com/document/d/1JAJNAVZp27eP6vmuVtKRB2xegWN6aKvXQe1eXCg29Nk/edit` }, { type: AttachmentType.VIDEO, title: `lempparit ja tunteet, lumikot.mp4`, url: `https://drive.google.com/file/d/1eeii9bbSlFwYkjA_EarmnEG5wRUJuPGz/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 9: Lemppareita ja tunteita, lumikot`,
+            url: `https://docs.google.com/document/d/1JAJNAVZp27eP6vmuVtKRB2xegWN6aKvXQe1eXCg29Nk/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `lempparit ja tunteet, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1eeii9bbSlFwYkjA_EarmnEG5wRUJuPGz/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-04-10': {
-    display_name: 'Week 10 (Apr 10 - Apr 16)',
+  "2023-04-10": {
+    display_name: "Week 10 (Apr 10 - Apr 16)",
     items: [
       {
-        id: '603966606768',
+        id: "603966606768",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Apr 2023',
+        date: "14 Apr 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\nmaanantai: Spoken skills: Muistellaan menneitä, Tiina\ntiistai: Ainesanat, Netta\nkeskiviikko: Monikon partitiivi, Tiina\ntorstai: Objekti 1, Netta\nNote that both ainesanat and monikon partitiivi are included in one set of slides.\n**\nSpoken skills to the MAX!\n**\nSorry, forget everything I said last week about the Monday/Tuesday group starting. We had to\ncancel that for now, because there were some changes in our schedule. We also had to move\nour afternoon time slot a little, so from now on Max-lessons will be\n**\n12:30-13.45,\n**\nso 15 minutes later.\nTopics and teachers for next week (lessons\n**\n12:30-13:45\n**\n):\nkeskiviikko:Kaupat, Netta\ntorstai: Kaupat, Tiina\nAll the materials are in the Classroom.\n**\nModuuli 3\n**\nModuuli 3 has officially started! Here are links to the independent studies and Quizlet.\nhttps://sites.google.com/edu.arffman.fi/kvmoduuli3/front-page\nhttps://quizlet.com/join/sN4jGcMFk?i=466rp4&x=1bqt\nIn the end of this module there will be actual tests you need to pass to be able to move on\nto the next module. The tests will be about writing, reading, listening and speaking.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 11_ Muistellaan menneitä (imperfekti) - Google Docs.pdf`, url: `https://drive.google.com/file/d/1Ha9NZIu7h5OE1Y5CgRVdsWIk7POAC_Wf/view` }, { type: AttachmentType.PDF, title: `29 Monikon partitiivi CLASS.pdf`, url: `https://drive.google.com/file/d/1acEyBF54U6lNnGtsT0EwN2L5Xr9CLVoR/view` }, { type: AttachmentType.PDF, title: `Objekti 1 CL.pdf`, url: `https://drive.google.com/file/d/1NkpE55Q7o2gAMFPZYMiFnenxa0ho8Tqu/view` }, { type: AttachmentType.PDF, title: `03B. Kaupat - Google Docs.pdf`, url: `https://drive.google.com/file/d/1aXbBTKcU_TF0NsAuQ0BVbu6cyo0b67O2/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 11_ Muistellaan menneitä (imperfekti) - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1Ha9NZIu7h5OE1Y5CgRVdsWIk7POAC_Wf/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `29 Monikon partitiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1acEyBF54U6lNnGtsT0EwN2L5Xr9CLVoR/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Objekti 1 CL.pdf`,
+            url: `https://drive.google.com/file/d/1NkpE55Q7o2gAMFPZYMiFnenxa0ho8Tqu/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `03B. Kaupat - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1aXbBTKcU_TF0NsAuQ0BVbu6cyo0b67O2/view`,
+          },
+        ],
       },
       {
-        id: '603944361863',
+        id: "603944361863",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Apr 2023',
+        date: "13 Apr 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1f-HEsuWM599C0UHy_VOckysgqys0fOnDe3y8D6PqyGQ/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/OFJhVU46QDtzsb3oSjb9dTxGJpboc1zwtEpBh4_mIonuDvSfsepXCMJRN62YOZHv.X_Gdt0HNvbsO6mXM?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1f-HEsuWM599C0UHy_VOckysgqys0fOnDe3y8D6PqyGQ/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/OFJhVU46QDtzsb3oSjb9dTxGJpboc1zwtEpBh4_mIonuDvSfsepXCMJRN62YOZHv.X_Gdt0HNvbsO6mXM?authuser=0`,
+          },
+        ],
       },
       {
-        id: '603732392587',
+        id: "603732392587",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '13 Apr 2023',
+        date: "13 Apr 2023",
         deleted: false,
         content: `Assignment: "27. Imperfekti 2"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '603922046207',
+        id: "603922046207",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Apr 2023',
+        date: "13 Apr 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Imperfekti 2, lumikot`, url: `https://docs.google.com/document/d/1LDUn6gDcsm4Y-B5Fnx3IIr8lIehXLlrbkhTtZayvtbg/edit` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1RRQqVy-qBPeY3wGVSu03PWMbQAZXCIsS/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1MVqvscnXtCYIefjiMAsHNkmz7ZlNEH86/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1u6RZ-I1fTGZiOhBE4r-killsSDFp17YU/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/15NvaFv6WMqjF8o20UQ5QcUPGXhe235dw/view` }, { type: AttachmentType.VIDEO, title: `imperfekti 2, lumikot.mp4`, url: `https://drive.google.com/file/d/1nqXe-onepjIQnLW8YALJqVTXmvfC5KEg/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Imperfekti 2, lumikot`,
+            url: `https://docs.google.com/document/d/1LDUn6gDcsm4Y-B5Fnx3IIr8lIehXLlrbkhTtZayvtbg/edit`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1RRQqVy-qBPeY3wGVSu03PWMbQAZXCIsS/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1MVqvscnXtCYIefjiMAsHNkmz7ZlNEH86/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1u6RZ-I1fTGZiOhBE4r-killsSDFp17YU/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/15NvaFv6WMqjF8o20UQ5QcUPGXhe235dw/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `imperfekti 2, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1nqXe-onepjIQnLW8YALJqVTXmvfC5KEg/view`,
+          },
+        ],
       },
       {
-        id: '603745717480',
+        id: "603745717480",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '12 Apr 2023',
+        date: "12 Apr 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali keskiviikolta. Huomenna Tiinan kanssa sama teema.\nMuista, että tallenne on olemassa vain 5 päivää (recording only exists for 5 days).`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1GlYPvFimEtC1-vQkkiU3QLnYyuZBs4r5aTZSD85l7hQ/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/E5loRjwNRE5N2fdhUfrWuRut0SCzR5oSfN9L7R6sYMt4DBWNBJWgsktjnl9GawUJ.WCdebvaVdoPU3Fkc?startTime=1681291191000&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1GlYPvFimEtC1-vQkkiU3QLnYyuZBs4r5aTZSD85l7hQ/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/E5loRjwNRE5N2fdhUfrWuRut0SCzR5oSfN9L7R6sYMt4DBWNBJWgsktjnl9GawUJ.WCdebvaVdoPU3Fkc?startTime=1681291191000&authuser=0`,
+          },
+        ],
       },
       {
-        id: '603735413503',
+        id: "603735413503",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Apr 2023',
+        date: "12 Apr 2023",
         deleted: false,
         content: `**\nModuuli 3 has officially started! Here are links to the independent studies and Quizlet.\n**\nhttps://sites.google.com/edu.arffman.fi/kvmoduuli3/front-page\nhttps://quizlet.com/join/sN4jGcMFk?i=466rp4&x=1bqt\nIf you didn't complete the Skill Check and/or are missing assignments from Module 2, I have\nsent you a private message. I am waiting for your explanations before removing you from the\ngroup.`,
-        attachments: [{ type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli3/front-page?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 3 | Quizlet`, url: `https://quizlet.com/join/sN4jGcMFk?i=466rp4&x=1bqt&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli3/front-page?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 3 | Quizlet`,
+            url: `https://quizlet.com/join/sN4jGcMFk?i=466rp4&x=1bqt&authuser=0`,
+          },
+        ],
       },
       {
-        id: '603719493331',
+        id: "603719493331",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Apr 2023',
+        date: "12 Apr 2023",
         deleted: false,
         content: `Keskiviikon materiaalit,`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 10: Vapaa-aika, konditionaali, lumikot`, url: `https://docs.google.com/document/d/1Xh2Ilpvg2OfgF7HWULIr-lrIVAYCQ-AwuJmrFmkK3QI/edit` }, { type: AttachmentType.VIDEO, title: `vapaa-aika ja konditionaali, lumikot.mp4`, url: `https://drive.google.com/file/d/1UvbaguHoUUGxFAtBDQtbdWZHAijzgfSs/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 10: Vapaa-aika, konditionaali, lumikot`,
+            url: `https://docs.google.com/document/d/1Xh2Ilpvg2OfgF7HWULIr-lrIVAYCQ-AwuJmrFmkK3QI/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `vapaa-aika ja konditionaali, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1UvbaguHoUUGxFAtBDQtbdWZHAijzgfSs/view`,
+          },
+        ],
       },
       {
-        id: '603505493013',
+        id: "603505493013",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 Apr 2023',
+        date: "11 Apr 2023",
         deleted: false,
         content: `Assignment: "26. Konditionaali"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '603482885701',
+        id: "603482885701",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '11 Apr 2023',
+        date: "11 Apr 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Konditionaali, lumikot`, url: `https://docs.google.com/document/d/1lwYxGqoClaW28ZnGVFdb1JNDy97lSHLn2be56QSMFBM/edit` }, { type: AttachmentType.PDF, title: `Konditionaali CLASS.pdf`, url: `https://drive.google.com/file/d/1RDqQFq6JfoWiSK-VNKosIiMBIbhmpmkN/view` }, { type: AttachmentType.PDF, title: `27 Konditionaali tehtävä1.pdf`, url: `https://drive.google.com/file/d/1yvapi3W5s668ShkqbdbdSAyGBGTZzsdM/view` }, { type: AttachmentType.PDF, title: `27 konditionaali tehtävä2.pdf`, url: `https://drive.google.com/file/d/1YRjDi7AjSxFyXdMrnIkhIe4A8FID0bqW/view` }, { type: AttachmentType.VIDEO, title: `konditionaali, lumikot.mp4`, url: `https://drive.google.com/file/d/1hWFcs4eR7YoPzx97kxwypM94fOqwY6pI/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Konditionaali, lumikot`,
+            url: `https://docs.google.com/document/d/1lwYxGqoClaW28ZnGVFdb1JNDy97lSHLn2be56QSMFBM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Konditionaali CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1RDqQFq6JfoWiSK-VNKosIiMBIbhmpmkN/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `27 Konditionaali tehtävä1.pdf`,
+            url: `https://drive.google.com/file/d/1yvapi3W5s668ShkqbdbdSAyGBGTZzsdM/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `27 konditionaali tehtävä2.pdf`,
+            url: `https://drive.google.com/file/d/1YRjDi7AjSxFyXdMrnIkhIe4A8FID0bqW/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `konditionaali, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1hWFcs4eR7YoPzx97kxwypM94fOqwY6pI/view`,
+          },
+        ],
       },
       {
-        id: '603483656911',
+        id: "603483656911",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 Apr 2023',
+        date: "11 Apr 2023",
         deleted: false,
         content: `Assignment: "Skill Check II"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-04-17': {
-    display_name: 'Week 11 (Apr 17 - Apr 23)',
+  "2023-04-17": {
+    display_name: "Week 11 (Apr 17 - Apr 23)",
     items: [
       {
-        id: '605483812041',
+        id: "605483812041",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '21 Apr 2023',
+        date: "21 Apr 2023",
         deleted: false,
         content: `Assignment: "Henkilötiedot"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '605485392631',
+        id: "605485392631",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '21 Apr 2023',
+        date: "21 Apr 2023",
         deleted: false,
         content: `Moi tyypit!\nWe were asked to gather some basic information about our students. The form goes all the\nstudents who are currently in the training. You can find this from\n*\nTehtävät\n*\ntab or above here.\nThe information you give us is only to used by Netta and/or Tiina and only to attach to your\npersonal files in our inner system (Arffman) and made into statistics later. This is\npersonal infomation so we don't feel that it is fair from us to try to ask these from\nrecruit people, it is best to ask straight from you. :)\nQuestions are: Name, nationality, current location, native language, other languages,\nsex/gender and preffered pronouns.\nIf you have any questions or corncerns about this, please contact me or Tiina. :)\nThank you all!`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '605460228429',
+        id: "605460228429",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Apr 2023',
+        date: "21 Apr 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!**\n**\nEnsi viikolla…\n**\nmaanantai: Objekti 2, Netta\ntiistai: Spoken skills: Ruoka, Tiina\nkeskiviikko: Verbityyppi 6, Tiina\ntorstai: Spoken skills: Kertaus, Tiina\n**\nSpoken skills to the MAX!\n**\nTopics and teachers for next week (lessons 12:30-13:45):\nkeskiviikko: Ulkonäkö, Netta\ntorstai: Ulkonäkö, Tiina\nAll the materials are in the Classroom.\n**\nModuuli 3 testit**\n**\nWritten tests are on 11th of May\n**\nReading and writing at 8.00-9.00\nOne form in Classroom. You have to complete it during this time.\nListening is at 10.30 in my Zoom\nYou have to be in my Zoom for the listening test. We are going to listen audios together and\nyou will answer the questions in a form in Classroom. So you will have to able to be in Zoom\nand access the form in Classroom at the same time. Using a computer or a laptop is highly\nrecommended.\n**\nSpoken tests on Friday 12th of May\n**\nSign up for the Spoken skills test. Write your name on one of the slots. Note that each time\nhas 3-4 slots. In the test there will be two teachers and 3 (2) students present. Spoken\nskills test lasts about 20 minutes per group of students. We will be asking you questions,\nthey are all old Spoken skills questions.\nSign up here:\nhttps://docs.google.com/spreadsheets/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/edit?usp=sharing\n**\nModuuli 3 tests are mandatory,\n**\nyou can't continue the training without passing the tests. If there is a problem with\nanything regarding the tests, please contact me ASAP.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/view` }, { type: AttachmentType.PDF, title: `Objekti 2 CL (1).pdf`, url: `https://drive.google.com/file/d/1PzHZDKl6I94WpkdamaPLwLGVZPk3SlhQ/view` }, { type: AttachmentType.PDF, title: `Viikko 8_ Ruoka - Google Docs.pdf`, url: `https://drive.google.com/file/d/1HYHW6nQ8RDaEw0Wh_phJbt7NxaDxE9yn/view` }, { type: AttachmentType.PDF, title: `luento34vt6 CLASS.pdf`, url: `https://drive.google.com/file/d/1rJTgeAyXgYm9Sdzhk_5xKf7H_9LFLpCk/view` }, { type: AttachmentType.PDF, title: `viikko 12 kertaus.pdf`, url: `https://drive.google.com/file/d/1oJsZKcNRZzYdMspkIeIiMcw2IPQGuGgI/view` }, { type: AttachmentType.PDF, title: `04A Ulkonäkö.pdf`, url: `https://drive.google.com/file/d/1y5kYjYQ2o5P_D2VJQMO8mlO-JKfnDvv1/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Objekti 2 CL (1).pdf`,
+            url: `https://drive.google.com/file/d/1PzHZDKl6I94WpkdamaPLwLGVZPk3SlhQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 8_ Ruoka - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1HYHW6nQ8RDaEw0Wh_phJbt7NxaDxE9yn/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento34vt6 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1rJTgeAyXgYm9Sdzhk_5xKf7H_9LFLpCk/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `viikko 12 kertaus.pdf`,
+            url: `https://drive.google.com/file/d/1oJsZKcNRZzYdMspkIeIiMcw2IPQGuGgI/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `04A Ulkonäkö.pdf`,
+            url: `https://drive.google.com/file/d/1y5kYjYQ2o5P_D2VJQMO8mlO-JKfnDvv1/view`,
+          },
+        ],
       },
       {
-        id: '605256225315',
+        id: "605256225315",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '20 Apr 2023',
+        date: "20 Apr 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali torstailta.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1IxQCkkcT_HrOJk9fMbNT9nRZXlm_cDGNFSSENWt0SOE/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/0XvCvlQkEKY9TpX1eEpXfaM90yZCAz1cUjurgVEQkgLXYHJuK053exLvd1vG9Adn.00JnW40yTwmwfwdV?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1IxQCkkcT_HrOJk9fMbNT9nRZXlm_cDGNFSSENWt0SOE/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/0XvCvlQkEKY9TpX1eEpXfaM90yZCAz1cUjurgVEQkgLXYHJuK053exLvd1vG9Adn.00JnW40yTwmwfwdV?authuser=0`,
+          },
+        ],
       },
       {
-        id: '605246746960',
+        id: "605246746960",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '20 Apr 2023',
+        date: "20 Apr 2023",
         deleted: false,
         content: `Assignment: "30. Objekti 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '605247814554',
+        id: "605247814554",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '20 Apr 2023',
+        date: "20 Apr 2023",
         deleted: false,
         content: `Torstain materiaali! Jatkamme objektia maanantaina. :)`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento30objekti1.pdf`, url: `https://drive.google.com/file/d/1QHa48a3lMgxYe7vXeNEIu3kDxB4sfh-Z/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1Df7fZP2yORsIH7jUYuhzN2ERkDtJABlE/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1MIJmPjsNjDUvy4rK-aFs_VsEDxiZh13x/view` }, { type: AttachmentType.PDF, title: `tehtävät.pdf`, url: `https://drive.google.com/file/d/15EDKPh5HRYndQaSThNd1bieIZNPloDEp/view` }, { type: AttachmentType.DOCS, title: `Objekti 1`, url: `https://docs.google.com/document/d/1nz10L5Q-8Uq161DDRqa2OVWM6R_ps0pl1_RhXhl7kTI/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot objekti.mp4`, url: `https://drive.google.com/file/d/1k4043om363Mx8VUqfCyJQ5xEV2LHX1wb/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento30objekti1.pdf`,
+            url: `https://drive.google.com/file/d/1QHa48a3lMgxYe7vXeNEIu3kDxB4sfh-Z/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1Df7fZP2yORsIH7jUYuhzN2ERkDtJABlE/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1MIJmPjsNjDUvy4rK-aFs_VsEDxiZh13x/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `tehtävät.pdf`,
+            url: `https://drive.google.com/file/d/15EDKPh5HRYndQaSThNd1bieIZNPloDEp/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Objekti 1`,
+            url: `https://docs.google.com/document/d/1nz10L5Q-8Uq161DDRqa2OVWM6R_ps0pl1_RhXhl7kTI/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot objekti.mp4`,
+            url: `https://drive.google.com/file/d/1k4043om363Mx8VUqfCyJQ5xEV2LHX1wb/view`,
+          },
+        ],
       },
       {
-        id: '605001680348',
+        id: "605001680348",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Apr 2023',
+        date: "19 Apr 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/104ppAVOrH59OTmh0_zTgTnY3redDQcrVBMzbLaWrvGI/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/Gn2JEUFUKjn50ffNZp6q-3eQAMVErkSN2n5HwR1CvAOg9ywpBMQCPV7n0h4_2U1z.9i8wCNSCATgUforW?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/104ppAVOrH59OTmh0_zTgTnY3redDQcrVBMzbLaWrvGI/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/Gn2JEUFUKjn50ffNZp6q-3eQAMVErkSN2n5HwR1CvAOg9ywpBMQCPV7n0h4_2U1z.9i8wCNSCATgUforW?authuser=0`,
+          },
+        ],
       },
       {
-        id: '604984624758',
+        id: "604984624758",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '19 Apr 2023',
+        date: "19 Apr 2023",
         deleted: false,
         content: `Assignment: "29. Monikon partitiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '604982532831',
+        id: "604982532831",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Apr 2023',
+        date: "19 Apr 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Monikon partitiivi, lumikot`, url: `https://docs.google.com/document/d/1WKI9gRypgz5AuRB7n6fElQiQsUYYEe975DhLo688V0E/edit` }, { type: AttachmentType.PDF, title: `Ainesanat ja Monikon partitiivi.pdf`, url: `https://drive.google.com/file/d/1a47rSsTiYfYjNBcCYlxmVSPDPRKXHHOk/view` }, { type: AttachmentType.PDF, title: `T3 Monikon partitiivi.pdf`, url: `https://drive.google.com/file/d/1fE4QGCkOsUqfyjnDn6DYxWQ543YK9qPN/view` }, { type: AttachmentType.VIDEO, title: `monikon partitiivi, lumikot.mp4`, url: `https://drive.google.com/file/d/1Mn0JtFnSOhJ9yXcQOWXHktaA8zjX933U/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Monikon partitiivi, lumikot`,
+            url: `https://docs.google.com/document/d/1WKI9gRypgz5AuRB7n6fElQiQsUYYEe975DhLo688V0E/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Ainesanat ja Monikon partitiivi.pdf`,
+            url: `https://drive.google.com/file/d/1a47rSsTiYfYjNBcCYlxmVSPDPRKXHHOk/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `T3 Monikon partitiivi.pdf`,
+            url: `https://drive.google.com/file/d/1fE4QGCkOsUqfyjnDn6DYxWQ543YK9qPN/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `monikon partitiivi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Mn0JtFnSOhJ9yXcQOWXHktaA8zjX933U/view`,
+          },
+        ],
       },
       {
-        id: '604726272429',
+        id: "604726272429",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '18 Apr 2023',
+        date: "18 Apr 2023",
         deleted: false,
         content: `Assignment: "28. Ainesanat"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '604751578152',
+        id: "604751578152",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '18 Apr 2023',
+        date: "18 Apr 2023",
         deleted: false,
         content: `Maanantaina materiaali!\nViimeisen tehtävän vastaukset on muistiinpanoissa. (Answers to the last exercse are in the\nnotes.)`,
-        attachments: [{ type: AttachmentType.PDF, title: `Ainesanat ja Monikon partitiivi.pdf`, url: `https://drive.google.com/file/d/1-dUPNru-2_5o4ihQ4wrpsu14B01zZ6zt/view` }, { type: AttachmentType.PDF, title: `Tehtävä 1_ Kappalesanant vs ainesanat.pdf`, url: `https://drive.google.com/file/d/1vjbm9W8_Uajdi2R0mIR19_sIRqN2FA-P/view` }, { type: AttachmentType.PDF, title: `ainesana vai partitivii vai mitä ihmettä.pdf`, url: `https://drive.google.com/file/d/1MyRkKqXydAZ-WIy9Aw24VHtqtJX9HW6X/view` }, { type: AttachmentType.DOCS, title: `Ainesanat Lumikot`, url: `https://docs.google.com/document/d/1yMqI68-HokwXuKtDrT77oLXvOl8x0hJtpq7aqOXwwYo/edit` }, { type: AttachmentType.VIDEO, title: `Ainesanojen partitiivi Lumikot.mp4`, url: `https://drive.google.com/file/d/1eBTD1w8Lkmpl_7R32eM-URa-oByRPSuC/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Ainesanat ja Monikon partitiivi.pdf`,
+            url: `https://drive.google.com/file/d/1-dUPNru-2_5o4ihQ4wrpsu14B01zZ6zt/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Tehtävä 1_ Kappalesanant vs ainesanat.pdf`,
+            url: `https://drive.google.com/file/d/1vjbm9W8_Uajdi2R0mIR19_sIRqN2FA-P/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `ainesana vai partitivii vai mitä ihmettä.pdf`,
+            url: `https://drive.google.com/file/d/1MyRkKqXydAZ-WIy9Aw24VHtqtJX9HW6X/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Ainesanat Lumikot`,
+            url: `https://docs.google.com/document/d/1yMqI68-HokwXuKtDrT77oLXvOl8x0hJtpq7aqOXwwYo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Ainesanojen partitiivi Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1eBTD1w8Lkmpl_7R32eM-URa-oByRPSuC/view`,
+          },
+        ],
       },
       {
-        id: '553106710604',
+        id: "553106710604",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '17 Apr 2023',
+        date: "17 Apr 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 11: Muistellaan menneitä (imperfekti), lumikot`, url: `https://docs.google.com/document/d/1aioVtKqJDBmm9NfF5vQr2EQe1P44wb815sfIyS-1ksI/edit` }, { type: AttachmentType.VIDEO, title: `menneet lumikot.mp4`, url: `https://drive.google.com/file/d/1rwz_xOtBdoAMfIrKTuQ7fKZ2TOA52y8H/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 11: Muistellaan menneitä (imperfekti), lumikot`,
+            url: `https://docs.google.com/document/d/1aioVtKqJDBmm9NfF5vQr2EQe1P44wb815sfIyS-1ksI/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `menneet lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1rwz_xOtBdoAMfIrKTuQ7fKZ2TOA52y8H/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-04-24': {
-    display_name: 'Week 12 (Apr 24 - Apr 30)',
+  "2023-04-24": {
+    display_name: "Week 12 (Apr 24 - Apr 30)",
     items: [
       {
-        id: '606752879837',
+        id: "606752879837",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '28 Apr 2023',
+        date: "28 Apr 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\n**\nMaanantaina\n**\non vappu! Monday 1st of May is a national holiday in Finland, so we have no lessons. Me and\nNetta will be out of office. Check out a video about vappu in Class room.\n**\nTiistaina, keskiviikkona ja torstaina\n**\nme luemme, kirjoitamme ja kuuntelemme kaikilla oppitunneilla.\nWe will practice reading, writing and listening in all lessons. All the lessons are with me.\n(No slides for this, but couple of vocabulary lists for texts we are going to read during\nthese lessons)\nAnything you would like to review before the exams? If you have something (grammar or\nvocabulary topics) you wish to check or have questions, don't hesitate to message me. I will\ntry to include your suggestions to next week's program.\n**\nSpoken skills to the MAX!\n**\nTopics and teachers for next week (lessons 12:30-13:45):\n**\nkeskiviikko:\n**\nLiikenne, Tiina\n**\ntorstai:\n**\nLiikenne, Netta\nAll the materials are in the Classroom.\n**\nModuuli 3 testit**\n**\nWritten tests are on 11th of May\n**\n**\nReading and writing at 8.00-9.00\n**\nOne form in Classroom. You have to complete it during this time.\n**\nListening is at 10.30 in my Zoom\n**\nYou have to be in my Zoom for the listening test. We are going to listen audios together and\nyou will answer the questions in a form in Classroom. So you will have to  be able to be in\nZoom and access the form in Classroom at the same time. Using a computer or a laptop is\nhighly recommended.\n**\nSpoken tests on Friday 12th of May\n**\nSign up for the Spoken skills test. Write your name on one of the slots. Note that each time\nhas 3-4 slots. In the test there will be two teachers and 3 (2) students present. Spoken\nskills test lasts about 20 minutes per group of students. We will be asking you questions,\nthey are all old Spoken skills questions.\nSign up here:\nhttps://docs.google.com/spreadsheets/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/edit?usp=sharing\n**\nModuuli 3 tests are mandatory,\n**\nyou can't continue the training without passing the tests. If there is a problem with\nanything regarding the tests, please contact me ASAP.\n**\nCheck out this site to get the idea, what is required on A1.3-level:\n**\nIt is not official, but I like it, because it gives concrete examples of grammar and\nvocabularies\nhttps://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.VIDEO, title: `Vappu - mitä vappuna juhlitaan?`, url: `https://www.youtube.com/watch?v=0EAE8Ae8bVc` }, { type: AttachmentType.PDF, title: `Lue Hanna on sairas SANASTO.pdf`, url: `https://drive.google.com/file/d/1u-G_ldPokVoKbLhmcDb14itMlKGnxIyo/view` }, { type: AttachmentType.PDF, title: `Lue yövuorossa SANASTO.pdf`, url: `https://drive.google.com/file/d/1lC5S9v898Dr3GHsIw9U0JfVavZiON20V/view` }, { type: AttachmentType.PDF, title: `04B. Liikenne - Google Docs.pdf`, url: `https://drive.google.com/file/d/1JBZzjZpyT9GWDJXjngZtWJBZ5UiLPwkk/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/view` }, { type: AttachmentType.LINK, title: `Beginner Finnish Topics - Level A1: A1.1 to A1.3 - Uusi kielemme`, url: `https://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.VIDEO,
+            title: `Vappu - mitä vappuna juhlitaan?`,
+            url: `https://www.youtube.com/watch?v=0EAE8Ae8bVc`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lue Hanna on sairas SANASTO.pdf`,
+            url: `https://drive.google.com/file/d/1u-G_ldPokVoKbLhmcDb14itMlKGnxIyo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lue yövuorossa SANASTO.pdf`,
+            url: `https://drive.google.com/file/d/1lC5S9v898Dr3GHsIw9U0JfVavZiON20V/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `04B. Liikenne - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1JBZzjZpyT9GWDJXjngZtWJBZ5UiLPwkk/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1ato_MOijP2wltM2WQCATVn9ll8KK0u22L1xJgoanavo/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Beginner Finnish Topics - Level A1: A1.1 to A1.3 - Uusi kielemme`,
+            url: `https://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3?authuser=0`,
+          },
+        ],
       },
       {
-        id: '606536923655',
+        id: "606536923655",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '27 Apr 2023',
+        date: "27 Apr 2023",
         deleted: false,
         content: `Spoken skills to the MAX tallenne ja muistiinpanot.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `27.4. Puhutaan ulkonäöstä`, url: `https://docs.google.com/document/d/1askqbYMGaIS1F_yUE79GC5V3Ro7ji6WBbIE2DNeFumE/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/CKtg3e1GjKsnUuWGmOCo0pAmaMnPTnvc8MbRPidUJ0Ut85f4kYwm1L9wX1Q88zIx.4ki8icOL_lMVXjQX?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `27.4. Puhutaan ulkonäöstä`,
+            url: `https://docs.google.com/document/d/1askqbYMGaIS1F_yUE79GC5V3Ro7ji6WBbIE2DNeFumE/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/CKtg3e1GjKsnUuWGmOCo0pAmaMnPTnvc8MbRPidUJ0Ut85f4kYwm1L9wX1Q88zIx.4ki8icOL_lMVXjQX?authuser=0`,
+          },
+        ],
       },
       {
-        id: '606518262510',
+        id: "606518262510",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '27 Apr 2023',
+        date: "27 Apr 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbityyppi 6 + muuta, lumikot`, url: `https://docs.google.com/document/d/1-EVLmd_67meuv56uAREg_CPoV1xymLhOFFghuO-qwOM/edit` }, { type: AttachmentType.PDF, title: `luento34vt6.pdf`, url: `https://drive.google.com/file/d/1Tb8T-MeADLyE0n4svJpVrk5h3hQErk48/view` }, { type: AttachmentType.PDF, title: `viikko 12 kertaus.pdf`, url: `https://drive.google.com/file/d/1y36ytrCXBD4oTgJg4jraIX94GxzXySLA/view` }, { type: AttachmentType.LINK, title: `Viikko12`, url: `https://wheelofnames.com/ks4-zty?authuser=0` }, { type: AttachmentType.VIDEO, title: `kertaus,lumikot.mp4`, url: `https://drive.google.com/file/d/14KCH8ujE2LbOI1C0n6-lzHoiAtoic8NH/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityyppi 6 + muuta, lumikot`,
+            url: `https://docs.google.com/document/d/1-EVLmd_67meuv56uAREg_CPoV1xymLhOFFghuO-qwOM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento34vt6.pdf`,
+            url: `https://drive.google.com/file/d/1Tb8T-MeADLyE0n4svJpVrk5h3hQErk48/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `viikko 12 kertaus.pdf`,
+            url: `https://drive.google.com/file/d/1y36ytrCXBD4oTgJg4jraIX94GxzXySLA/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Viikko12`,
+            url: `https://wheelofnames.com/ks4-zty?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `kertaus,lumikot.mp4`,
+            url: `https://drive.google.com/file/d/14KCH8ujE2LbOI1C0n6-lzHoiAtoic8NH/view`,
+          },
+        ],
       },
       {
-        id: '606316562491',
+        id: "606316562491",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '26 Apr 2023',
+        date: "26 Apr 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -tunnin materiaali. Muista, että tallenne on olemassa vain 5\npäivää.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `2604 ke 04A Ulkonäkö`, url: `https://docs.google.com/document/d/14LiWlPZa6ybwgiEbgkJ6Xh129qMxgXPOWR7-3HqxUeM/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/iZltTdxTtsaUpo0DEViikTGOwmIeU0G3s1dY44y1HayrXRTbwK1ymxCfXCvwHD_Q.kZAwSSpO3rGCdxSr?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `2604 ke 04A Ulkonäkö`,
+            url: `https://docs.google.com/document/d/14LiWlPZa6ybwgiEbgkJ6Xh129qMxgXPOWR7-3HqxUeM/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/iZltTdxTtsaUpo0DEViikTGOwmIeU0G3s1dY44y1HayrXRTbwK1ymxCfXCvwHD_Q.kZAwSSpO3rGCdxSr?authuser=0`,
+          },
+        ],
       },
       {
-        id: '553410712968',
+        id: "553410712968",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '26 Apr 2023',
+        date: "26 Apr 2023",
         deleted: false,
         content: `Assignment: "32. Kirjoita lauseita"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '606284114690',
+        id: "606284114690",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '26 Apr 2023',
+        date: "26 Apr 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Verbityyppi 6 + muuta, lumikot`, url: `https://docs.google.com/document/d/1-EVLmd_67meuv56uAREg_CPoV1xymLhOFFghuO-qwOM/edit` }, { type: AttachmentType.PDF, title: `luento34vt6.pdf`, url: `https://drive.google.com/file/d/16WGIA9L7AnQUPayzsP7QRGmyGL6eGETT/view` }, { type: AttachmentType.VIDEO, title: `verbejä, lumikot.mp4`, url: `https://drive.google.com/file/d/1T6wQ7WUdxqWI007cePZnDrPkPw5-M1cN/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Verbityyppi 6 + muuta, lumikot`,
+            url: `https://docs.google.com/document/d/1-EVLmd_67meuv56uAREg_CPoV1xymLhOFFghuO-qwOM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento34vt6.pdf`,
+            url: `https://drive.google.com/file/d/16WGIA9L7AnQUPayzsP7QRGmyGL6eGETT/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `verbejä, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1T6wQ7WUdxqWI007cePZnDrPkPw5-M1cN/view`,
+          },
+        ],
       },
       {
-        id: '606035933824',
+        id: "606035933824",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '25 Apr 2023',
+        date: "25 Apr 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 8: Ruoka, lumikot`, url: `https://docs.google.com/document/d/1C3U2_Nf4fbGYhkDGSaYr1H8ZhM5-2pOeLd9V2JP3Ikw/edit` }, { type: AttachmentType.PDF, title: `qaruoka.pdf`, url: `https://drive.google.com/file/d/12GIXxPnYXvRhUuW2FBeyPQw45P8w_83N/view` }, { type: AttachmentType.VIDEO, title: `ruoka, lumikot.mp4`, url: `https://drive.google.com/file/d/1jSJChlk-E8pNs4ua6hPPKWbb-5FlgOZ9/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 8: Ruoka, lumikot`,
+            url: `https://docs.google.com/document/d/1C3U2_Nf4fbGYhkDGSaYr1H8ZhM5-2pOeLd9V2JP3Ikw/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `qaruoka.pdf`,
+            url: `https://drive.google.com/file/d/12GIXxPnYXvRhUuW2FBeyPQw45P8w_83N/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `ruoka, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1jSJChlk-E8pNs4ua6hPPKWbb-5FlgOZ9/view`,
+          },
+        ],
       },
       {
-        id: '605774506953',
+        id: "605774506953",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '24 Apr 2023',
+        date: "24 Apr 2023",
         deleted: false,
         content: `Assignment: "31. Objekti 2"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '553324569925',
+        id: "553324569925",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '24 Apr 2023',
+        date: "24 Apr 2023",
         deleted: false,
         content: `Maanantain materiaalit! You'll check the rest of the exercise with Tiina tomorrow. :)`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento31objekti2.pdf`, url: `https://drive.google.com/file/d/1mqdNpU8fW_5xOi6n11GBtf7I8U45VaRc/view` }, { type: AttachmentType.PDF, title: `OBJEKTIN SIJA Kaikki.pdf`, url: `https://drive.google.com/file/d/1yNUQWUHIeAExcBcDLYnhvzhE6rKFkvpC/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1PgLfsRTyUO7vEH1RhntHQijbNWlU6sZ1/view` }, { type: AttachmentType.DOCS, title: `Objekti 2 Lumikot`, url: `https://docs.google.com/document/d/14Uwk4WSS-UFefwRZek561c4oW80bMtgvQdfBtgLPCvc/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot Objekti 2.mp4`, url: `https://drive.google.com/file/d/1bere9XL2kNPWwRUEG3lNBc-WJoAInWBL/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento31objekti2.pdf`,
+            url: `https://drive.google.com/file/d/1mqdNpU8fW_5xOi6n11GBtf7I8U45VaRc/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `OBJEKTIN SIJA Kaikki.pdf`,
+            url: `https://drive.google.com/file/d/1yNUQWUHIeAExcBcDLYnhvzhE6rKFkvpC/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1PgLfsRTyUO7vEH1RhntHQijbNWlU6sZ1/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Objekti 2 Lumikot`,
+            url: `https://docs.google.com/document/d/14Uwk4WSS-UFefwRZek561c4oW80bMtgvQdfBtgLPCvc/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot Objekti 2.mp4`,
+            url: `https://drive.google.com/file/d/1bere9XL2kNPWwRUEG3lNBc-WJoAInWBL/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-05-01': {
-    display_name: 'Week 13 (May 01 - May 07)',
+  "2023-05-01": {
+    display_name: "Week 13 (May 01 - May 07)",
     items: [
       {
-        id: '607990279996',
+        id: "607990279996",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '5 May 2023',
+        date: "5 May 2023",
         deleted: false,
         content: `**\nEnsi viikolla…\n**\nmaanantai: Yövuorossa, Netta\ntiistai: Spoken: Kertaus, Tiina\nkeskiviikko: Kertaus, Tiina\ntorstai: TESTIT, Tiina\nIf you have something (grammar or vocabulary topics) you wish to check or have questions,\ndon't hesitate to message me. I will try to include your suggestions to next week's program.\n**\nSpoken skills to the MAX!\n**\nTopics and teachers for next week (lessons 12:30-13:45):\nkeskiviikko: Terveys ja sairaus, Netta\ntorstai: Terveys ja sairaus, Tiina\nAll the materials are in the Classroom.\n**\nModuuli 3 testit**\n**\nWritten tests are on 11th of May\n**\n**\nReading and writing at 8.00-9.00\n**\nOne form in Classroom. You have to complete it during this time.\n**\nListening is at 10.30 in my Zoom\n**\nYou have to be in my Zoom for the listening test. We are going to listen audios together and\nyou will answer the questions in a form in Classroom. So you will have to  be able to be in\nZoom and access the form in Classroom at the same time. Using a computer or a laptop is\nhighly recommended.\n**\nSpoken tests on Friday 12th of May\n**\nSign up for the Spoken skills test. Write your name on one of the slots. Note that each time\nhas 3-4 slots. In the test there will be two teachers and 3 (2) students present. Spoken\nskills test lasts about 20 minutes per group of students. We will be asking you questions,\nthey are all old Spoken skills questions. I'll give you a list of themes next week.\n**\nModuuli 3 tests are mandatory\n**\n, you can't continue the training without passing the tests. If there is a problem with\nanything regarding the tests, please contact me ASAP.\n**\nCheck out this site to get the idea, what is required on A1.3-level:**\nIt is not official, but I like it, because it gives concrete examples of grammar and\nvocabularies\nhttps://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Lue yövuorossa SANASTO.pdf`, url: `https://drive.google.com/file/d/1AkujqWqjVQ0VIEbdp2_aoN_GZqlq8FgV/view` }, { type: AttachmentType.PDF, title: `viikko 12 kertaus.pdf`, url: `https://drive.google.com/file/d/1JRV-uccmeBgcmf7T-U1OzEy3e9JiCJLF/view` }, { type: AttachmentType.PDF, title: `05A Terveys ja sairaus - Google Docs.pdf`, url: `https://drive.google.com/file/d/18Sj5QHmINVaRpgS3kn5RaO-2Fg2GQ3M8/view` }, { type: AttachmentType.LINK, title: `Beginner Finnish Topics - Level A1: A1.1 to A1.3 - Uusi kielemme`, url: `https://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Lue yövuorossa SANASTO.pdf`,
+            url: `https://drive.google.com/file/d/1AkujqWqjVQ0VIEbdp2_aoN_GZqlq8FgV/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `viikko 12 kertaus.pdf`,
+            url: `https://drive.google.com/file/d/1JRV-uccmeBgcmf7T-U1OzEy3e9JiCJLF/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `05A Terveys ja sairaus - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/18Sj5QHmINVaRpgS3kn5RaO-2Fg2GQ3M8/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Beginner Finnish Topics - Level A1: A1.1 to A1.3 - Uusi kielemme`,
+            url: `https://uusikielemme.fi/language-levels/beginner-finnish-topics-level-a1-a1-1-to-a1-3?authuser=0`,
+          },
+        ],
       },
       {
-        id: '607791427421',
+        id: "607791427421",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '4 May 2023',
+        date: "4 May 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaalit. Muista, että tallenne on olemassa vain 5 päivää.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `4.5. to 04B. Liikenne`, url: `https://docs.google.com/document/d/1xBrIR4UfAVFOnNlx0reXDp3x57egDUhi1wYdc-cHjIg/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/kDCO0_JB77GIK4XRwoifnDgSuKSCvzO-numiK-sVfTX14KD20Uc1OmXbxmQWur7v.tx4s1fQwIwaFldf1?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `4.5. to 04B. Liikenne`,
+            url: `https://docs.google.com/document/d/1xBrIR4UfAVFOnNlx0reXDp3x57egDUhi1wYdc-cHjIg/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/kDCO0_JB77GIK4XRwoifnDgSuKSCvzO-numiK-sVfTX14KD20Uc1OmXbxmQWur7v.tx4s1fQwIwaFldf1?authuser=0`,
+          },
+        ],
       },
       {
-        id: '606772308472',
+        id: "606772308472",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '4 May 2023',
+        date: "4 May 2023",
         deleted: false,
         content: `Assignment: "35. Kuuntele"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '607768233110',
+        id: "607768233110",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '4 May 2023',
+        date: "4 May 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`, url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot kirjoittaa.mp4`, url: `https://drive.google.com/file/d/1wYlniIHClaZHWIPBrcNOhRgQUvFNVqta/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`,
+            url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot kirjoittaa.mp4`,
+            url: `https://drive.google.com/file/d/1wYlniIHClaZHWIPBrcNOhRgQUvFNVqta/view`,
+          },
+        ],
       },
       {
-        id: '607550020406',
+        id: "607550020406",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '3 May 2023',
+        date: "3 May 2023",
         deleted: false,
         content: `Spoken skills to the MAX tallenne ja muistiinpanot.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `3.5. 04B. Liikenne`, url: `https://docs.google.com/document/d/1MV6iAekj5iHLwxl4pLtdJVIiF3Eh2kPX19vPKzUfeyU/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/IhDQoDMm9fP-A0Eq9oPmDsb6hOfLW8dgtro_T8beOTQLPYDbQrItYGTcwOHD-XLI.3P-Vn8dzYv6UoPyX?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `3.5. 04B. Liikenne`,
+            url: `https://docs.google.com/document/d/1MV6iAekj5iHLwxl4pLtdJVIiF3Eh2kPX19vPKzUfeyU/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/IhDQoDMm9fP-A0Eq9oPmDsb6hOfLW8dgtro_T8beOTQLPYDbQrItYGTcwOHD-XLI.3P-Vn8dzYv6UoPyX?authuser=0`,
+          },
+        ],
       },
       {
-        id: '606770951147',
+        id: "606770951147",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '3 May 2023',
+        date: "3 May 2023",
         deleted: false,
         content: `Assignment: "34. Lue"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '607535517052',
+        id: "607535517052",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '3 May 2023',
+        date: "3 May 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`, url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit` }, { type: AttachmentType.PDF, title: `Lue Hanna on sairas TEKSTI JA KYSYMYKSET (1).pdf`, url: `https://drive.google.com/file/d/1ZdFNUXuQ2jDxzNgOGV6btBCFmgvJex3H/view` }, { type: AttachmentType.VIDEO, title: `Lumikot lukee ja kuuntelee 2.mp4`, url: `https://drive.google.com/file/d/1l5CYlWQNuj7v01njGWFzLQ29BgKcas7L/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`,
+            url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lue Hanna on sairas TEKSTI JA KYSYMYKSET (1).pdf`,
+            url: `https://drive.google.com/file/d/1ZdFNUXuQ2jDxzNgOGV6btBCFmgvJex3H/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot lukee ja kuuntelee 2.mp4`,
+            url: `https://drive.google.com/file/d/1l5CYlWQNuj7v01njGWFzLQ29BgKcas7L/view`,
+          },
+        ],
       },
       {
-        id: '553492872445',
+        id: "553492872445",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '2 May 2023',
+        date: "2 May 2023",
         deleted: false,
         content: `Assignment: "33. Kirjoita"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '607293402695',
+        id: "607293402695",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '2 May 2023',
+        date: "2 May 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`, url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit` }, { type: AttachmentType.PDF, title: `Lue Viestejä ja KYSYMYKSET (1).pdf`, url: `https://drive.google.com/file/d/1LA9bMYkxSJbD2g0SxWZzR6Pi6rE4xX-u/view` }, { type: AttachmentType.VIDEO, title: `Lumikot lukee ja kuuntelee1.mp4`, url: `https://drive.google.com/file/d/1JREStd5Z1PBSGiiFYof92J37OkKeEURR/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Luetaan, kuunnellaan ja kirjoitetaan, lumikot`,
+            url: `https://docs.google.com/document/d/1V4Gvp-OJDObvqaOh45WxPgPeOAxIB6ckp_DGjWaTpu0/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Lue Viestejä ja KYSYMYKSET (1).pdf`,
+            url: `https://drive.google.com/file/d/1LA9bMYkxSJbD2g0SxWZzR6Pi6rE4xX-u/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot lukee ja kuuntelee1.mp4`,
+            url: `https://drive.google.com/file/d/1JREStd5Z1PBSGiiFYof92J37OkKeEURR/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-05-08': {
-    display_name: 'Week 14 (May 08 - May 14)',
+  "2023-05-08": {
+    display_name: "Week 14 (May 08 - May 14)",
     items: [
       {
-        id: '553848955016',
+        id: "553848955016",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 May 2023',
+        date: "12 May 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!Testit ovat ohi, hurraa!\n**\nTests are done! I will let you know by Monday, if you have passed or not. Module 4 will\nofficially begin on Monday. Here are the links to Quizlet and Independent studies:\n**\nItsenäiset:\n**\nhttps://sites.google.com/edu.arffman.fi/kvmoduuli4/front-page\n**\nQuizlet:\n**\nhttps://quizlet.com/join/aha3FDQPK?i=466rp4&x=1bqt\nIf you didn’t pass, it is not the end of the world nor the end of your studies. We will\ntransfer you to another group so you can retake Module 3 (or 1-2 if needed). Don’t be\ndiscouraged by the possible transfer. People have different life situations and need\ndifferent amount of time for learning. Just do your best!\n**\nRemember:\n**\nYou also must have completed ALL Module 3 homework by Monday morning 9:00 am, to be able to\ncontinue to Module 4!\n**\nEnsi viikolla…\n**\nmaanantai: Milloin, Netta\ntiistai: Puhetaidot: Terveystarkastus, Tiina\nkeskiviikko: Ehdotuspassiivi, Tiina\n**\ntorstai: ei oppituntia, Suomessa on taas vapaapäivä!\n**\nThursday will be Ascension day which is yet again a national holiday in FInland. Me and\nNetta are out of the office, so there will be no lessons.\nWe will be back to the office on Friday, so if you have any urgent questions or worries, we\nwill get back to you then.\n**\nSpoken skills to the MAX!\n**\nkeskiviikko: Luonne, Netta\nAll the materials are in the Classroom.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli4/front-page?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 4 | Quizlet`, url: `https://quizlet.com/join/aha3FDQPK?i=466rp4&x=1bqt&authuser=0` }, { type: AttachmentType.PDF, title: `Luento37järjestys ja aika CLASS .pdf`, url: `https://drive.google.com/file/d/1QwCwQBoRF8gXUA9LA14KimbSGCwtx1sF/view` }, { type: AttachmentType.PDF, title: `Viikko 13_ Terveystarkastus - Google Docs.pdf`, url: `https://drive.google.com/file/d/1QqB4d0zfA4_r7BPDKnnyAZJJ2NPWlqXn/view` }, { type: AttachmentType.PDF, title: `Luento39LetspassiiviCLASS.pdf`, url: `https://drive.google.com/file/d/1Jrv3DftVbZG17E0vMKfvxFBygBmFjGX2/view` }, { type: AttachmentType.PDF, title: `05B Luonne - Google Docs.pdf`, url: `https://drive.google.com/file/d/16fwm9xa1zyamLSqYE_ekfXlRrulYm7Am/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli4/front-page?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 4 | Quizlet`,
+            url: `https://quizlet.com/join/aha3FDQPK?i=466rp4&x=1bqt&authuser=0`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento37järjestys ja aika CLASS .pdf`,
+            url: `https://drive.google.com/file/d/1QwCwQBoRF8gXUA9LA14KimbSGCwtx1sF/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 13_ Terveystarkastus - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1QqB4d0zfA4_r7BPDKnnyAZJJ2NPWlqXn/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento39LetspassiiviCLASS.pdf`,
+            url: `https://drive.google.com/file/d/1Jrv3DftVbZG17E0vMKfvxFBygBmFjGX2/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `05B Luonne - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/16fwm9xa1zyamLSqYE_ekfXlRrulYm7Am/view`,
+          },
+        ],
       },
       {
-        id: '609084304644',
+        id: "609084304644",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 May 2023',
+        date: "12 May 2023",
         deleted: false,
         content: `**\nPuhetesti\n**\nTänään on puhetestipäivä, hurraa!\nIt is spoken skills test day, hooray!\nI know that you might be feeling anxious and stressed, but try to breathe and calm down.\nThis is not super difficult or scary, we have been practicing for this. It is just me, Netta\nand some old spoken skills questions.\nImportant things to remember are as follows:\nTry to find as quiet, calm and comfortable a place as you can for the test. All extra noise\ndisturbs your focus as well as your group mate's. Closets and bathrooms have been very\npopular places in the past.\nYou need to have your microphone and camera on during the test.\nAll the notes, dictionaries and translators are forbidden, obviously. This is the time you\nneed to trust yourselves, you need to use the skills you have. Cheating will lead to\nautomatic failure of the test.\nJoin Zoom a couple of minutes before your test starts, wait patiently in the waiting room.\nDuring the test it is okay to ask us to repeat, to speak lower, to say that you don't\nunderstand and even pass a question.\nUseful phrases:\n1. Can you repeat? = Voitko toistaa?\n2. Can you speak slower? = Voitko puhua hitaammin?\n3. I don't understand. = En ymmärrä.\nNähdään pian, see you soon! We'll start 9 am. Check your own time!\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '609059203966',
+        id: "609059203966",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '11 May 2023',
+        date: "11 May 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `11.5. 05A Terveys ja sairaus`, url: `https://docs.google.com/document/d/1X57sgQSCvJyLpRTgSk9yaT77-0mZI9PRsYKvTo5MoNY/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/VnWr0XCdu74A5KGPFj7NMPW-YY7HgxepyPUnsexc6aH_o35ZwNIpN-rnjpjRm92q.WYd-axerSxwcX6rc?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `11.5. 05A Terveys ja sairaus`,
+            url: `https://docs.google.com/document/d/1X57sgQSCvJyLpRTgSk9yaT77-0mZI9PRsYKvTo5MoNY/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/VnWr0XCdu74A5KGPFj7NMPW-YY7HgxepyPUnsexc6aH_o35ZwNIpN-rnjpjRm92q.WYd-axerSxwcX6rc?authuser=0`,
+          },
+        ],
       },
       {
-        id: '608933757909',
+        id: "608933757909",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 May 2023',
+        date: "11 May 2023",
         deleted: false,
         content: `Assignment: "Moduuli 3: Kuunteleminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '609057238091',
+        id: "609057238091",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '11 May 2023',
+        date: "11 May 2023",
         deleted: false,
         content: `Tule mun Zoomiin kuuntelutestiin kello 10:30.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '608938181715',
+        id: "608938181715",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 May 2023',
+        date: "11 May 2023",
         deleted: false,
         content: `Assignment: "Moduuli 3: Kirjoittaminen ja lukeminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '563626076501',
+        id: "563626076501",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '11 May 2023',
+        date: "11 May 2023",
         deleted: false,
         content: `**\nKirjoittamisen ja lukemisen testi alkaa kello 8:00!\n**\nWriting and reading test will begin at 8 am.\nIt must be completed by 9 am. You will not be able to send your answers after that.\nYou will find the form in Classroom and I will also send it on Skype.\nDO NOT CHEAT! Using Google translate, dictionaries, old notes, asking a friend to help etc.\nare considered cheating. CHEATING MEANS FAILING!\nJust do your best and you will succeed! <3`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '608843756673',
+        id: "608843756673",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '10 May 2023',
+        date: "10 May 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -nateriaalit. Aihe oli\n*\nTerveys ja sairaus.\n*`,
-        attachments: [{ type: AttachmentType.DOCS, title: `1005 ke 05A Terveys ja sairaus`, url: `https://docs.google.com/document/d/1IB2WaK9G5WF_ZXZ4HT-SYSzKtAxVA5Jl_bWLEsyOovU/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/xSEd_N_DCW7edC1KRWm2ojhHalfAHBy82lZuL_0BhILU4p5Oc856GiFzHuMulg-b.Zxl0OxELfBfVKSgg?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `1005 ke 05A Terveys ja sairaus`,
+            url: `https://docs.google.com/document/d/1IB2WaK9G5WF_ZXZ4HT-SYSzKtAxVA5Jl_bWLEsyOovU/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/xSEd_N_DCW7edC1KRWm2ojhHalfAHBy82lZuL_0BhILU4p5Oc856GiFzHuMulg-b.Zxl0OxELfBfVKSgg?authuser=0`,
+          },
+        ],
       },
       {
-        id: '608833649897',
+        id: "608833649897",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '10 May 2023',
+        date: "10 May 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Kerrataan testiin, lumikot`, url: `https://docs.google.com/document/d/1i1BBf5Ki-9z9KJQymwghtc9aQj_2imC6a9eBp2O9B6w/edit` }, { type: AttachmentType.VIDEO, title: `kertausta testiin, lumikot.mp4`, url: `https://drive.google.com/file/d/1JcRTky_McvxNJvIDVYzV8O_2gWeo1dsT/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Kerrataan testiin, lumikot`,
+            url: `https://docs.google.com/document/d/1i1BBf5Ki-9z9KJQymwghtc9aQj_2imC6a9eBp2O9B6w/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `kertausta testiin, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1JcRTky_McvxNJvIDVYzV8O_2gWeo1dsT/view`,
+          },
+        ],
       },
       {
-        id: '608573370885',
+        id: "608573370885",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '9 May 2023',
+        date: "9 May 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 12: KERTAUS`, url: `https://docs.google.com/document/d/148vXYZUfWrbr-SnskBujrBFmQ7P-2sLdzNhk8LL_jjY/edit` }, { type: AttachmentType.LINK, title: `Viikko12`, url: `https://wheelofnames.com/ks4-zty?authuser=0` }, { type: AttachmentType.VIDEO, title: `kertaus, lumikot.mp4`, url: `https://drive.google.com/file/d/1CQo7f_-Jj4Sbf8De9IGbY9PyYdK7NwEk/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 12: KERTAUS`,
+            url: `https://docs.google.com/document/d/148vXYZUfWrbr-SnskBujrBFmQ7P-2sLdzNhk8LL_jjY/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Viikko12`,
+            url: `https://wheelofnames.com/ks4-zty?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `kertaus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1CQo7f_-Jj4Sbf8De9IGbY9PyYdK7NwEk/view`,
+          },
+        ],
       },
       {
-        id: '553738087089',
+        id: "553738087089",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '8 May 2023',
+        date: "8 May 2023",
         deleted: false,
         content: `Assignment: "36. Lue ja etsi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '608327713584',
+        id: "608327713584",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '8 May 2023',
+        date: "8 May 2023",
         deleted: false,
         content: `Maanantai materiaali`,
-        attachments: [{ type: AttachmentType.PDF, title: `yövuorossa SANASTO.pdf`, url: `https://drive.google.com/file/d/1ZHa3H7ttIKNJb02CEqrwaTZBSM_CxxdX/view` }, { type: AttachmentType.PDF, title: `yövuorossa TEKSTI JA KYSYMYKSET.pdf`, url: `https://drive.google.com/file/d/1ifaG2s74sbMDYr4rEQXtbu6iHkRufafn/view` }, { type: AttachmentType.PDF, title: `KIRJOITUS Sairaalahuone.pdf`, url: `https://drive.google.com/file/d/1clYVNzbSvo_E8aUx45eB9X9PRBn38Yrh/view` }, { type: AttachmentType.DOCS, title: `Luetaan: Yövuorossa`, url: `https://docs.google.com/document/d/18rydNoGZ_jMWEKhOtsQsYm0OJDKN_mvk23rTo6V9lh8/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot lukee ja kirjoittaa.mp4`, url: `https://drive.google.com/file/d/1VF261L_H-c3WDAkFog9hm1xX1NqE62mp/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `yövuorossa SANASTO.pdf`,
+            url: `https://drive.google.com/file/d/1ZHa3H7ttIKNJb02CEqrwaTZBSM_CxxdX/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `yövuorossa TEKSTI JA KYSYMYKSET.pdf`,
+            url: `https://drive.google.com/file/d/1ifaG2s74sbMDYr4rEQXtbu6iHkRufafn/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `KIRJOITUS Sairaalahuone.pdf`,
+            url: `https://drive.google.com/file/d/1clYVNzbSvo_E8aUx45eB9X9PRBn38Yrh/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Luetaan: Yövuorossa`,
+            url: `https://docs.google.com/document/d/18rydNoGZ_jMWEKhOtsQsYm0OJDKN_mvk23rTo6V9lh8/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot lukee ja kirjoittaa.mp4`,
+            url: `https://drive.google.com/file/d/1VF261L_H-c3WDAkFog9hm1xX1NqE62mp/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-05-15': {
-    display_name: 'Week 15 (May 15 - May 21)',
+  "2023-05-15": {
+    display_name: "Week 15 (May 15 - May 21)",
     items: [
       {
-        id: '554097852359',
+        id: "554097852359",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 May 2023',
+        date: "19 May 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n****\n**\nEnsi viikolla…\n**\nmaanantai: Puhetaidot: Työtä ja juhlaa, Tiina\ntiistai: Haluta, voida, osata, Tiina\nkeskiviikko: Perfekti, Tiina\ntorstai: L-muodot, Tiina\n**\nSpoken skills to the MAX!\n**\nThe themes will start over from the beginning next week.\nkeskiviikko: Minä, Netta\ntorstai: Minä, Netta\n**\nModuulin 4 testit\n**\nHere are already the dates and times for Module 4 tests!\n**\n19.6. Muut testit\n**\n9:00-10:15    Kuunteleminen\n11:00-12:30   Kirjoittaminen ja lukeminen\n**\n30.6. Puhuminen\n**\nYour speaking tests will be a bit late. Officially Module 5 has already started by then, but\nthis will be the only possible date for testing for us. I’ll make the sign up sheet for you\nguys next week. We might be having students joining this group next week, so I want them to\nhave an equal chance for choosing the time for the speaking test.\nAll the materials are in the Classroom.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 14_ Työtä ja juhlaa ja passiivia - Google Docs.pdf`, url: `https://drive.google.com/file/d/1xqUbT-nmNBmxhwf0TXcuV20twVlhVgQh/view` }, { type: AttachmentType.PDF, title: `Päivitetty_ Luento40halutavoidaosataCLASS.pptx.pdf`, url: `https://drive.google.com/file/d/1wI01yBISkTqJMzIHt3HZjNp-t61FFm0z/view` }, { type: AttachmentType.PDF, title: `Luento38perfektiCLASS.pdf`, url: `https://drive.google.com/file/d/17FfNR0l4JDT_5sqk8b5aMtIHpMlRXFMN/view` }, { type: AttachmentType.PDF, title: `Luento43LmuotojaCLASS (1).pdf`, url: `https://drive.google.com/file/d/1XysEELapcBfvCP3q36Bwvq6MTc5CwiCp/view` }, { type: AttachmentType.PDF, title: `01 Minä - Google Docs.pdf`, url: `https://drive.google.com/file/d/1iE6RfLtE93FGiMNCRRugCX21EBqffa60/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 14_ Työtä ja juhlaa ja passiivia - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1xqUbT-nmNBmxhwf0TXcuV20twVlhVgQh/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Päivitetty_ Luento40halutavoidaosataCLASS.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1wI01yBISkTqJMzIHt3HZjNp-t61FFm0z/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento38perfektiCLASS.pdf`,
+            url: `https://drive.google.com/file/d/17FfNR0l4JDT_5sqk8b5aMtIHpMlRXFMN/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento43LmuotojaCLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1XysEELapcBfvCP3q36Bwvq6MTc5CwiCp/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `01 Minä - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1iE6RfLtE93FGiMNCRRugCX21EBqffa60/view`,
+          },
+        ],
       },
       {
-        id: '610116523127',
+        id: "610116523127",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '17 May 2023',
+        date: "17 May 2023",
         deleted: false,
         content: `Assignment: "38. Ehdotuspassiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '610098380263',
+        id: "610098380263",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '17 May 2023',
+        date: "17 May 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali`,
-        attachments: [{ type: AttachmentType.DOCS, title: `1705 ke 05B Luonne`, url: `https://docs.google.com/document/d/1EAQHrs75qnA0z0nAQo8KJSRDvFPaGi0RK85Jy3Ob4xA/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/UvQATYA8-vVXJZmo1sZ3bXjmpIFp3wCpG0niDKllMivNrCYTjLy1l4gW8xbqOp2f.XVudNCVDn39-V551?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `1705 ke 05B Luonne`,
+            url: `https://docs.google.com/document/d/1EAQHrs75qnA0z0nAQo8KJSRDvFPaGi0RK85Jy3Ob4xA/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/UvQATYA8-vVXJZmo1sZ3bXjmpIFp3wCpG0niDKllMivNrCYTjLy1l4gW8xbqOp2f.XVudNCVDn39-V551?authuser=0`,
+          },
+        ],
       },
       {
-        id: '610112029655',
+        id: "610112029655",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '17 May 2023',
+        date: "17 May 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Ehdotuspassiivi, lumikot`, url: `https://docs.google.com/document/d/1e4tsfD8fNQiwPKK1BD_xDJZTrvMspU0LgA7VLVz55Jk/edit` }, { type: AttachmentType.PDF, title: `Luento39LetspassiiviCLASS.pdf`, url: `https://drive.google.com/file/d/1Kqo7Dki7vJvhF3NcsX3hOZKN5lCaRm5s/view` }, { type: AttachmentType.PDF, title: `Etsi tekstistä passiivit.pdf`, url: `https://drive.google.com/file/d/1IL_AV64_MNLdKh6RjXmoHF4s1BzXKVDQ/view` }, { type: AttachmentType.VIDEO, title: `ehdotuspassiivi, lumikot.mp4`, url: `https://drive.google.com/file/d/1u8iFGY3OZGnG5fJopWSzsIdqBZxkZfzY/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Ehdotuspassiivi, lumikot`,
+            url: `https://docs.google.com/document/d/1e4tsfD8fNQiwPKK1BD_xDJZTrvMspU0LgA7VLVz55Jk/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento39LetspassiiviCLASS.pdf`,
+            url: `https://drive.google.com/file/d/1Kqo7Dki7vJvhF3NcsX3hOZKN5lCaRm5s/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Etsi tekstistä passiivit.pdf`,
+            url: `https://drive.google.com/file/d/1IL_AV64_MNLdKh6RjXmoHF4s1BzXKVDQ/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `ehdotuspassiivi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1u8iFGY3OZGnG5fJopWSzsIdqBZxkZfzY/view`,
+          },
+        ],
       },
       {
-        id: '609844553119',
+        id: "609844553119",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 May 2023',
+        date: "16 May 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 13: Terveystarkastus, lumikot`, url: `https://docs.google.com/document/d/1AJbHHoPxbQyM_hoLnVkasgX61qVqVxjLF4MksNmVpuA/edit` }, { type: AttachmentType.VIDEO, title: `terveystarkastus, lumikot.mp4`, url: `https://drive.google.com/file/d/1Z3ZcXcUj2CFSKYTpzH4iLreYS_Qt6dKn/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 13: Terveystarkastus, lumikot`,
+            url: `https://docs.google.com/document/d/1AJbHHoPxbQyM_hoLnVkasgX61qVqVxjLF4MksNmVpuA/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `terveystarkastus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Z3ZcXcUj2CFSKYTpzH4iLreYS_Qt6dKn/view`,
+          },
+        ],
       },
       {
-        id: '609610888865',
+        id: "609610888865",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '15 May 2023',
+        date: "15 May 2023",
         deleted: false,
         content: `Assignment: "37. Järjestysluvut ja päivämäärä"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '609606561978',
+        id: "609606561978",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '15 May 2023',
+        date: "15 May 2023",
         deleted: false,
         content: `Maanantain materiaalit! Tehtävät on dioissa, exercises are included to the slides.\nYou can send your group's sentences to me on Skype, if you wish, and I'll add them to notes\nwih comments. :)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Milloin päivämäärä Lumikot`, url: `https://docs.google.com/document/d/1wWD2RTrijUfxIDxge1FM9P3wtFIcRFSrvSbcWrxhDKU/edit` }, { type: AttachmentType.PDF, title: `Luento37järjestys.pdf`, url: `https://drive.google.com/file/d/1-U8xY3M9drRFf6RZVxWq382E930brDVs/view` }, { type: AttachmentType.VIDEO, title: `Päivämäärä ja milloin Lumikot.mp4`, url: `https://drive.google.com/file/d/1D7-f20eqOxs-tSausoRNStj2da-98oXV/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Milloin päivämäärä Lumikot`,
+            url: `https://docs.google.com/document/d/1wWD2RTrijUfxIDxge1FM9P3wtFIcRFSrvSbcWrxhDKU/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento37järjestys.pdf`,
+            url: `https://drive.google.com/file/d/1-U8xY3M9drRFf6RZVxWq382E930brDVs/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Päivämäärä ja milloin Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1D7-f20eqOxs-tSausoRNStj2da-98oXV/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-05-22': {
-    display_name: 'Week 16 (May 22 - May 28)',
+  "2023-05-22": {
+    display_name: "Week 16 (May 22 - May 28)",
     items: [
       {
-        id: '611669805966',
+        id: "611669805966",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '26 May 2023',
+        date: "26 May 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!Ensi viikolla…\n**\nmaanantai: Puhetaidot: Labra Tiina\ntiistai: Verbien rektiot, Tiina\nkeskiviikko: Adjektiivien vertailu, Tiina\ntorstai: Monikon partitiivin kertaus, Netta\n**\nSpoken skills to the MAX!\n**\nkeskiviikko: Perhe, Tiina\ntorstai: Perhe, Netta\nAll the materials are in the Classroom\n**\nModuulin 4 testit19.6. Muut testit\n**\n9:00-10:15    Kuunteleminen\n11:00-12:30   Kirjoittaminen ja lukeminen\n**\n30.6. Puhuminen\n**\nSign up here:\nhttps://docs.google.com/spreadsheets/d/14KB-DOBW_eQ8MCH1El32fqHmY13YvyoB_wxzoGnjO5c/edit?usp=sharing\n.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Viikko 15_ Labra v2 - Google Docs.pdf`, url: `https://drive.google.com/file/d/1L_z7UhUGaxX41uCPXtWxKbssmvIWOylw/view` }, { type: AttachmentType.PDF, title: `44. Rektiot CLASS (1).pdf`, url: `https://drive.google.com/file/d/1rdiFLkRdmGhcZBrylc5ZEzPDmCZrSlXZ/view` }, { type: AttachmentType.PDF, title: `Luento45adjvertCL.pdf`, url: `https://drive.google.com/file/d/1B3Td5L7B-mq60GHuvDH2kMpsA6eXxnfW/view` }, { type: AttachmentType.PDF, title: `Luento46monpartkert CLASS.pdf`, url: `https://drive.google.com/file/d/1JmkCKY-TGpnz-7rxEbrSLCvgCXnwhiwB/view` }, { type: AttachmentType.PDF, title: `02A. Perhe - Google Docs.pdf`, url: `https://drive.google.com/file/d/1oowQMqgM0mPuhUoMWP50r4fl1-0Q5X7x/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/14KB-DOBW_eQ8MCH1El32fqHmY13YvyoB_wxzoGnjO5c/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 15_ Labra v2 - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1L_z7UhUGaxX41uCPXtWxKbssmvIWOylw/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `44. Rektiot CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1rdiFLkRdmGhcZBrylc5ZEzPDmCZrSlXZ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento45adjvertCL.pdf`,
+            url: `https://drive.google.com/file/d/1B3Td5L7B-mq60GHuvDH2kMpsA6eXxnfW/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento46monpartkert CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1JmkCKY-TGpnz-7rxEbrSLCvgCXnwhiwB/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `02A. Perhe - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1oowQMqgM0mPuhUoMWP50r4fl1-0Q5X7x/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/14KB-DOBW_eQ8MCH1El32fqHmY13YvyoB_wxzoGnjO5c/view`,
+          },
+        ],
       },
       {
-        id: '611642728284',
+        id: "611642728284",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '25 May 2023',
+        date: "25 May 2023",
         deleted: false,
         content: `Spoken skills to the MAX -materiaali! Muista, että tallenne on olemassa vain 5 päivää.,`,
-        attachments: [{ type: AttachmentType.DOCS, title: `2505 to 01 Minä`, url: `https://docs.google.com/document/d/1f9qfi9X0Gc8azEYoz14Go5bQYkDMYvs9E3gW--b48GU/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/MrNqAaCALJlkQ7gNm3P4ROUxKAkdKqIt30WHpnegzH7EWbLI5JLGaqeEp08hVf_8.n1NlP_Vb2xEZwIqE?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `2505 to 01 Minä`,
+            url: `https://docs.google.com/document/d/1f9qfi9X0Gc8azEYoz14Go5bQYkDMYvs9E3gW--b48GU/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/MrNqAaCALJlkQ7gNm3P4ROUxKAkdKqIt30WHpnegzH7EWbLI5JLGaqeEp08hVf_8.n1NlP_Vb2xEZwIqE?authuser=0`,
+          },
+        ],
       },
       {
-        id: '611638637646',
+        id: "611638637646",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '25 May 2023',
+        date: "25 May 2023",
         deleted: false,
         content: `Assignment: "42. L-muotoja"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '611421665556',
+        id: "611421665556",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '25 May 2023',
+        date: "25 May 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento43Lmuotoja.pdf`, url: `https://drive.google.com/file/d/1ZyC48DcChmiN6fi4_KZjo_-bBRTvlwdW/view` }, { type: AttachmentType.PDF, title: `keneltä kenelle.pdf`, url: `https://drive.google.com/file/d/1yW47QEDW8Lx72J1s45PTQot4T_uj9Lhu/view` }, { type: AttachmentType.DOCS, title: `L-muodot, lumikot`, url: `https://docs.google.com/document/d/1i8eBz20zzJjmBZMnGY2flBuid3E7hu4KqAJygUODsro/edit` }, { type: AttachmentType.VIDEO, title: `L-muodot, lumikot.mp4`, url: `https://drive.google.com/file/d/1TSUU78MRgvFE5G-7YIRvfhMrInDGxZND/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento43Lmuotoja.pdf`,
+            url: `https://drive.google.com/file/d/1ZyC48DcChmiN6fi4_KZjo_-bBRTvlwdW/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `keneltä kenelle.pdf`,
+            url: `https://drive.google.com/file/d/1yW47QEDW8Lx72J1s45PTQot4T_uj9Lhu/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `L-muodot, lumikot`,
+            url: `https://docs.google.com/document/d/1i8eBz20zzJjmBZMnGY2flBuid3E7hu4KqAJygUODsro/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `L-muodot, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1TSUU78MRgvFE5G-7YIRvfhMrInDGxZND/view`,
+          },
+        ],
       },
       {
-        id: '611163671828',
+        id: "611163671828",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '24 May 2023',
+        date: "24 May 2023",
         deleted: false,
         content: `Assignment: "41. Perfekti"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '611408274460',
+        id: "611408274460",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '24 May 2023',
+        date: "24 May 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali. Muista, että tallenne on olemassa vai 5 päivää.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `2405 ke 01 Minä`, url: `https://docs.google.com/document/d/1fAkzXbgTAe86fHOhXqEjkN9Uwov_Ini0o-1drKoTX_s/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/pD4SPXYODmu_WV0S6U4SFr7L8PxusKijrkYF5JzDJA7nJfHd5k7D3v2FM7kqiJQB.0WXUnsHWJGls6Xgi?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `2405 ke 01 Minä`,
+            url: `https://docs.google.com/document/d/1fAkzXbgTAe86fHOhXqEjkN9Uwov_Ini0o-1drKoTX_s/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/pD4SPXYODmu_WV0S6U4SFr7L8PxusKijrkYF5JzDJA7nJfHd5k7D3v2FM7kqiJQB.0WXUnsHWJGls6Xgi?authuser=0`,
+          },
+        ],
       },
       {
-        id: '611163345082',
+        id: "611163345082",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '24 May 2023',
+        date: "24 May 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento38perfekti.pdf`, url: `https://drive.google.com/file/d/1DjO87MUqCTeK0tC0Fml2MgkUf8YfW3vH/view` }, { type: AttachmentType.DOCS, title: `Perfekti, lumikot`, url: `https://docs.google.com/document/d/1N2HMrbIXPmM0x8uZ5ORepjiuppI4GTHmh2HsX08aBTo/edit` }, { type: AttachmentType.PDF, title: `TEHTÄVÄT (1).pdf`, url: `https://drive.google.com/file/d/1aNwbmYZBBmlZUv7Th3QgsmhE10aelcni/view` }, { type: AttachmentType.VIDEO, title: `perfekti, lumikot.mp4`, url: `https://drive.google.com/file/d/1w6IOIIOvByVF7TUtjdCtRmjLLJDptOP_/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento38perfekti.pdf`,
+            url: `https://drive.google.com/file/d/1DjO87MUqCTeK0tC0Fml2MgkUf8YfW3vH/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Perfekti, lumikot`,
+            url: `https://docs.google.com/document/d/1N2HMrbIXPmM0x8uZ5ORepjiuppI4GTHmh2HsX08aBTo/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `TEHTÄVÄT (1).pdf`,
+            url: `https://drive.google.com/file/d/1aNwbmYZBBmlZUv7Th3QgsmhE10aelcni/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `perfekti, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1w6IOIIOvByVF7TUtjdCtRmjLLJDptOP_/view`,
+          },
+        ],
       },
       {
-        id: '610907222469',
+        id: "610907222469",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '23 May 2023',
+        date: "23 May 2023",
         deleted: false,
         content: `Assignment: "40. Haluta, voida, osata"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '610908733628',
+        id: "610908733628",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '23 May 2023',
+        date: "23 May 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Haluta, voida, osata, lumikot`, url: `https://docs.google.com/document/d/1ONLOl17eMNylVRDeWATnvdidGQiL7ebYnEYZVg8t7Xg/edit` }, { type: AttachmentType.PDF, title: `Päivitetty_ Luento40halutavoidaosata.pptx.pdf`, url: `https://drive.google.com/file/d/1HwXzSKkUSiWKDvByE3hQzqEIoafCTIu0/view` }, { type: AttachmentType.VIDEO, title: `haluta,voida,osata, lumikot.mp4`, url: `https://drive.google.com/file/d/1Lr6xZC-CV5g9Ed86Lmd6fPAvf8vJR3qL/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Haluta, voida, osata, lumikot`,
+            url: `https://docs.google.com/document/d/1ONLOl17eMNylVRDeWATnvdidGQiL7ebYnEYZVg8t7Xg/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Päivitetty_ Luento40halutavoidaosata.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1HwXzSKkUSiWKDvByE3hQzqEIoafCTIu0/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `haluta,voida,osata, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Lr6xZC-CV5g9Ed86Lmd6fPAvf8vJR3qL/view`,
+          },
+        ],
       },
       {
-        id: '610876073212',
+        id: "610876073212",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '22 May 2023',
+        date: "22 May 2023",
         deleted: false,
         content: `Assignment: "39. Sanatyppejä (Us/As/es/is ja VUs)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '610878207097',
+        id: "610878207097",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 May 2023',
+        date: "22 May 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 14: Työtä ja juhlaa, lumikot`, url: `https://docs.google.com/document/d/1a22y1WmcGAScSSF772aIPjliJfhl_IZGfj94ehmsxq8/edit` }, { type: AttachmentType.VIDEO, title: `työtä ja juhlaa, lumikot.mp4`, url: `https://drive.google.com/file/d/1XHr-7tiSy4MwOk6b31MAhgtlKwTHcA5Y/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 14: Työtä ja juhlaa, lumikot`,
+            url: `https://docs.google.com/document/d/1a22y1WmcGAScSSF772aIPjliJfhl_IZGfj94ehmsxq8/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `työtä ja juhlaa, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1XHr-7tiSy4MwOk6b31MAhgtlKwTHcA5Y/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-05-29': {
-    display_name: 'Week 17 (May 29 - Jun 04)',
+  "2023-05-29": {
+    display_name: "Week 17 (May 29 - Jun 04)",
     items: [
       {
-        id: '612737663671',
+        id: "612737663671",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '2 Jun 2023',
+        date: "2 Jun 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!**\n**\nEnsi viikolla…\n**\nmaanantai: Objektin kertaus, Netta\ntiistai: Puhetaidot: Sairaalassa, Tiina\nkeskiviikko: Transitiivisuus, Tiina\ntorstai: Sivulause, Tiina\n**\nSpoken skills to the MAX! 12:30-13:45\n**\nkeskiviikko: Ruoka, Tiina\ntorstai: Ruoka, Netta\nAll the materials are in the Classroom\n**\nModuulin 4 testit**\n**\n19.6. Muut testit\n**\n9:00-10:15    Kuunteleminen\n11:00-12:30   Kirjoittaminen ja lukeminen\n**\nPuhuminen: PERUTTU - CANCELLED!\n**\nSorry everyone, if you have arranged time off from work for this, but we have to cancel\nspeaking tests for Module 4.\nWe don’t always have Spoken skills -test in Module 4. We thought we could fit it to our\nschedule for you guys, but we are a bit short staffed for the summer months.\nPlease bear in mind that you need to be careful to keep up with your speaking skill until\nthe Module 5 Spoken skills test! If you do not speak Finnish regularly, your skills will\ndisappear quickly.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento objektin kertaus CLASS (2).pdf`, url: `https://drive.google.com/file/d/1upJIrEMZ0h2r3DeaFACHZ16Flg7ZTy4v/view` }, { type: AttachmentType.PDF, title: `Viikko 16_ Sairaalassa - Google Docs.pdf`, url: `https://drive.google.com/file/d/1uL8NWdseTIBIM1jwRltnRzIo1kYXbSsL/view` }, { type: AttachmentType.PDF, title: `Luento48transitiivisuus.CLASS (uusin).pdf`, url: `https://drive.google.com/file/d/14WlVOf7AlBv4De7I_Ae-xJkqF_bqR3y5/view` }, { type: AttachmentType.PDF, title: `Luento51sivulauseCLASS (1).pdf`, url: `https://drive.google.com/file/d/1OztcWWT5Q5DeWIa3MzywC913DQ80x3ub/view` }, { type: AttachmentType.PDF, title: `02B. Ruoka.pdf`, url: `https://drive.google.com/file/d/14IuV9EyXHyiG23jLFh-Pnrxt7JAXPIOK/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento objektin kertaus CLASS (2).pdf`,
+            url: `https://drive.google.com/file/d/1upJIrEMZ0h2r3DeaFACHZ16Flg7ZTy4v/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Viikko 16_ Sairaalassa - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1uL8NWdseTIBIM1jwRltnRzIo1kYXbSsL/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento48transitiivisuus.CLASS (uusin).pdf`,
+            url: `https://drive.google.com/file/d/14WlVOf7AlBv4De7I_Ae-xJkqF_bqR3y5/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento51sivulauseCLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1OztcWWT5Q5DeWIa3MzywC913DQ80x3ub/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `02B. Ruoka.pdf`,
+            url: `https://drive.google.com/file/d/14IuV9EyXHyiG23jLFh-Pnrxt7JAXPIOK/view`,
+          },
+        ],
       },
       {
-        id: '612594633930',
+        id: "612594633930",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '1 Jun 2023',
+        date: "1 Jun 2023",
         deleted: false,
         content: `Assignment: "45. Monikon partitiivin kertaus"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '612600457729',
+        id: "612600457729",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '1 Jun 2023',
+        date: "1 Jun 2023",
         deleted: false,
         content: `Torstain materiaalit!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento46monpartkert CL.pdf`, url: `https://drive.google.com/file/d/13x8XNJAw53MkZuCWuaUtJoiDb2gBlKZ0/view` }, { type: AttachmentType.PDF, title: `valitse oikea muoto.pdf`, url: `https://drive.google.com/file/d/1vB6YTsK_hLLAMsg84gcUqNnOMMUAp1rH/view` }, { type: AttachmentType.PDF, title: `tee monikon partitiivi.pdf`, url: `https://drive.google.com/file/d/1DfXUsrfDPFEbWjvD7UFQX8sh-Iq0JfBC/view` }, { type: AttachmentType.DOCS, title: `Lumikko - lumikoita: monikon partitiivin kertaus`, url: `https://docs.google.com/document/d/1EcsyxpqES00z5j7Ns0OrSuvJ6Fdup6AYtHwt7CzrXfo/edit` }, { type: AttachmentType.VIDEO, title: `Monikon partitiivin kertaus lumikot.mp4`, url: `https://drive.google.com/file/d/17lxvjPf_APEe3wqjtd-TDTs-u2EPZ_p7/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento46monpartkert CL.pdf`,
+            url: `https://drive.google.com/file/d/13x8XNJAw53MkZuCWuaUtJoiDb2gBlKZ0/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `valitse oikea muoto.pdf`,
+            url: `https://drive.google.com/file/d/1vB6YTsK_hLLAMsg84gcUqNnOMMUAp1rH/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `tee monikon partitiivi.pdf`,
+            url: `https://drive.google.com/file/d/1DfXUsrfDPFEbWjvD7UFQX8sh-Iq0JfBC/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikko - lumikoita: monikon partitiivin kertaus`,
+            url: `https://docs.google.com/document/d/1EcsyxpqES00z5j7Ns0OrSuvJ6Fdup6AYtHwt7CzrXfo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Monikon partitiivin kertaus lumikot.mp4`,
+            url: `https://drive.google.com/file/d/17lxvjPf_APEe3wqjtd-TDTs-u2EPZ_p7/view`,
+          },
+        ],
       },
       {
-        id: '612594611573',
+        id: "612594611573",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '1 Jun 2023',
+        date: "1 Jun 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1aMCKC1R31tNQCVWboMD1AdIGiW3GAdh4zzdpcTVarbE/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/Wmc2-zlejDw7gswMg3DDgdwAcMitQk2xfTdcTO8GMgTM-eiMpx6--o1H4kmiS7w.gYSq1co6wvfWfTA_?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1aMCKC1R31tNQCVWboMD1AdIGiW3GAdh4zzdpcTVarbE/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/Wmc2-zlejDw7gswMg3DDgdwAcMitQk2xfTdcTO8GMgTM-eiMpx6--o1H4kmiS7w.gYSq1co6wvfWfTA_?authuser=0`,
+          },
+        ],
       },
       {
-        id: '612579214407',
+        id: "612579214407",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '1 Jun 2023',
+        date: "1 Jun 2023",
         deleted: false,
         content: `Assignment: "44. Adjektiivien vertailu"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '554270655938',
+        id: "554270655938",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '31 May 2023',
+        date: "31 May 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1N7h4HKSl1SETw6BzSMuvEp7gyKfGfjUK7OrXHGcUH6k/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/3SSsaguuV1lk2KXBGiFvY3iFZlc2FM5ptfPxr98TrVgU8F3yu_Ovs2KD8llR25iS.SeafdTPk59kKT3Gd?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1N7h4HKSl1SETw6BzSMuvEp7gyKfGfjUK7OrXHGcUH6k/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/3SSsaguuV1lk2KXBGiFvY3iFZlc2FM5ptfPxr98TrVgU8F3yu_Ovs2KD8llR25iS.SeafdTPk59kKT3Gd?authuser=0`,
+          },
+        ],
       },
       {
-        id: '612417067553',
+        id: "612417067553",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '31 May 2023',
+        date: "31 May 2023",
         deleted: false,
         content: `Nähdään mun Zoomissa kello 10:30.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }, { type: AttachmentType.DOCS, title: `Adjektiivien vertailu, lumikot`, url: `https://docs.google.com/document/d/1YON3cW1bVX41na0b_IKHPX5WBISllszpMBbpkQDgDiI/edit` }, { type: AttachmentType.PDF, title: `Luento45adjvert.pdf`, url: `https://drive.google.com/file/d/1DXdcnqczPZYNMQWGy6K4BRerMsA-7LQF/view` }, { type: AttachmentType.PDF, title: `komparatiivitehtävä.pdf`, url: `https://drive.google.com/file/d/1fjmlcZfXbH7pFYinLKNIyDimCUpRyVAI/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Adjektiivien vertailu, lumikot`,
+            url: `https://docs.google.com/document/d/1YON3cW1bVX41na0b_IKHPX5WBISllszpMBbpkQDgDiI/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento45adjvert.pdf`,
+            url: `https://drive.google.com/file/d/1DXdcnqczPZYNMQWGy6K4BRerMsA-7LQF/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `komparatiivitehtävä.pdf`,
+            url: `https://drive.google.com/file/d/1fjmlcZfXbH7pFYinLKNIyDimCUpRyVAI/view`,
+          },
+        ],
       },
       {
-        id: '612201967770',
+        id: "612201967770",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '30 May 2023',
+        date: "30 May 2023",
         deleted: false,
         content: `Assignment: "43. Rektiot"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '612201710715',
+        id: "612201710715",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '30 May 2023',
+        date: "30 May 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Rektiot, lumikot`, url: `https://docs.google.com/document/d/1lW5184VScOgijSmuXquICtmBIO-2h1EFtpHv-ID82Q0/edit` }, { type: AttachmentType.PDF, title: `44. Rektiot CLASS (1).pdf`, url: `https://drive.google.com/file/d/1KZvxaSzxA8g6Vm_WtPoBhvFBffSz51Nc/view` }, { type: AttachmentType.VIDEO, title: `rektiot, lumikot.mp4`, url: `https://drive.google.com/file/d/1pRBc8ImNta4ZLUbDbGsc-uw32h25CMiW/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Rektiot, lumikot`,
+            url: `https://docs.google.com/document/d/1lW5184VScOgijSmuXquICtmBIO-2h1EFtpHv-ID82Q0/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `44. Rektiot CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1KZvxaSzxA8g6Vm_WtPoBhvFBffSz51Nc/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `rektiot, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1pRBc8ImNta4ZLUbDbGsc-uw32h25CMiW/view`,
+          },
+        ],
       },
       {
-        id: '612074296413',
+        id: "612074296413",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '29 May 2023',
+        date: "29 May 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viikko 15: Labra`, url: `https://docs.google.com/document/d/1pvf3AHp5vvmMhRUflYE2ChnPlOlz6WCTXLD12mC5wrg/edit` }, { type: AttachmentType.VIDEO, title: `labra, lumikot.mp4`, url: `https://drive.google.com/file/d/18aa5E2cEC3vKc1O5NSsIphJ-bVctBzK_/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viikko 15: Labra`,
+            url: `https://docs.google.com/document/d/1pvf3AHp5vvmMhRUflYE2ChnPlOlz6WCTXLD12mC5wrg/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `labra, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/18aa5E2cEC3vKc1O5NSsIphJ-bVctBzK_/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-06-05': {
-    display_name: 'Week 18 (Jun 05 - Jun 11)',
+  "2023-06-05": {
+    display_name: "Week 18 (Jun 05 - Jun 11)",
     items: [
       {
-        id: '613441722876',
+        id: "613441722876",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '9 Jun 2023',
+        date: "9 Jun 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**Ensi viikolla…\n**\nmaanantai: Joka, Tiina\ntiistai: Tunneverbejä, Tiina\nkeskiviikko: Lausetyypit, Tiina\ntorstai: Puhetaitojen kertaus, Tiina\n**\nSpoken skills to the MAX!\n**\nkeskiviikko: Koti, Netta\ntorstai: Koti, Netta\nAll the materials are in the Classroom\n**\nModuulin 4 testit**\n**\n19.6. Muut testit\n**\n9:00-10:15    Kuunteleminen\n11:00-12:30   Kirjoittaminen ja lukeminen\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento52joka CLASS (1).pdf`, url: `https://drive.google.com/file/d/16Vdn0kySqLf1_JRoMv8BKmn9q-91P1Pf/view` }, { type: AttachmentType.PDF, title: `Luento49tunnelauseet CLASS.pdf`, url: `https://drive.google.com/file/d/1lISMh5Lngg_r07h7JLmIFWZLvoSq54H5/view` }, { type: AttachmentType.PDF, title: `Luento50lausetyyppejä.pptx.pdf`, url: `https://drive.google.com/file/d/1cy07e44g06IzqwocPJFAQxNSnjdlgRVu/view` }, { type: AttachmentType.PDF, title: `03A. Koti.pdf`, url: `https://drive.google.com/file/d/1e1z4Gk0OoO3twKReOqiP_gcjcQzev8Tt/view` }, { type: AttachmentType.PDF, title: `Puhetaidot_ Kertaus m4.pdf`, url: `https://drive.google.com/file/d/1TjOhZ8_8iVlDzx3kAkUfu8hJZvCQ8FEA/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento52joka CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/16Vdn0kySqLf1_JRoMv8BKmn9q-91P1Pf/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento49tunnelauseet CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1lISMh5Lngg_r07h7JLmIFWZLvoSq54H5/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento50lausetyyppejä.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1cy07e44g06IzqwocPJFAQxNSnjdlgRVu/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `03A. Koti.pdf`,
+            url: `https://drive.google.com/file/d/1e1z4Gk0OoO3twKReOqiP_gcjcQzev8Tt/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Puhetaidot_ Kertaus m4.pdf`,
+            url: `https://drive.google.com/file/d/1TjOhZ8_8iVlDzx3kAkUfu8hJZvCQ8FEA/view`,
+          },
+        ],
       },
       {
-        id: '613426811899',
+        id: "613426811899",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '8 Jun 2023',
+        date: "8 Jun 2023",
         deleted: false,
         content: `Spoken Skill to the MAX -materiaali. Recording exists only 5 days,`,
-        attachments: [{ type: AttachmentType.DOCS, title: `0806 to 02B. Ruoka`, url: `https://docs.google.com/document/d/1J1ErH5n0py2rXocXtGnaZLGGNuuHIukQ0MnBin78-ZE/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/YpOscsElb2HOMwuKvmx32QWIky6W1Gt4G-dTalbkcVEwcOFML4TcvNZU484a5nz9.RbPJ-Viepzh0kta0?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `0806 to 02B. Ruoka`,
+            url: `https://docs.google.com/document/d/1J1ErH5n0py2rXocXtGnaZLGGNuuHIukQ0MnBin78-ZE/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/YpOscsElb2HOMwuKvmx32QWIky6W1Gt4G-dTalbkcVEwcOFML4TcvNZU484a5nz9.RbPJ-Viepzh0kta0?authuser=0`,
+          },
+        ],
       },
       {
-        id: '612741711464',
+        id: "612741711464",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Jun 2023',
+        date: "8 Jun 2023",
         deleted: false,
         content: `Assignment: "48. Sivulause"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '613424204599',
+        id: "613424204599",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '8 Jun 2023',
+        date: "8 Jun 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Sivulause, lumikot`, url: `https://docs.google.com/document/d/13fXLzZTI23o64iIygxLwk5EF7Am_hHUSNusEKix4_Lo/edit` }, { type: AttachmentType.PDF, title: `konjunktiotehtävä - Google Docs (1).pdf`, url: `https://drive.google.com/file/d/1lIgS58kBZ6VtYeOf_4m3U1sH0Ki0LdCa/view` }, { type: AttachmentType.PDF, title: `Luento51sivulause.pptx (1).pdf`, url: `https://drive.google.com/file/d/1_z4gOL-8knzUjOBkXoXk9N1o-4fzYPak/view` }, { type: AttachmentType.VIDEO, title: `sivulause, lumikot.mp4`, url: `https://drive.google.com/file/d/1ygu2yYdullVt-_9IJ3P942AVvtTx0yLH/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Sivulause, lumikot`,
+            url: `https://docs.google.com/document/d/13fXLzZTI23o64iIygxLwk5EF7Am_hHUSNusEKix4_Lo/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `konjunktiotehtävä - Google Docs (1).pdf`,
+            url: `https://drive.google.com/file/d/1lIgS58kBZ6VtYeOf_4m3U1sH0Ki0LdCa/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento51sivulause.pptx (1).pdf`,
+            url: `https://drive.google.com/file/d/1_z4gOL-8knzUjOBkXoXk9N1o-4fzYPak/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `sivulause, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1ygu2yYdullVt-_9IJ3P942AVvtTx0yLH/view`,
+          },
+        ],
       },
       {
-        id: '613276940220',
+        id: "613276940220",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '7 Jun 2023',
+        date: "7 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `7.6. 02B. Ruoka`, url: `https://docs.google.com/document/d/1InB_Bjk80Mj3qEDmr3TF5AA0x6JZOBk0fxe-9yQIyto/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/N-1NxIRlWNtiMdtHsjG1ud2IGF9KjH1QeVcKemSliVZbi-4ckcGucr--GKb3A7jY.iLWI4YIe_UFa7j88?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `7.6. 02B. Ruoka`,
+            url: `https://docs.google.com/document/d/1InB_Bjk80Mj3qEDmr3TF5AA0x6JZOBk0fxe-9yQIyto/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/N-1NxIRlWNtiMdtHsjG1ud2IGF9KjH1QeVcKemSliVZbi-4ckcGucr--GKb3A7jY.iLWI4YIe_UFa7j88?authuser=0`,
+          },
+        ],
       },
       {
-        id: '554312349965',
+        id: "554312349965",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '7 Jun 2023',
+        date: "7 Jun 2023",
         deleted: false,
         content: `Assignment: "47. Transitiivisuus"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '613276231572',
+        id: "613276231572",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '7 Jun 2023',
+        date: "7 Jun 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Transitiivisuus, lumikot`, url: `https://docs.google.com/document/d/1ehPHMmXYL11lfh_e8Ioa9Sm2pnYl0JwRC0RxX_-n8B8/edit` }, { type: AttachmentType.PDF, title: `Luento48transitiivisuus. (uusin).pdf`, url: `https://drive.google.com/file/d/1Sc5267CpgVkZUOmC96exSHd4OdB6xtz1/view` }, { type: AttachmentType.VIDEO, title: `transitiivisuus, lumikot.mp4`, url: `https://drive.google.com/file/d/1om8sqhQLDmVdUiZraNsldmRZjItZ7zTx/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Transitiivisuus, lumikot`,
+            url: `https://docs.google.com/document/d/1ehPHMmXYL11lfh_e8Ioa9Sm2pnYl0JwRC0RxX_-n8B8/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento48transitiivisuus. (uusin).pdf`,
+            url: `https://drive.google.com/file/d/1Sc5267CpgVkZUOmC96exSHd4OdB6xtz1/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `transitiivisuus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1om8sqhQLDmVdUiZraNsldmRZjItZ7zTx/view`,
+          },
+        ],
       },
       {
-        id: '613122848507',
+        id: "613122848507",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Jun 2023',
+        date: "6 Jun 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `16: Sairaalassa, lumikot`, url: `https://docs.google.com/document/d/1ccDi732Np8eb_77erM7MdBHKfYYBomX2JXsdJx6F8qc/edit` }, { type: AttachmentType.VIDEO, title: `sairaalassa, lumikot.mp4`, url: `https://drive.google.com/file/d/1_QA3eWvKL1U8qKpTvMsIbhrxL-ttlxBS/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `16: Sairaalassa, lumikot`,
+            url: `https://docs.google.com/document/d/1ccDi732Np8eb_77erM7MdBHKfYYBomX2JXsdJx6F8qc/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `sairaalassa, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1_QA3eWvKL1U8qKpTvMsIbhrxL-ttlxBS/view`,
+          },
+        ],
       },
       {
-        id: '612963081288',
+        id: "612963081288",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '5 Jun 2023',
+        date: "5 Jun 2023",
         deleted: false,
         content: `Assignment: "46. Objektin kertaus"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '612977093739',
+        id: "612977093739",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '5 Jun 2023',
+        date: "5 Jun 2023",
         deleted: false,
         content: `Maanantain materiaalit! Tehtävät on dioissa (exercises are included in to these slides).`,
-        attachments: [{ type: AttachmentType.PDF, title: `47. Objektin kertausta.pdf`, url: `https://drive.google.com/file/d/18MjCwvN6QJ5nrfp_4yTQYUHYPkLblcr-/view` }, { type: AttachmentType.DOCS, title: `Objektin kertaus`, url: `https://docs.google.com/document/d/124ykpvOeLHSgYrHxCYN-CL7MGoKZRMZU88xD7re8yQY/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot kertaa objektin objektia.mp4`, url: `https://drive.google.com/file/d/1D65yg7HX8eBtBBkmBtG3PfFn5F_tHnM5/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `47. Objektin kertausta.pdf`,
+            url: `https://drive.google.com/file/d/18MjCwvN6QJ5nrfp_4yTQYUHYPkLblcr-/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Objektin kertaus`,
+            url: `https://docs.google.com/document/d/124ykpvOeLHSgYrHxCYN-CL7MGoKZRMZU88xD7re8yQY/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot kertaa objektin objektia.mp4`,
+            url: `https://drive.google.com/file/d/1D65yg7HX8eBtBBkmBtG3PfFn5F_tHnM5/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-06-12': {
-    display_name: 'Week 19 (Jun 12 - Jun 18)',
+  "2023-06-12": {
+    display_name: "Week 19 (Jun 12 - Jun 18)",
     items: [
       {
-        id: '614266099457',
+        id: "614266099457",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 Jun 2023',
+        date: "16 Jun 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!**\n**\nEnsi viikolla…\n**\n**Maananaina on testit!\n**\n9:00 Kuunteleminen Tiinan Zoomissa.\n11:00 Lukeminen ja kirjoittaminen Classroomissa.\n**\nSitten alkaa Moduuli 5!\n**\ntiistai: Passiivi, Tiina\nkeskiviikko: Ihminen ja lähipiiri, Tiina\ntorstai: Ihminen ja lähipiiri, Tiina\n**\nSpoken skills to the MAX\n**\nYour Module 5 is starting so we will start offering A2-level material for you guys. The\nschedule is still the same but you will be together with the Ahmat group again. Themes are\nsimilar, but the questions will be a bit more complex from now on.\nkeskiviikko: Minä, Tiina\ntorstai: Minä, Tiina\n**\nJuhannus - Midsummer\n**\nPerjantaina 23.6. on juhannusaatto.\nFriday the 23th of June is the eve of Midsummer which is a national holiday in Finland. We\nwill be out of the office. If you send me a message on Friday, I will get back to you on\nMonday. You will get the Friday announcements on Thursday.\n**\nOpettajien kesälomat\n**\nIn Finland it is very common to have a four week summer holiday sometime during summer\nmonths. Me and Netta will have our summer holidays at different times, so you will always be\nable to contact at least one of us. During summer we will have a couple of substitute\nteachers to teach some of your lessons, while one of us is on a holiday. They will post\ntheir Zoom-links in Classroom and Skype. Make sure you are in the correct Zoom-class at the\ncorrect time!\nNetta on lomalla 19.6.-17.7.\nTiina on lomalla 27.7.-20.8.\nYou will not be able to contact us during our holidays! We will not read email or check\nSkype. So during my holiday, contact Netta if you have anything to ask and vice versa.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento53passiivi CL.pdf`, url: `https://drive.google.com/file/d/1I9e4-YCk2ewufN-EHWOxYHPrRhTkKLy7/view` }, { type: AttachmentType.PDF, title: `Ihminen ja lähipiiri CLASS.pdf`, url: `https://drive.google.com/file/d/1dnhMm-Ed33PeIsP7sAh1lanJyFuBoQmo/view` }, { type: AttachmentType.PDF, title: `A2 01 Minä.pdf`, url: `https://drive.google.com/file/d/1sv7o-udsikfQp-6FhrUEoouaLEBjQ5YZ/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento53passiivi CL.pdf`,
+            url: `https://drive.google.com/file/d/1I9e4-YCk2ewufN-EHWOxYHPrRhTkKLy7/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Ihminen ja lähipiiri CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1dnhMm-Ed33PeIsP7sAh1lanJyFuBoQmo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 01 Minä.pdf`,
+            url: `https://drive.google.com/file/d/1sv7o-udsikfQp-6FhrUEoouaLEBjQ5YZ/view`,
+          },
+        ],
       },
       {
-        id: '614275279903',
+        id: "614275279903",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '15 Jun 2023',
+        date: "15 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX tään mun Zoomissa klo 12.30!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1Yq_Yy9TZowqsDyHae22101SdgWX_LOhRMar83f_vmEk/view` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1Yq_Yy9TZowqsDyHae22101SdgWX_LOhRMar83f_vmEk/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0`,
+          },
+        ],
       },
       {
-        id: '614158810938',
+        id: "614158810938",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '15 Jun 2023',
+        date: "15 Jun 2023",
         deleted: false,
         content: `Assignment: "EXTRA: Kuunteluharjoituksia"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614264582083',
+        id: "614264582083",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '15 Jun 2023',
+        date: "15 Jun 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `M4 Puhetaitojen kertaus`, url: `https://docs.google.com/document/d/1PMxIB479N8JUGshXeXkNgHOfDD4qiGp5hEDUPZCPcUs/edit` }, { type: AttachmentType.LINK, title: `Moduuli4 kertaus`, url: `https://wheelofnames.com/dra-dn5?authuser=0` }, { type: AttachmentType.VIDEO, title: `puhekertaus, lumikot.mp4`, url: `https://drive.google.com/file/d/1lW2FgBfwesE-ZzTZM_FEGLCod-pwc7-g/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `M4 Puhetaitojen kertaus`,
+            url: `https://docs.google.com/document/d/1PMxIB479N8JUGshXeXkNgHOfDD4qiGp5hEDUPZCPcUs/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Moduuli4 kertaus`,
+            url: `https://wheelofnames.com/dra-dn5?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `puhekertaus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1lW2FgBfwesE-ZzTZM_FEGLCod-pwc7-g/view`,
+          },
+        ],
       },
       {
-        id: '614138360071',
+        id: "614138360071",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '14 Jun 2023',
+        date: "14 Jun 2023",
         deleted: false,
         content: `Moikka! Spoken Skill to the MAX -materiaali!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1i9p5vzDZY5WqvqMrOI70hq40UuK8_2ULJSJjTP8PiGI/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/6jeXiIqGqz5820AgIK8IplyBDl5MZ-xiMQxIH_3HSrTkylWWrSV8jHplh2vTouOh.tGc1hERgcn7aqIcw?startTime=1686737209000&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1i9p5vzDZY5WqvqMrOI70hq40UuK8_2ULJSJjTP8PiGI/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/6jeXiIqGqz5820AgIK8IplyBDl5MZ-xiMQxIH_3HSrTkylWWrSV8jHplh2vTouOh.tGc1hERgcn7aqIcw?startTime=1686737209000&authuser=0`,
+          },
+        ],
       },
       {
-        id: '613467192541',
+        id: "613467192541",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '14 Jun 2023',
+        date: "14 Jun 2023",
         deleted: false,
         content: `Assignment: "51. Lausetyypit"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614013220081',
+        id: "614013220081",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Jun 2023',
+        date: "14 Jun 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lausetyypit, lumikot`, url: `https://docs.google.com/document/d/1faUuq2iRh9UerojrSqPuamxyAVMl3zJI0qruX4Ho46U/edit` }, { type: AttachmentType.PDF, title: `Luento50lausetyyppejä.pptx (1) (1).pdf`, url: `https://drive.google.com/file/d/1XVEO98TKZx-Hen9Zj3pNcn42HtEUPP43/view` }, { type: AttachmentType.PDF, title: `Kirjoita kuvasta_lausetyypit - Google Docs (1).pdf`, url: `https://drive.google.com/file/d/1DermszTa0jv0jGRPTdRjWVPX8kXddfMv/view` }, { type: AttachmentType.VIDEO, title: `lausetyypit, lumikot.mp4`, url: `https://drive.google.com/file/d/1TTWG4vZVyWooHEgsTi3ySSFLSuIfbteO/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lausetyypit, lumikot`,
+            url: `https://docs.google.com/document/d/1faUuq2iRh9UerojrSqPuamxyAVMl3zJI0qruX4Ho46U/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento50lausetyyppejä.pptx (1) (1).pdf`,
+            url: `https://drive.google.com/file/d/1XVEO98TKZx-Hen9Zj3pNcn42HtEUPP43/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Kirjoita kuvasta_lausetyypit - Google Docs (1).pdf`,
+            url: `https://drive.google.com/file/d/1DermszTa0jv0jGRPTdRjWVPX8kXddfMv/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `lausetyypit, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1TTWG4vZVyWooHEgsTi3ySSFLSuIfbteO/view`,
+          },
+        ],
       },
       {
-        id: '613466035112',
+        id: "613466035112",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '13 Jun 2023',
+        date: "13 Jun 2023",
         deleted: false,
         content: `Assignment: "50. Tunneverbejä"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '613862199911',
+        id: "613862199911",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Jun 2023',
+        date: "13 Jun 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Tunneverbejä, lumikot`, url: `https://docs.google.com/document/d/1e_Rgi5quc6C5yaDGIUXlrGgD68VTPqSb5szBhFuPeEE/edit` }, { type: AttachmentType.PDF, title: `Luento49tunneverbejä.pptx (1).pdf`, url: `https://drive.google.com/file/d/1pEsRh1Hj_mHtnyxJLDDJzLGRewF7YgvW/view` }, { type: AttachmentType.PDF, title: `tunneverbit (1).pdf`, url: `https://drive.google.com/file/d/1VRoWGUef9kzHKm94WC8RD6GGakARbDrs/view` }, { type: AttachmentType.PDF, title: `tunneverbit_lausetehtävä - Google Docs (1).pdf`, url: `https://drive.google.com/file/d/11yxV_ZL7-Iom4Ta56LnD17qaF5yifLDs/view` }, { type: AttachmentType.VIDEO, title: `tunneverbit, lumikot.mp4`, url: `https://drive.google.com/file/d/1CeVXtjhlqxv4IC2WQN_dAnmXb9YYEJHm/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Tunneverbejä, lumikot`,
+            url: `https://docs.google.com/document/d/1e_Rgi5quc6C5yaDGIUXlrGgD68VTPqSb5szBhFuPeEE/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento49tunneverbejä.pptx (1).pdf`,
+            url: `https://drive.google.com/file/d/1pEsRh1Hj_mHtnyxJLDDJzLGRewF7YgvW/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `tunneverbit (1).pdf`,
+            url: `https://drive.google.com/file/d/1VRoWGUef9kzHKm94WC8RD6GGakARbDrs/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `tunneverbit_lausetehtävä - Google Docs (1).pdf`,
+            url: `https://drive.google.com/file/d/11yxV_ZL7-Iom4Ta56LnD17qaF5yifLDs/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `tunneverbit, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1CeVXtjhlqxv4IC2WQN_dAnmXb9YYEJHm/view`,
+          },
+        ],
       },
       {
-        id: '613466281466',
+        id: "613466281466",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '12 Jun 2023',
+        date: "12 Jun 2023",
         deleted: false,
         content: `Assignment: "49. Joka"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '613832994418',
+        id: "613832994418",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Jun 2023',
+        date: "12 Jun 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Joka, lumikot`, url: `https://docs.google.com/document/d/14t8viGT_EOgoVlxrLtnBcwMC6LCH9stu9389IeJkZS8/edit` }, { type: AttachmentType.PDF, title: `Luento52joka.pdf`, url: `https://drive.google.com/file/d/1z-PC3UDhbrtFabHJAOTEefION9Swrhvg/view` }, { type: AttachmentType.VIDEO, title: `joka, lumikot.mp4`, url: `https://drive.google.com/file/d/1kAp_6xleuSyccVUQmU9ooQ8ruHs3wkG-/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Joka, lumikot`,
+            url: `https://docs.google.com/document/d/14t8viGT_EOgoVlxrLtnBcwMC6LCH9stu9389IeJkZS8/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento52joka.pdf`,
+            url: `https://drive.google.com/file/d/1z-PC3UDhbrtFabHJAOTEefION9Swrhvg/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `joka, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1kAp_6xleuSyccVUQmU9ooQ8ruHs3wkG-/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-06-19': {
-    display_name: 'Week 20 (Jun 19 - Jun 25)',
+  "2023-06-19": {
+    display_name: "Week 20 (Jun 19 - Jun 25)",
     items: [
       {
-        id: '614906214904',
+        id: "614906214904",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 Jun 2023',
+        date: "22 Jun 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\nTorstaiversio! - Thursday edition!\n**\nHuomenna on juhannusaatto, se on vapaapäivä Suomessa.\n**\nTomorrow is the eve of Midsummer which is a national holiday in Finland. I will be out of\nthe office.\nAll the groups had testing recently so I have been moving a lot of people around this week!\nMy inbox has been very full figuring out everyone’s situation. If you are confused by\nsomething or I haven’t answered your message, please contact me again. I’ll get back to you\non Monday.\n**\nEnsi viikolla…\n**\nmaanantai: Puhetaidot: lähipiiri ja vapaa-aika, Hilma\ntiistai:  Arki 1, Hilma\nkeskiviikko: Arki 2, Hilma\ntorstai: Vapaa-aika 1, Tiina (slides contain also material for next Monday's lesson)\nNote that most of your lessons next week will be taught by\n**\nHilma\n**\n. She will post her Zoom-link here and in the Classroom.\nRemember we expect you to check out the slides before lessons! If there is vocabulary, check\nthat you understand it and if there are exercises, do them before the lesson!\n**\nSpoken skills to the MAX kello 12.30\n**\nkeskiviikko: Perhe, Tiina\ntorstai: Perhe, Tiina\n**\nModuuli 5 on alkanut!\n**\nItsenäiset:\nhttps://sites.google.com/edu.arffman.fi/kvmoduuli5/front-page\nQuizlet:\nhttps://quizlet.com/join/tn9AKxSEE?i=466rp4&x=1bqt\n**\nTestit\n**\n17.7.    Kuunteleminen kello 9:00-10:00\nKirjoittaminen ja lukeminen kello 11:00-12:00\n21.7.    Puhuminen, varaa aika taulukosta:\nhttps://docs.google.com/spreadsheets/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/edit?usp=sharing\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli5/front-page?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduuli 5 | Quizlet`, url: `https://quizlet.com/join/tn9AKxSEE?i=466rp4&x=1bqt&authuser=0` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view` }, { type: AttachmentType.PDF, title: `Spoken (M5 eka) Ihminen ja vapaa-aika - Google Docs.pdf`, url: `https://drive.google.com/file/d/1snDYdvvN0-B0OTLo1Anl1djlV30OWCW9/view` }, { type: AttachmentType.PDF, title: `Arki ja asiointi (Kaupassa ja ravintolassa) CLASS.pdf`, url: `https://drive.google.com/file/d/1dgjqDIihXUbGXveYOUeNrCX5psDx_BlR/view` }, { type: AttachmentType.PDF, title: `Luennot Vapaa-aika CL.pdf`, url: `https://drive.google.com/file/d/1sOK5GKB_cpjNB2K42J6idy66_XLGNpZT/view` }, { type: AttachmentType.PDF, title: `A2 02 Perhe.pdf`, url: `https://drive.google.com/file/d/10UenJLZ6_7MoFyLgjusJenSm1dZ25pHG/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli5/front-page?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduuli 5 | Quizlet`,
+            url: `https://quizlet.com/join/tn9AKxSEE?i=466rp4&x=1bqt&authuser=0`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Spoken (M5 eka) Ihminen ja vapaa-aika - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1snDYdvvN0-B0OTLo1Anl1djlV30OWCW9/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Arki ja asiointi (Kaupassa ja ravintolassa) CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1dgjqDIihXUbGXveYOUeNrCX5psDx_BlR/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luennot Vapaa-aika CL.pdf`,
+            url: `https://drive.google.com/file/d/1sOK5GKB_cpjNB2K42J6idy66_XLGNpZT/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 02 Perhe.pdf`,
+            url: `https://drive.google.com/file/d/10UenJLZ6_7MoFyLgjusJenSm1dZ25pHG/view`,
+          },
+        ],
       },
       {
-        id: '614730111967',
+        id: "614730111967",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '22 Jun 2023',
+        date: "22 Jun 2023",
         deleted: false,
         content: `Assignment: "54. Ihminen ja lähipiiri 2"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614830150873',
+        id: "614830150873",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 Jun 2023',
+        date: "22 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1WsDVOyfq2ISnZ3i6gsj6zhlhmL9msBekGgYwRrN0EjI/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/rF8Jfps5x0Jw2EA6UtI8Tp89xnPMRJjqS129LMIKIEtcLR5oGCLX9hD-GwtP_ElG.8rZqLl4jRM7Ev5WN?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1WsDVOyfq2ISnZ3i6gsj6zhlhmL9msBekGgYwRrN0EjI/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/rF8Jfps5x0Jw2EA6UtI8Tp89xnPMRJjqS129LMIKIEtcLR5oGCLX9hD-GwtP_ElG.8rZqLl4jRM7Ev5WN?authuser=0`,
+          },
+        ],
       },
       {
-        id: '614830228889',
+        id: "614830228889",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 Jun 2023',
+        date: "22 Jun 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `55. ihminen ja lähipiiri 2.pdf`, url: `https://drive.google.com/file/d/1D8-s7Xfzak2DdVKQ4zk_4NfkB74hOTAu/view` }, { type: AttachmentType.DOCS, title: `Ihminen ja lähipiiri, lumikot`, url: `https://docs.google.com/document/d/1ZzhoddkDnTg4c8v1HWwwRfhEGSn0BhXI8uQ2bDx_M3A/edit` }, { type: AttachmentType.VIDEO, title: `ihminen ja lähipiiri 2, lumikot.mp4`, url: `https://drive.google.com/file/d/1MmcoT8UH5o4s8ky7hMbKLmMUHhJKWk8T/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `55. ihminen ja lähipiiri 2.pdf`,
+            url: `https://drive.google.com/file/d/1D8-s7Xfzak2DdVKQ4zk_4NfkB74hOTAu/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Ihminen ja lähipiiri, lumikot`,
+            url: `https://docs.google.com/document/d/1ZzhoddkDnTg4c8v1HWwwRfhEGSn0BhXI8uQ2bDx_M3A/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `ihminen ja lähipiiri 2, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1MmcoT8UH5o4s8ky7hMbKLmMUHhJKWk8T/view`,
+          },
+        ],
       },
       {
-        id: '614825737209',
+        id: "614825737209",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Jun 2023',
+        date: "21 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1Dhazjbvid73yC15hSNKIu-oWp1ANmISrOfQKqI1G2-8/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/EUpnxtLakAXZB4eLJFteVP3DPTvSCZE41ecvmt9pxdTmUvXxsFK2PXkNvoL_QyKD.aRVuC4N5ZzNTeQII?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1Dhazjbvid73yC15hSNKIu-oWp1ANmISrOfQKqI1G2-8/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/EUpnxtLakAXZB4eLJFteVP3DPTvSCZE41ecvmt9pxdTmUvXxsFK2PXkNvoL_QyKD.aRVuC4N5ZzNTeQII?authuser=0`,
+          },
+        ],
       },
       {
-        id: '614732758236',
+        id: "614732758236",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Jun 2023',
+        date: "21 Jun 2023",
         deleted: false,
         content: `Assignment: "53. Ihminen ja lähipiiri 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614819534949',
+        id: "614819534949",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Jun 2023',
+        date: "21 Jun 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Ihminen ja lähipiiri, lumikot`, url: `https://docs.google.com/document/d/1ZzhoddkDnTg4c8v1HWwwRfhEGSn0BhXI8uQ2bDx_M3A/edit` }, { type: AttachmentType.PDF, title: `Luetaan - Google Docs.pdf`, url: `https://drive.google.com/file/d/1FpSw_VSkUqUnCj16EZAN-Sy8zilDNGka/view` }, { type: AttachmentType.VIDEO, title: `ihminen ja lähipiiri, lumikot.mp4`, url: `https://drive.google.com/file/d/1Nf-eXqwvmGDelVwXudPFshVYrg3z8yZI/view` }, { type: AttachmentType.PDF, title: `54. Ihminen ja lähipiiri 1.pdf`, url: `https://drive.google.com/file/d/1T7XZJbelIq3o4RvOMrdKuJZRFFtt5P0G/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Ihminen ja lähipiiri, lumikot`,
+            url: `https://docs.google.com/document/d/1ZzhoddkDnTg4c8v1HWwwRfhEGSn0BhXI8uQ2bDx_M3A/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luetaan - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1FpSw_VSkUqUnCj16EZAN-Sy8zilDNGka/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `ihminen ja lähipiiri, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Nf-eXqwvmGDelVwXudPFshVYrg3z8yZI/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `54. Ihminen ja lähipiiri 1.pdf`,
+            url: `https://drive.google.com/file/d/1T7XZJbelIq3o4RvOMrdKuJZRFFtt5P0G/view`,
+          },
+        ],
       },
       {
-        id: '614718348471',
+        id: "614718348471",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '20 Jun 2023',
+        date: "20 Jun 2023",
         deleted: false,
         content: `Assignment: "52. Passiivi"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614718758507',
+        id: "614718758507",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '20 Jun 2023',
+        date: "20 Jun 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento53passiivi.pptx.pdf`, url: `https://drive.google.com/file/d/1Ws9gRhDlRGO0humJj5LtMqPC0Ru-akp4/view` }, { type: AttachmentType.DOCS, title: `Passiivi, lumikot`, url: `https://docs.google.com/document/d/15mdekqytzs7Ww7OhydodOCiKnqjcgnTWIH67odHgZmo/edit` }, { type: AttachmentType.VIDEO, title: `passiivi, lumikot.mp4`, url: `https://drive.google.com/file/d/1qWAH-9zKXnuC03HxRty-8r_AQFb1VR68/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento53passiivi.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1Ws9gRhDlRGO0humJj5LtMqPC0Ru-akp4/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Passiivi, lumikot`,
+            url: `https://docs.google.com/document/d/15mdekqytzs7Ww7OhydodOCiKnqjcgnTWIH67odHgZmo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `passiivi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1qWAH-9zKXnuC03HxRty-8r_AQFb1VR68/view`,
+          },
+        ],
       },
       {
-        id: '613585037987',
+        id: "613585037987",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '19 Jun 2023',
+        date: "19 Jun 2023",
         deleted: false,
         content: `Assignment: "Moduuli 4: Kirjoittaminen ja lukeminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '613584464067',
+        id: "613584464067",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '19 Jun 2023',
+        date: "19 Jun 2023",
         deleted: false,
         content: `Assignment: "Moduuli 4: Kuunteleminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '614621702198',
+        id: "614621702198",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Jun 2023',
+        date: "19 Jun 2023",
         deleted: false,
         content: `Hyvää huomenta! Kuuntelemisen testi alkaa mun Zoomissa kello 9:00.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-06-26': {
-    display_name: 'Week 21 (Jun 26 - Jul 02)',
+  "2023-06-26": {
+    display_name: "Week 21 (Jun 26 - Jul 02)",
     items: [
       {
-        id: '615327466588',
+        id: "615327466588",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '30 Jun 2023',
+        date: "30 Jun 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\nmaanantai: Vapaa-aika 2, Marie\ntiistai: Puhetaidot: terveys ja luonto, Marie  (You'll also get some independent assingments\nand study materials for the nature theme, there won't be a lesson about that.)\nkeskiviikko: Terveys 1, Tiina\ntorstai: Terveys 2, Tiina\nNote, that you will have a new substitute teacher Marie teaching you on Monday and Tuesday.\nShe will post her Zoom-link in Skype and Classroom. Be in the correct Zoom at the correct\ntime!\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Ruoka, Tiina\ntorstai: Ruoka, Tiina\n**\nOpet lomalla:\n**\nNetta on lomalla 19.6.-17.7.\nTiina on lomalla 27.7.-20.8.\n**\nModuulin 5 testit\n**\n17.7.    Kuunteleminen kello 9:00-10:00\nKirjoittaminen ja lukeminen kello 11:00-12:00\n21.7.    Puhuminen, varaa aika taulukosta:\nhttps://docs.google.com/spreadsheets/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/edit?usp=sharing\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view` }, { type: AttachmentType.PDF, title: `Luennot Vapaa-aika CL.pdf`, url: `https://drive.google.com/file/d/1dvm6doDXXdV1HxMYb2fOeIWS5RdzuYuI/view` }, { type: AttachmentType.PDF, title: `19_ Luonto + terveys - Google Docs.pdf`, url: `https://drive.google.com/file/d/1RG_CtKUwaL7YAqod44dLSBSVVZPbEPbr/view` }, { type: AttachmentType.PDF, title: `Luonto ja ympäristö yhdistetty.pdf`, url: `https://drive.google.com/file/d/1wR_YDHk4NkWHlS6zlqoeQq4oVDTMxRiU/view` }, { type: AttachmentType.PDF, title: `LUENTODIAT Terveys CLASS (1).pdf`, url: `https://drive.google.com/file/d/1ptMPZATd2_ZtxmwVD4m3SQZmGxnbaXrU/view` }, { type: AttachmentType.PDF, title: `A2 03 Ruoka - Google Docs.pdf`, url: `https://drive.google.com/file/d/1s8Am3KRoftBc2LyQjpzagz4LnhkcLmCS/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luennot Vapaa-aika CL.pdf`,
+            url: `https://drive.google.com/file/d/1dvm6doDXXdV1HxMYb2fOeIWS5RdzuYuI/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `19_ Luonto + terveys - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1RG_CtKUwaL7YAqod44dLSBSVVZPbEPbr/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luonto ja ympäristö yhdistetty.pdf`,
+            url: `https://drive.google.com/file/d/1wR_YDHk4NkWHlS6zlqoeQq4oVDTMxRiU/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `LUENTODIAT Terveys CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1ptMPZATd2_ZtxmwVD4m3SQZmGxnbaXrU/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 03 Ruoka - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1s8Am3KRoftBc2LyQjpzagz4LnhkcLmCS/view`,
+          },
+        ],
       },
       {
-        id: '615342410687',
+        id: "615342410687",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '29 Jun 2023',
+        date: "29 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1t512Y_ZBbcGZBz4pkVKSNugDq-QNrGUaEpd2OS6OJKM/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/auPCMYmXfFc3VVEwjTXnuu3KwSb34VT-1DATYVbyRc5EQCDK4je5eiZ7N18FokCb.MB-XLpwlsSCUza0m?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1t512Y_ZBbcGZBz4pkVKSNugDq-QNrGUaEpd2OS6OJKM/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/auPCMYmXfFc3VVEwjTXnuu3KwSb34VT-1DATYVbyRc5EQCDK4je5eiZ7N18FokCb.MB-XLpwlsSCUza0m?authuser=0`,
+          },
+        ],
       },
       {
-        id: '614733870501',
+        id: "614733870501",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '29 Jun 2023',
+        date: "29 Jun 2023",
         deleted: false,
         content: `Assignment: "57. Vapaa-aika: Harrastukset"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615341188417',
+        id: "615341188417",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '29 Jun 2023',
+        date: "29 Jun 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Vapaa-aika 1: Harrastukset, lumikot`, url: `https://docs.google.com/document/d/1_kKiAvYP8zzEmFbuiSV6uVOyVwI8epa2HwegqqKQ58M/edit` }, { type: AttachmentType.PDF, title: `Luento58vapaa-aika1 Ope.pdf`, url: `https://drive.google.com/file/d/1oul61lioapVopsYU-3sNpKyYulVkkCsl/view` }, { type: AttachmentType.PDF, title: `vapaa-aika.pdf`, url: `https://drive.google.com/file/d/1jFgi7kNbUc3aUEFmXIdDi7C8lSFprkiM/view` }, { type: AttachmentType.VIDEO, title: `harrastukset, lumikot.mp4`, url: `https://drive.google.com/file/d/11yI1GkXHxBZn2Al_bcmCi2FkT3twx44C/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Vapaa-aika 1: Harrastukset, lumikot`,
+            url: `https://docs.google.com/document/d/1_kKiAvYP8zzEmFbuiSV6uVOyVwI8epa2HwegqqKQ58M/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento58vapaa-aika1 Ope.pdf`,
+            url: `https://drive.google.com/file/d/1oul61lioapVopsYU-3sNpKyYulVkkCsl/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `vapaa-aika.pdf`,
+            url: `https://drive.google.com/file/d/1jFgi7kNbUc3aUEFmXIdDi7C8lSFprkiM/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `harrastukset, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/11yI1GkXHxBZn2Al_bcmCi2FkT3twx44C/view`,
+          },
+        ],
       },
       {
-        id: '615334888301',
+        id: "615334888301",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '28 Jun 2023',
+        date: "28 Jun 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1busK39k4A092VEma-xMGUwoq2ZpZL5pDJkZlGm5QyWw/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/zJh5JIhJuaXpnqC8Ksr0ecFS9wUCBRgwfNWEJIqtZ13eEyi4roETlhwTN1i0qZcL.MPDREs2LwEwEyNtK?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1busK39k4A092VEma-xMGUwoq2ZpZL5pDJkZlGm5QyWw/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/zJh5JIhJuaXpnqC8Ksr0ecFS9wUCBRgwfNWEJIqtZ13eEyi4roETlhwTN1i0qZcL.MPDREs2LwEwEyNtK?authuser=0`,
+          },
+        ],
       },
       {
-        id: '614732233080',
+        id: "614732233080",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '28 Jun 2023',
+        date: "28 Jun 2023",
         deleted: false,
         content: `Assignment: "56. Arki ja asiointi: Ravintolassa"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615329602796',
+        id: "615329602796",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '28 Jun 2023',
+        date: "28 Jun 2023",
         deleted: false,
         content: `Ravintolassa -tunnin materiaalit ja tallenne.`,
-        attachments: [{ type: AttachmentType.PDF, title: `L57 Arki 2_ ravintolassa Ope.pdf`, url: `https://drive.google.com/file/d/1i8kAgpfr51i_uZN_LAnLDPfDWJNy5b-X/view` }, { type: AttachmentType.PDF, title: `L57 kuunteluiden kysymykset.pdf`, url: `https://drive.google.com/file/d/1Jme5-x-khCEb3T5kpaAlgHxQzLwrRdJ7/view` }, { type: AttachmentType.PDF, title: `L57 open esimerkki.pdf`, url: `https://drive.google.com/file/d/11F56uHAdPTt2-VAKom6pVbP5wULOI1q6/view` }, { type: AttachmentType.PDF, title: `L57 ruokalistat.pdf`, url: `https://drive.google.com/file/d/1KwB4xJy9KRs4m1BLb3ZBTZruY7tgb-TZ/view` }, { type: AttachmentType.DOCS, title: `Lumikot ravintolassa`, url: `https://docs.google.com/document/d/1xH3bugr5-IwPZXeSxGWu03SAOFv4aKjvxct49fCoULU/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/i3kFvXTZCNe2leiL7wZEa-vFrHVEs7lrI9YyZyMDMjAZmXLrXMlkI27F2jXL_ngX.pJLFaWfIu1ObdJmn?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `L57 Arki 2_ ravintolassa Ope.pdf`,
+            url: `https://drive.google.com/file/d/1i8kAgpfr51i_uZN_LAnLDPfDWJNy5b-X/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L57 kuunteluiden kysymykset.pdf`,
+            url: `https://drive.google.com/file/d/1Jme5-x-khCEb3T5kpaAlgHxQzLwrRdJ7/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L57 open esimerkki.pdf`,
+            url: `https://drive.google.com/file/d/11F56uHAdPTt2-VAKom6pVbP5wULOI1q6/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L57 ruokalistat.pdf`,
+            url: `https://drive.google.com/file/d/1KwB4xJy9KRs4m1BLb3ZBTZruY7tgb-TZ/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot ravintolassa`,
+            url: `https://docs.google.com/document/d/1xH3bugr5-IwPZXeSxGWu03SAOFv4aKjvxct49fCoULU/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/i3kFvXTZCNe2leiL7wZEa-vFrHVEs7lrI9YyZyMDMjAZmXLrXMlkI27F2jXL_ngX.pJLFaWfIu1ObdJmn?authuser=0`,
+          },
+        ],
       },
       {
-        id: '554418432351',
+        id: "554418432351",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '27 Jun 2023',
+        date: "27 Jun 2023",
         deleted: false,
         content: `Assignment: "55. Arki ja asiointi: Kaupassa"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615243455237',
+        id: "615243455237",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '27 Jun 2023',
+        date: "27 Jun 2023",
         deleted: false,
         content: `Tässä Kaupassa-tunnin tunnin materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `L56 Arki 1_ Kaupassa OPE.pdf`, url: `https://drive.google.com/file/d/1zkRCKeUJa8p-2EpNDe4kb0fyyrcYO8c2/view` }, { type: AttachmentType.PDF, title: `L56 Imperatiivista konditionaali.pdf`, url: `https://drive.google.com/file/d/1DuRwAq7F2TCTVDeDfTXnwh0w3mc4CZuN/view` }, { type: AttachmentType.PDF, title: `L56 mainoksia.pdf`, url: `https://drive.google.com/file/d/13YJScYear7z5Ac5R_yPnoa_TZXR5stPY/view` }, { type: AttachmentType.PDF, title: `L56 Ruokakaupassa kysymukset.pdf`, url: `https://drive.google.com/file/d/13wJErf4WxUWmJA5Mt1Hohe7IrUYYYnva/view` }, { type: AttachmentType.DOCS, title: `Lumikot kaupassa`, url: `https://docs.google.com/document/d/1ZbKLb_ta4AMHHldzNf1VzOvtjDLEUHNu8wgTjz6voV4/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/TTERZvu-GZ6BKtXm083Nd4MqpLQGCNPlDBpjRaKZMghkScWSp964PUZmg9d4LK7A.fmXuDi3L5vPcVG3J?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `L56 Arki 1_ Kaupassa OPE.pdf`,
+            url: `https://drive.google.com/file/d/1zkRCKeUJa8p-2EpNDe4kb0fyyrcYO8c2/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L56 Imperatiivista konditionaali.pdf`,
+            url: `https://drive.google.com/file/d/1DuRwAq7F2TCTVDeDfTXnwh0w3mc4CZuN/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L56 mainoksia.pdf`,
+            url: `https://drive.google.com/file/d/13YJScYear7z5Ac5R_yPnoa_TZXR5stPY/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `L56 Ruokakaupassa kysymukset.pdf`,
+            url: `https://drive.google.com/file/d/13wJErf4WxUWmJA5Mt1Hohe7IrUYYYnva/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot kaupassa`,
+            url: `https://docs.google.com/document/d/1ZbKLb_ta4AMHHldzNf1VzOvtjDLEUHNu8wgTjz6voV4/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/TTERZvu-GZ6BKtXm083Nd4MqpLQGCNPlDBpjRaKZMghkScWSp964PUZmg9d4LK7A.fmXuDi3L5vPcVG3J?authuser=0`,
+          },
+        ],
       },
       {
-        id: '615154144063',
+        id: "615154144063",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '26 Jun 2023',
+        date: "26 Jun 2023",
         deleted: false,
         content: `Tässä  Puhetaidot -materiaalit ja tallenne!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot: Spoken (M5 eka) Ihminen ja vapaa-aika`, url: `https://docs.google.com/document/d/1PykYLhpCZegCjCawl4YuJRLMluEK1tiIbGdEE8zWwRQ/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/alWsydQZuJXttRux2xD5d3Bj_L-8oTYOOLWBDGXBkeQIzRFYrSC2vQFaYcjQl8UO.d5eBEB0WNJtGVAQ-?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot: Spoken (M5 eka) Ihminen ja vapaa-aika`,
+            url: `https://docs.google.com/document/d/1PykYLhpCZegCjCawl4YuJRLMluEK1tiIbGdEE8zWwRQ/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/alWsydQZuJXttRux2xD5d3Bj_L-8oTYOOLWBDGXBkeQIzRFYrSC2vQFaYcjQl8UO.d5eBEB0WNJtGVAQ-?authuser=0`,
+          },
+        ],
       },
       {
-        id: '615149459699',
+        id: "615149459699",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '26 Jun 2023',
+        date: "26 Jun 2023",
         deleted: false,
         content: `Huomenta! Tässä linkki minun Zoomiin.`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/my/hilmareittola?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/my/hilmareittola?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-07-03': {
-    display_name: 'Week 22 (Jul 03 - Jul 09)',
+  "2023-07-03": {
+    display_name: "Week 22 (Jul 03 - Jul 09)",
     items: [
       {
-        id: '554495627635',
+        id: "554495627635",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '7 Jul 2023',
+        date: "7 Jul 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!Ensi viikolla…\n**\nmaanantai: Terveys 3, Tiina\ntiistai: Työ ja opiskelu, Laura\nkeskiviikko: Yhteiskunta, Tiina\ntorstai: Puhetaidot: Työ ja yhteiskunta, Laura\nNote, that you will have a new substitute teacher\n**\nLaura\n**\nteaching you on Tuesday and Thursday. She will post her Zoom-link in Skype and Classroom. Be\nin the correct Zoom at the correct time!\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Asuminen, Tiina\ntorstai: Asuminen, Tiina\n**\nOpet lomalla:\n**\nNetta on lomalla 19.6.-17.7.\nTiina on lomalla 27.7.-20.8.\n**\nModuulin 5 testit\n**\n17.7.    Kuunteleminen kello 9:00-10:00\nKirjoittaminen ja lukeminen kello 11:00-12:00\n21.7.    Puhuminen, varaa aika taulukosta:\nhttps://docs.google.com/spreadsheets/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/edit?usp=sharing\nKaikki moduulin 5 kotitehtävät täytyy olla tehty 17.7. kello 9.00!\nAll module 5 homework must be completed by 17th of July 9 am!\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view` }, { type: AttachmentType.PDF, title: `LUENTODIAT Terveys CLASS.pdf`, url: `https://drive.google.com/file/d/1lUSfeO2iJ5rgqQ0YaVrRhBKwLZK7-sxQ/view` }, { type: AttachmentType.PDF, title: `65 ja 66 Työ ja opiskelu CLASS.pdf`, url: `https://drive.google.com/file/d/13el2jU5ao2JnUvhy5mmGwVhROllR_sGI/view` }, { type: AttachmentType.PDF, title: `yhteiskunta CLASS (1).pdf`, url: `https://drive.google.com/file/d/1j4t8pwutYhOAI7qS_vEcF8AhP4crwoN0/view` }, { type: AttachmentType.PDF, title: `SPOKEN 20v2 incl. Spoken Suomi-fiilis - Google Docs.pdf`, url: `https://drive.google.com/file/d/1E6VUDKWi4nkMNG3O5VHHhP7Od2cGDEyn/view` }, { type: AttachmentType.PDF, title: `A2 04 Asuminen.pdf`, url: `https://drive.google.com/file/d/1-JWIQqebnNvSFOgTX--sZh_bH1iM9edi/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `LUENTODIAT Terveys CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1lUSfeO2iJ5rgqQ0YaVrRhBKwLZK7-sxQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `65 ja 66 Työ ja opiskelu CLASS.pdf`,
+            url: `https://drive.google.com/file/d/13el2jU5ao2JnUvhy5mmGwVhROllR_sGI/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `yhteiskunta CLASS (1).pdf`,
+            url: `https://drive.google.com/file/d/1j4t8pwutYhOAI7qS_vEcF8AhP4crwoN0/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `SPOKEN 20v2 incl. Spoken Suomi-fiilis - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1E6VUDKWi4nkMNG3O5VHHhP7Od2cGDEyn/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 04 Asuminen.pdf`,
+            url: `https://drive.google.com/file/d/1-JWIQqebnNvSFOgTX--sZh_bH1iM9edi/view`,
+          },
+        ],
       },
       {
-        id: '615494210182',
+        id: "615494210182",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '6 Jul 2023',
+        date: "6 Jul 2023",
         deleted: false,
         content: `Assignment: "61. Terveys 2"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615740101473',
+        id: "615740101473",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Jul 2023',
+        date: "6 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1OBR4aMkUumBQxTEu3v3WKMwVawzC98mr6QaLB4_kWC8/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/sWQdJtMkXRNx2daDypoIxOWbUEKR3Ap-t6qpJW6tHMERYBz5C7k7aIjJX7WnFPWH.skzhB0Z9nIfpEGl6?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1OBR4aMkUumBQxTEu3v3WKMwVawzC98mr6QaLB4_kWC8/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/sWQdJtMkXRNx2daDypoIxOWbUEKR3Ap-t6qpJW6tHMERYBz5C7k7aIjJX7WnFPWH.skzhB0Z9nIfpEGl6?authuser=0`,
+          },
+        ],
       },
       {
-        id: '615742037301',
+        id: "615742037301",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '6 Jul 2023',
+        date: "6 Jul 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Terveys 2, lumikot`, url: `https://docs.google.com/document/d/1OLZMwwSBJILCtq4Xxoq8b5tVmjxPyMaBoouLbK0L6Ys/edit` }, { type: AttachmentType.PDF, title: `Luento63terveys2 Ope.pdf`, url: `https://drive.google.com/file/d/1ER-xafSNGm4ZF4I6KhWPFu61lS3WqpBT/view` }, { type: AttachmentType.VIDEO, title: `terveys 2, lumikot.mp4`, url: `https://drive.google.com/file/d/1gZYUwleztr9pb0sDHZCIVMm7ZqbvVYHg/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Terveys 2, lumikot`,
+            url: `https://docs.google.com/document/d/1OLZMwwSBJILCtq4Xxoq8b5tVmjxPyMaBoouLbK0L6Ys/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento63terveys2 Ope.pdf`,
+            url: `https://drive.google.com/file/d/1ER-xafSNGm4ZF4I6KhWPFu61lS3WqpBT/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `terveys 2, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1gZYUwleztr9pb0sDHZCIVMm7ZqbvVYHg/view`,
+          },
+        ],
       },
       {
-        id: '615494614690',
+        id: "615494614690",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '5 Jul 2023',
+        date: "5 Jul 2023",
         deleted: false,
         content: `Assignment: "60. Terveys 1"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615736723976',
+        id: "615736723976",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '5 Jul 2023',
+        date: "5 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1uN5iCrNxNE9RFg39yaiWE0RocmKzZq30M4E0cw9L65M/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/UZPd6Ml-d8PNi_Efqaa0RAYuEK6iij6eZuyfG0bD6SPdvpx_5wvbShbk7Dvwqm1d.vsvKCzFFYmZOK_8F?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1uN5iCrNxNE9RFg39yaiWE0RocmKzZq30M4E0cw9L65M/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/UZPd6Ml-d8PNi_Efqaa0RAYuEK6iij6eZuyfG0bD6SPdvpx_5wvbShbk7Dvwqm1d.vsvKCzFFYmZOK_8F?authuser=0`,
+          },
+        ],
       },
       {
-        id: '615733710179',
+        id: "615733710179",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '5 Jul 2023',
+        date: "5 Jul 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento62terveys1.Ope (2).pdf`, url: `https://drive.google.com/file/d/1q_Rf2dmyOU55kCJb_KtWScq4jDwzmV8o/view` }, { type: AttachmentType.DOCS, title: `Terveys 1, lumikot`, url: `https://docs.google.com/document/d/1gf68hX8_criWYdqf2C5ReEmpkWnyx8m0Jab5x3Ujdak/edit` }, { type: AttachmentType.VIDEO, title: `terveys 1, lumikot.mp4`, url: `https://drive.google.com/file/d/1B9RaIA6MUCU1qLrJ3wFxpWpw4k3481tF/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento62terveys1.Ope (2).pdf`,
+            url: `https://drive.google.com/file/d/1q_Rf2dmyOU55kCJb_KtWScq4jDwzmV8o/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Terveys 1, lumikot`,
+            url: `https://docs.google.com/document/d/1gf68hX8_criWYdqf2C5ReEmpkWnyx8m0Jab5x3Ujdak/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `terveys 1, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1B9RaIA6MUCU1qLrJ3wFxpWpw4k3481tF/view`,
+          },
+        ],
       },
       {
-        id: '615492429140',
+        id: "615492429140",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '4 Jul 2023',
+        date: "4 Jul 2023",
         deleted: false,
         content: `Assignment: "59. Luonto"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615679823437',
+        id: "615679823437",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '4 Jul 2023',
+        date: "4 Jul 2023",
         deleted: false,
         content: `Spoken: Luonto ja terveys -muistiinapanot ja tallenne`,
-        attachments: [{ type: AttachmentType.PDF, title: `Spoken_ Luonto ja terveys.pdf`, url: `https://drive.google.com/file/d/1FMdhdBT1gtkt90AfLPuveioT-1uaUQsf/view` }, { type: AttachmentType.PDF, title: `Spoken_ luonto ja terveys - muistiinpanot 4.7..pdf`, url: `https://drive.google.com/file/d/17C9-AWmJ_ebinku8dDNWDPYPJtSoZEFO/view` }, { type: AttachmentType.VIDEO, title: `video1086585802.mp4`, url: `https://drive.google.com/file/d/1suhufjL__7cBuywtnksuTdXgcHqzKChQ/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Spoken_ Luonto ja terveys.pdf`,
+            url: `https://drive.google.com/file/d/1FMdhdBT1gtkt90AfLPuveioT-1uaUQsf/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Spoken_ luonto ja terveys - muistiinpanot 4.7..pdf`,
+            url: `https://drive.google.com/file/d/17C9-AWmJ_ebinku8dDNWDPYPJtSoZEFO/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `video1086585802.mp4`,
+            url: `https://drive.google.com/file/d/1suhufjL__7cBuywtnksuTdXgcHqzKChQ/view`,
+          },
+        ],
       },
       {
-        id: '615624609265',
+        id: "615624609265",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '3 Jul 2023',
+        date: "3 Jul 2023",
         deleted: false,
         content: `Matkustaminen -tunnin materiaalit, muistiinapnnot ja tallenne:`,
-        attachments: [{ type: AttachmentType.PDF, title: `4.matkustaminen.pdf`, url: `https://drive.google.com/file/d/1B4WQ9Y35bW6lkjNZw7vRsNfQ8oMJA4fB/view` }, { type: AttachmentType.PDF, title: `3.matkustaminen.pdf`, url: `https://drive.google.com/file/d/1PFlsID68z_lEFAmkKzNfltACYdHRLJzL/view` }, { type: AttachmentType.PDF, title: `2.matkustaminen.pdf`, url: `https://drive.google.com/file/d/16qO_Zc2FxwLcXZBk_Ev9Ya4m2SR2tRmv/view` }, { type: AttachmentType.PDF, title: `1.matkustaminen.pdf`, url: `https://drive.google.com/file/d/1xUyVzulNHa9MgYSolw7FsQRI3pUo2-JQ/view` }, { type: AttachmentType.PDF, title: `Luento59vapaa-aika2 Ope.pdf`, url: `https://drive.google.com/file/d/1Nc8dBpyvgTWDkQY47Ijzgwr0fQN_gzkG/view` }, { type: AttachmentType.PDF, title: `Muistiinpanot luento 59, 3.7.2023.pdf`, url: `https://drive.google.com/file/d/1xtqhoiDuKfkrcVZEpuwe1vCIzKlcGZze/view` }, { type: AttachmentType.IMAGE, title: `75. päivää kk-talviloma lähestyy.mp3`, url: `https://drive.google.com/file/d/1T8SBwtf6lfMtD5Akoe5oAdkdsVlPTrtl/view` }, { type: AttachmentType.VIDEO, title: `video1194554313.mp4`, url: `https://drive.google.com/file/d/18qpEcUkt0SBTgTergcALrjjOHqZ-hIM-/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `4.matkustaminen.pdf`,
+            url: `https://drive.google.com/file/d/1B4WQ9Y35bW6lkjNZw7vRsNfQ8oMJA4fB/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `3.matkustaminen.pdf`,
+            url: `https://drive.google.com/file/d/1PFlsID68z_lEFAmkKzNfltACYdHRLJzL/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `2.matkustaminen.pdf`,
+            url: `https://drive.google.com/file/d/16qO_Zc2FxwLcXZBk_Ev9Ya4m2SR2tRmv/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `1.matkustaminen.pdf`,
+            url: `https://drive.google.com/file/d/1xUyVzulNHa9MgYSolw7FsQRI3pUo2-JQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento59vapaa-aika2 Ope.pdf`,
+            url: `https://drive.google.com/file/d/1Nc8dBpyvgTWDkQY47Ijzgwr0fQN_gzkG/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Muistiinpanot luento 59, 3.7.2023.pdf`,
+            url: `https://drive.google.com/file/d/1xtqhoiDuKfkrcVZEpuwe1vCIzKlcGZze/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `75. päivää kk-talviloma lähestyy.mp3`,
+            url: `https://drive.google.com/file/d/1T8SBwtf6lfMtD5Akoe5oAdkdsVlPTrtl/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `video1194554313.mp4`,
+            url: `https://drive.google.com/file/d/18qpEcUkt0SBTgTergcALrjjOHqZ-hIM-/view`,
+          },
+        ],
       },
       {
-        id: '615492754263',
+        id: "615492754263",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '3 Jul 2023',
+        date: "3 Jul 2023",
         deleted: false,
         content: `Assignment: "58. Vapaa-aika: Matkustaminen"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-07-10': {
-    display_name: 'Week 23 (Jul 10 - Jul 16)',
+  "2023-07-10": {
+    display_name: "Week 23 (Jul 10 - Jul 16)",
     items: [
       {
-        id: '554580634036',
+        id: "554580634036",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Jul 2023',
+        date: "14 Jul 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\n(Sorry, this is a long one…)\n**\n**\nEnsi viikolla…\n**\nmaanantai: TESTIT\n9:00 Kuunteleminen, Tiinan Zoom\n11:00 Kirjoittaminen ja lukeminen, Classroom\n**\nKaikki moduulin 5 kotitehtävät täytyy olla tehty 17.7. kello 9.00!\n**\ntiistai: Moduulin 6 ja 7 orientaatio, Tiina\nkeskiviikko: minen-muoto, Tiina\ntorstai: Puhetestin harjoitus, Tiina\nHarjoituksen aihe on sää ja luonto. You'll get the material in the class, but you can\nalready prepare yourself by revising vocabulary for the topic.\nperjantai: Puhetestit! Tarkista sun aika!\nCheck the PDF for further instructions and themes of the spoken skills test.\n**\nSome thoughts about spoken skills tests...\n**\nPreparing for a spoken skills test is preparing for life after it. I mean if you just focus\non the test and passing that, it won't do you any good.\nMore is more. Try to answer more than one short sentence. Ask extra questions from your\nmates, if you can. Speaking does not require perfect grammar, so just let go of the thought\nthat you have to be perfect. If you have your verbs conjugated and like location cases more\nor less in order, you'll be understood. This of course changes when you go and do the higher\nlevels, I am mainly talking about beg-level tests, which this one is!\nYou don't have time to write sentences in real life. Writing sentences and learning them by\nheart gets you so far, of course. That's why we do it. But at some point you will understand\nthat there is a huge difference between spoken and written language. With speaking you just\nhave to trust your gut and jump to the deep end. Speak!\nListen! In life (and in spoken test) it is utterly frustrating when people don't listen to\neach other. That too is a skill. Part of the spoken test is also understanding one another\nand discussing a given topic. React, agree, disagree! You don't have to repeat what the\nother person says, if you agree, just tell them that you agree.\nAdmit if you don't understand, ask to repeat or explain. Learn to explain! In the test you\ncan say that you don't understand or know something. It is okay to ask, to skip, to pass or\nto be vague (or to lie...)\nMove forward! Many spoken tests fall for stubbornness. You have decided to talk about\nsomething even though you don't understand or know how. Just admit your defeat and take the\nnext question or topic or something.\nWe know you know how to read. You have limited time, so don't use that time to read the\nmaterial out loud. Of course sometimes someone has to ask the question or read the\nstatement, but not always, you can just let the conversation take you to the next part even\nwithout stating the question or referring to material, if not specifically asked.\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Shoppailu, Tiina\ntorstai: Shoppailu, Netta\n**\nTiinan loma\n**\nMä olen lomalla 24.7.-20.8. Mä en lue sähköpostia tai Skypeä lomalla. Jos lähetät mulle\nviestin, näen sen maanantaina 21.8.\nYou cannot reach me during my holiday. I will not read email or Skype. On Friday 21st of\nJuly I will turn off my computer at 4 pm and next time I will turn it on will be Monday 21st\nof August 8 am.\nIf you have any urgent concerns about the course during my holiday, contact Netta.\n**\nModuuli 6\n**\nEven though your Spoken test won’t be until Friday, module 6 will begin already on Tuesday.\nStudying will be a little bit different during modules 6 and 7 so I highly recommend\nparticipating in the orientation lesson on Tuesday. If you cannot participate, at least\nwatch the recording!\nI will be on holiday most of your module 6, but I will be back to host your tests.\n**\n21.8. Muut testit\n**\n9:00-10:00 Kuunteleminen, Tiinan Zoom\n12:00-13:30 Lukeminen ja kirjoittaminen, Classroom\n**\n25.8. Puhetestit\n**\nYou will get the sign up -sheet next Friday.\n**\nHere you can find independents and Quizlet for both Module 6 an 7:\n**\nSites:\nhttps://sites.google.com/edu.arffman.fi/kvmoduuli67/etusivu\nQuizlet:\nhttps://quizlet.com/join/enQtt6Rmd?i=466rp4&x=1bqt\n**\nAll Module 6 assignments must be completed by 25th of August 9 am!\n**\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `UUSI! Puhetestin teemat.pdf`, url: `https://drive.google.com/file/d/1lnt9cgcsSBFNN0nGEXSbYHheusvmWPdq/view` }, { type: AttachmentType.IMAGE, title: `lumikotm5.PNG`, url: `https://drive.google.com/file/d/1Ybje7YHJIf_8UDKepQkJUmiO8D_ihuZz/view` }, { type: AttachmentType.PDF, title: `1.4 minen.CLASS.pptx.pdf`, url: `https://drive.google.com/file/d/1iqVXHaav-hKzuiAdF0pdu8W9s_oK0p_m/view` }, { type: AttachmentType.PDF, title: `A2 05 Shoppailu - Google Docs.pdf`, url: `https://drive.google.com/file/d/1fyqQrV6m0hLoG9HTBgp7RzovxPf9851N/view` }, { type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli67/etusivu?authuser=0` }, { type: AttachmentType.LINK, title: `SOTE Moduulit 6 ja 7 | Quizlet`, url: `https://quizlet.com/join/enQtt6Rmd?i=466rp4&x=1bqt&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `UUSI! Puhetestin teemat.pdf`,
+            url: `https://drive.google.com/file/d/1lnt9cgcsSBFNN0nGEXSbYHheusvmWPdq/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `lumikotm5.PNG`,
+            url: `https://drive.google.com/file/d/1Ybje7YHJIf_8UDKepQkJUmiO8D_ihuZz/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `1.4 minen.CLASS.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1iqVXHaav-hKzuiAdF0pdu8W9s_oK0p_m/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 05 Shoppailu - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1fyqQrV6m0hLoG9HTBgp7RzovxPf9851N/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli67/etusivu?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `SOTE Moduulit 6 ja 7 | Quizlet`,
+            url: `https://quizlet.com/join/enQtt6Rmd?i=466rp4&x=1bqt&authuser=0`,
+          },
+        ],
       },
       {
-        id: '616011788806',
+        id: "616011788806",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Jul 2023',
+        date: "13 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1DkG-Xw6p2dHQaQkyetbOYfnhrYZ1Sg4cMy8Bbkv3N7c/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/N93L2OAjAw_AwJPOBu-KA57n6Cw-1fHOUnLpyOWdWa4F75Oc-oqQcP8DldKpdDuI.zLCrORJ2Y7rs0bDf?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1DkG-Xw6p2dHQaQkyetbOYfnhrYZ1Sg4cMy8Bbkv3N7c/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/N93L2OAjAw_AwJPOBu-KA57n6Cw-1fHOUnLpyOWdWa4F75Oc-oqQcP8DldKpdDuI.zLCrORJ2Y7rs0bDf?authuser=0`,
+          },
+        ],
       },
       {
-        id: '554580471676',
+        id: "554580471676",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Laura Kivikangas`,
-        date: '13 Jul 2023',
+        date: "13 Jul 2023",
         deleted: false,
         content: `Päivän materiaalit:\n(Ja kiitokset kaikille näistä parista päivästä! Oli hauskaa opettaa teitä!)\nEXTRA!\nJVG - Amatimies (I find this enjoyable song about job and sociaty... ;))\n*\nSanoitukset\n*\n*\nOn pakko painaa pitkää päivää (Haloo haloo haloo)(Onks siel ketään?) Vain siten homma hoituu (Huhuu?)Ja ote ehdoton (Pitkii päivii, pitkii päivii)Niin aina ammattimiehen on (Se ammattimies ku hoitaa, let's go!)On pakko painaa pitkää\n*\n*\nKoska oon amatimiesEi taukoi, alati hiesTunnettu työn raskaan raatajaJotain tästki on takasi saatavaSe on pakko jaksaa vaik raakanaKyl tilipäivä sit korvaa senOon matkalla sikariportaaseen, siks\n*\n*On pakko painaa pitkää\n*\n*\nTulin pomon pillin mukaan pomppiinKato kun mun leka lyö komppiiAikane aamu, paina vaa paaluuTurha odotella mitää hiton lomiiKato kun mä painan joka päivä jobiiKyllä mulle kaikki ylityöt sopii\n*\n*\nOn pakko painaa pitkää päivääVain siten homma hoituu (Ei muuten, no way, no way)Ja ote ehdotonNiin aina ammattimiehen on (Se ammattimies ku hoitaa, let's go!)On pakko painaa pitkää\n*\n*\nKoska mä oon amatimiesMä painan tääl kainalot hiesA-aamusin ei vaan naurataMä voin mun hanskat naulataMun asenne tarvii asennustKun asiakas kyselee alennustJa naapuri yöllä soittaa palvelust\n*\n*On pakko painaa pitkää\n*\n*\nLiksa juoksee kun minäkiTukka märkänä pitkin pitäjiiIhan sama vaik ostaja kaukanaPakko tää imuri on jollekki kaupataTulin paperia monistamaaAmeriikan unelmaa todistamaanJa kohta oon varmaan jo omistaja, siks\n*\n*\nOn pakko painaa pitkää päivääVain siten homma hoituu (Ei muuten, no way, no way)Ja ote ehdotonNiin aina ammattimiehen onOn pakko painaa pitkää päivää\n*`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/vCg0rVqunPC0B7WtvU2dD7TcLyCpbzxCxNF5E-U8ayOYFe-26jiscSXHpuj_j_9K.FKudvq5Q1JdI_-FY?authuser=0` }, { type: AttachmentType.PDF, title: `13.7. Lumikot Työ ja yhteiskunta.pdf`, url: `https://drive.google.com/file/d/1mYcW9oLtpxXKLRW_HSIuFVTmULyrqOQi/view` }, { type: AttachmentType.VIDEO, title: `JVG - Amatimies (Virallinen musiikkivideo)`, url: `https://www.youtube.com/watch?v=U6Nhw-H2peA` }, { type: AttachmentType.VIDEO, title: `GMT20230713-073316_Recording_1920x1020.mp4`, url: `https://drive.google.com/file/d/17CI-iOZnqXqHSMSnLvQlCbxgqOAvI6by/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/vCg0rVqunPC0B7WtvU2dD7TcLyCpbzxCxNF5E-U8ayOYFe-26jiscSXHpuj_j_9K.FKudvq5Q1JdI_-FY?authuser=0`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `13.7. Lumikot Työ ja yhteiskunta.pdf`,
+            url: `https://drive.google.com/file/d/1mYcW9oLtpxXKLRW_HSIuFVTmULyrqOQi/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `JVG - Amatimies (Virallinen musiikkivideo)`,
+            url: `https://www.youtube.com/watch?v=U6Nhw-H2peA`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `GMT20230713-073316_Recording_1920x1020.mp4`,
+            url: `https://drive.google.com/file/d/17CI-iOZnqXqHSMSnLvQlCbxgqOAvI6by/view`,
+          },
+        ],
       },
       {
-        id: '616052533586',
+        id: "616052533586",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Laura Kivikangas`,
-        date: '13 Jul 2023',
+        date: "13 Jul 2023",
         deleted: false,
         content: `Tervetuloa tänään Zoomiini:\nhttps://arffman.zoom.us/my/kivikangas\nPuhutaan työstä ja yhteiskunnasta!`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616004685013',
+        id: "616004685013",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Jul 2023',
+        date: "12 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1VG01NjvuzuKefo5q2yYStFyyuSN7PfRHeo8_6wQVzRc/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/3IB26AUX3lkLnGgh0gf7fd__yhnQjdURCZ9cJbaf4SWmY_e4Oa5ErBp3i696b3Qc.HLxvGAZk1laxAx6M?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1VG01NjvuzuKefo5q2yYStFyyuSN7PfRHeo8_6wQVzRc/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/3IB26AUX3lkLnGgh0gf7fd__yhnQjdURCZ9cJbaf4SWmY_e4Oa5ErBp3i696b3Qc.HLxvGAZk1laxAx6M?authuser=0`,
+          },
+        ],
       },
       {
-        id: '615844179779',
+        id: "615844179779",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '12 Jul 2023',
+        date: "12 Jul 2023",
         deleted: false,
         content: `Assignment: "64. Suomi-visa"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616002831481',
+        id: "616002831481",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Jul 2023',
+        date: "12 Jul 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Yhteiskunta, lumikot`, url: `https://docs.google.com/document/d/1VoyQb2Os2Z-pcwTPUBEh-f1Ww7C8oSPES762cXKGU4Y/edit` }, { type: AttachmentType.PDF, title: `yhteiskunta Yhdistetty ope (1).pdf`, url: `https://drive.google.com/file/d/1AMlzF43aHF9mMVPjN72xU44v5VlhNSeK/view` }, { type: AttachmentType.PDF, title: `suomi teksti ja kysymykset.pdf`, url: `https://drive.google.com/file/d/1TAfq3ErWzMGbMAUfVCq9kUWfZxQidmJJ/view` }, { type: AttachmentType.VIDEO, title: `yhteiskunta, lumikot.mp4`, url: `https://drive.google.com/file/d/1EeVI7nhMv8GiTnkIPos7XL7IhB7wbyKo/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Yhteiskunta, lumikot`,
+            url: `https://docs.google.com/document/d/1VoyQb2Os2Z-pcwTPUBEh-f1Ww7C8oSPES762cXKGU4Y/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `yhteiskunta Yhdistetty ope (1).pdf`,
+            url: `https://drive.google.com/file/d/1AMlzF43aHF9mMVPjN72xU44v5VlhNSeK/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `suomi teksti ja kysymykset.pdf`,
+            url: `https://drive.google.com/file/d/1TAfq3ErWzMGbMAUfVCq9kUWfZxQidmJJ/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `yhteiskunta, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1EeVI7nhMv8GiTnkIPos7XL7IhB7wbyKo/view`,
+          },
+        ],
       },
       {
-        id: '615841073501',
+        id: "615841073501",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 Jul 2023',
+        date: "11 Jul 2023",
         deleted: false,
         content: `Assignment: "63. Työ ja opiskelu"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615970396973',
+        id: "615970396973",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Laura Kivikangas`,
-        date: '11 Jul 2023',
+        date: "11 Jul 2023",
         deleted: false,
         content: `Tiistain matskut:\n(Ja kiitos tästä päivästä! Oli kiva tavata!)`,
-        attachments: [{ type: AttachmentType.PDF, title: `marjan työpäivä (1).pdf`, url: `https://drive.google.com/file/d/1XrMDh1HKVWuOUzTAORI23yIufEAOP5qu/view` }, { type: AttachmentType.PDF, title: `Muistiinpanot Lumikot 11.7..pdf`, url: `https://drive.google.com/file/d/14G7K6kM1k9ZcPg9iGs9ASkqZ78dW_Ahd/view` }, { type: AttachmentType.PDF, title: `11.7. Lumikot 65 Työ ja opiskelu yhdistetty Ope.pptx.pdf`, url: `https://drive.google.com/file/d/1AXUoR1D_RnbHQnRPjW-8TQm7ss_NhOXY/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/rZkMB-fUmmDEL-SI3w648epk41nEdusPgS3L6RhAetVXzxYciKSRxTZl8gwIrGqF.IDGRgdMXZs6O-9wf?authuser=0` }, { type: AttachmentType.VIDEO, title: `Tarja kertoo`, url: `https://www.youtube.com/watch?v=gbv6wkgK-yo` }, { type: AttachmentType.VIDEO, title: `GMT20230711-060218_Recording_1920x1020.mp4`, url: `https://drive.google.com/file/d/1JWL6fYmnscJcZD4Gl2_sh_XqXawEG3yS/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `marjan työpäivä (1).pdf`,
+            url: `https://drive.google.com/file/d/1XrMDh1HKVWuOUzTAORI23yIufEAOP5qu/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Muistiinpanot Lumikot 11.7..pdf`,
+            url: `https://drive.google.com/file/d/14G7K6kM1k9ZcPg9iGs9ASkqZ78dW_Ahd/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `11.7. Lumikot 65 Työ ja opiskelu yhdistetty Ope.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1AXUoR1D_RnbHQnRPjW-8TQm7ss_NhOXY/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/rZkMB-fUmmDEL-SI3w648epk41nEdusPgS3L6RhAetVXzxYciKSRxTZl8gwIrGqF.IDGRgdMXZs6O-9wf?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Tarja kertoo`,
+            url: `https://www.youtube.com/watch?v=gbv6wkgK-yo`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `GMT20230711-060218_Recording_1920x1020.mp4`,
+            url: `https://drive.google.com/file/d/1JWL6fYmnscJcZD4Gl2_sh_XqXawEG3yS/view`,
+          },
+        ],
       },
       {
-        id: '615940756176',
+        id: "615940756176",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Laura Kivikangas`,
-        date: '10 Jul 2023',
+        date: "10 Jul 2023",
         deleted: false,
         content: `Moikka Lumikot! :D\nNähdään huomenna klo 9.00 aamulla Zoomissani:\nhttps://arffman.zoom.us/my/kivikangas\nMuistakaa harjoitella imperfektiä ja perfektiä etukäteen ja tehdä tehtävä dialta 7 ennen\ntuntia!\n(So; see u tomorrow morning at 9 a.m. in my Zoom; remember to check the vocabulary\nbeforehand AND do the exercise from the slide 7 BEFORE the lesson! =bd=)\nNice to meet you all!`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615494236978',
+        id: "615494236978",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '10 Jul 2023',
+        date: "10 Jul 2023",
         deleted: false,
         content: `Assignment: "62. Terveys 3"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '615916253235',
+        id: "615916253235",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '10 Jul 2023',
+        date: "10 Jul 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `Luento64terveys3 Ope.pdf`, url: `https://drive.google.com/file/d/10qAhL1w2d7Lxei-z0BDCqD_hacjHhK69/view` }, { type: AttachmentType.DOCS, title: `Terveys 3, lumikot`, url: `https://docs.google.com/document/d/1HtUdgc3wdRC5M0Dm9913nA8rOJsLgkb-ODOciKpx72Q/edit` }, { type: AttachmentType.VIDEO, title: `terveys3, lumikot.mp4`, url: `https://drive.google.com/file/d/1ZHL-xWnvafujDhUv2MdrwQKLaYCYWbU5/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Luento64terveys3 Ope.pdf`,
+            url: `https://drive.google.com/file/d/10qAhL1w2d7Lxei-z0BDCqD_hacjHhK69/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Terveys 3, lumikot`,
+            url: `https://docs.google.com/document/d/1HtUdgc3wdRC5M0Dm9913nA8rOJsLgkb-ODOciKpx72Q/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `terveys3, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1ZHL-xWnvafujDhUv2MdrwQKLaYCYWbU5/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-07-17': {
-    display_name: 'Week 24 (Jul 17 - Jul 23)',
+  "2023-07-17": {
+    display_name: "Week 24 (Jul 17 - Jul 23)",
     items: [
       {
-        id: '616398571818',
+        id: "616398571818",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Jul 2023',
+        date: "21 Jul 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\nmaanantai: Koti ja asuminen, Netta\ntiistai: Asumisen ongelmat, Marie\nkeskiviikko: Apuvälineet Marie\ntorstai: Harrastukset, Netta\nMaanantain ja tiistain materiaalit saatte tunnilla. You'll get material for the Mon and Tue\nlessons at the lessons.\nKeskiviikon tunnille opiskele itsenäisistä viikko 1: Apuvälineet.\nTorstain tunnille opiskele Harrastukset-sanasto Classroomista.\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Raha, Netta\nSpoken skills will be only on Wednesdays from now on, because we have had so few\nparticipants lately.\n**\nTiinan loma\n**\nMä olen lomalla 24.7.-20.8. Mä en lue sähköpostia tai Skypeä lomalla. Jos lähetät mulle\nviestin, näen sen maanantaina 21.8.\nYou cannot reach me during my holiday. I will not read email or Skype. I will turn off my\ncomputer today at 4 pm and next time I will turn it on will be Monday 21st of August 8 am.\nIf you have any urgent concerns about the course during my holiday, contact Netta.\n**\nModuulin 6 testit\n**\n21.8. Muut testit\n9:00-10:00 Kuunteleminen, Tiinan Zoom\n12:00-13:30 Lukeminen ja kirjoittaminen, Classroom\n25.8. Puhetestit\nVaraa aika taulukosta:\nhttps://docs.google.com/spreadsheets/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/edit?usp=sharing\n**\nModuulin 7 testit\n**\nYou can already mark these to your calendars!\n15.9. Puhetestit\n20.9. Muut testit9:00-10:00 Kirjoittaminen10:30-11:30 Kuunteleminen\n12:00-13:00 Lukeminen\nHyvää viikonloppua! Nähdään 21. elokuuta!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Sign in - Google Accounts`, url: `https://sites.google.com/edu.arffman.fi/kvmoduuli67/itsen%C3%A4iset-opinnot/viikko-1?authuser=0` }, { type: AttachmentType.IMAGE, title: `harrastukset_sanasto.PNG`, url: `https://drive.google.com/file/d/1ecarbBRp7yDl0K3VIZvad_UIM10_VzT3/view` }, { type: AttachmentType.PDF, title: `A2 06 Raha - Google Docs.pdf`, url: `https://drive.google.com/file/d/18P_b7oIAFpkmxZkQxAOls2kU-vxMcj6Q/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Sign in - Google Accounts`,
+            url: `https://sites.google.com/edu.arffman.fi/kvmoduuli67/itsen%C3%A4iset-opinnot/viikko-1?authuser=0`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `harrastukset_sanasto.PNG`,
+            url: `https://drive.google.com/file/d/1ecarbBRp7yDl0K3VIZvad_UIM10_VzT3/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 06 Raha - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/18P_b7oIAFpkmxZkQxAOls2kU-vxMcj6Q/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view`,
+          },
+        ],
       },
       {
-        id: '616399305319',
+        id: "616399305319",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Jul 2023',
+        date: "21 Jul 2023",
         deleted: false,
         content: `Tänään on puhetestipäivä! Tarkista sun aika taulukosta. Tule mun Zoomiin, kun on sun aika.\nOle ajoissa!\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1RT6u251ArE1RD9ndIAYBMjRbo8eQ6TasTeA4s9e4zpo/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616395532078',
+        id: "616395532078",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '20 Jul 2023',
+        date: "20 Jul 2023",
         deleted: false,
         content: `Spoken Skills to the MAX klo 12.30 mun Zoomissa! :)\nMID: 260788 2009`,
-        attachments: [{ type: AttachmentType.DOCS, title: `200723 to A2 05 Shoppailu`, url: `https://docs.google.com/document/d/1aOYdb2_7S2Wl0Uc0TjYbPGtgHvABIdDADpNSEUSgHtc/edit` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `200723 to A2 05 Shoppailu`,
+            url: `https://docs.google.com/document/d/1aOYdb2_7S2Wl0Uc0TjYbPGtgHvABIdDADpNSEUSgHtc/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/nettakivimaki?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616383486932',
+        id: "616383486932",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '20 Jul 2023',
+        date: "20 Jul 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Puhetestin harjoitus, lumikot`, url: `https://docs.google.com/document/d/1hz5jfqTpZNMh90DBDKWRJvMxRjILBrfFLaFbgiU0fUQ/edit` }, { type: AttachmentType.VIDEO, title: `puhetestin harjoitus, lumikot.mp4`, url: `https://drive.google.com/file/d/1Zrr6Sgtf3XEtsISaBo8HNRhOz4ZeHplC/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Puhetestin harjoitus, lumikot`,
+            url: `https://docs.google.com/document/d/1hz5jfqTpZNMh90DBDKWRJvMxRjILBrfFLaFbgiU0fUQ/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `puhetestin harjoitus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Zrr6Sgtf3XEtsISaBo8HNRhOz4ZeHplC/view`,
+          },
+        ],
       },
       {
-        id: '616016001846',
+        id: "616016001846",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '19 Jul 2023',
+        date: "19 Jul 2023",
         deleted: false,
         content: `Assignment: "67. minen-muoto (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616322398359',
+        id: "616322398359",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Jul 2023',
+        date: "19 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `19.7. A2 05 Shoppailu`, url: `https://docs.google.com/document/d/106JNuFZrAOA6qHT9zjwlic0QvUoGjNkEgEu8DofmSwk/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/-aneJui44b_zFO-CELwcKfDo7Xy_bJ4B9B-xvfeJKEpAWdScWWaAcdeQIy4SCitE.PptWtf7fGPM-lvV_?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `19.7. A2 05 Shoppailu`,
+            url: `https://docs.google.com/document/d/106JNuFZrAOA6qHT9zjwlic0QvUoGjNkEgEu8DofmSwk/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/-aneJui44b_zFO-CELwcKfDo7Xy_bJ4B9B-xvfeJKEpAWdScWWaAcdeQIy4SCitE.PptWtf7fGPM-lvV_?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616317373242',
+        id: "616317373242",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Jul 2023',
+        date: "19 Jul 2023",
         deleted: false,
         content: `Keskiviikon materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `-minen-muoto, lumikot`, url: `https://docs.google.com/document/d/1fyOPYWq4cHvHLFJ8kud76DMl6WI8W1VJHIbS9fz69Dg/edit` }, { type: AttachmentType.PDF, title: `1.4. minen-muoto.pdf`, url: `https://drive.google.com/file/d/1xxlBnS5rbd3skCLub6niD3HlHvn0qubA/view` }, { type: AttachmentType.VIDEO, title: `minen, lumikot.mp4`, url: `https://drive.google.com/file/d/11EZlWQNKZV3o3WsrlPLuD5NEpCKQDkbr/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `-minen-muoto, lumikot`,
+            url: `https://docs.google.com/document/d/1fyOPYWq4cHvHLFJ8kud76DMl6WI8W1VJHIbS9fz69Dg/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `1.4. minen-muoto.pdf`,
+            url: `https://drive.google.com/file/d/1xxlBnS5rbd3skCLub6niD3HlHvn0qubA/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `minen, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/11EZlWQNKZV3o3WsrlPLuD5NEpCKQDkbr/view`,
+          },
+        ],
       },
       {
-        id: '616015445448',
+        id: "616015445448",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '18 Jul 2023',
+        date: "18 Jul 2023",
         deleted: false,
         content: `Assignment: "66. Meluisa naapuri (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616015471857',
+        id: "616015471857",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '18 Jul 2023',
+        date: "18 Jul 2023",
         deleted: false,
         content: `Assignment: "65. Leenan uusi koti (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616264445912',
+        id: "616264445912",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '18 Jul 2023',
+        date: "18 Jul 2023",
         deleted: false,
         content: `Moduulin 6 ja 7 orientaatio. Jos et ollut paikalla, katso tallenne!`,
-        attachments: [{ type: AttachmentType.LINK, title: `YKI-testi - When are you ready? B1.1 Finnish Level - Uusi kielemme`, url: `https://uusikielemme.fi/language-levels/yki-testi-when-are-you-ready-b1-1?authuser=0` }, { type: AttachmentType.LINK, title: `Yle Uutiset selkosuomeksi | Yle Uutiset`, url: `https://yle.fi/selkouutiset?authuser=0` }, { type: AttachmentType.VIDEO, title: `mod 6-7 orientaatio, lumikot.mp4`, url: `https://drive.google.com/file/d/1u0mD1SoToVwtlv80sILD_rIsFj-kKCXF/view` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `YKI-testi - When are you ready? B1.1 Finnish Level - Uusi kielemme`,
+            url: `https://uusikielemme.fi/language-levels/yki-testi-when-are-you-ready-b1-1?authuser=0`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Yle Uutiset selkosuomeksi | Yle Uutiset`,
+            url: `https://yle.fi/selkouutiset?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `mod 6-7 orientaatio, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1u0mD1SoToVwtlv80sILD_rIsFj-kKCXF/view`,
+          },
+        ],
       },
       {
-        id: '616012967049',
+        id: "616012967049",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '17 Jul 2023',
+        date: "17 Jul 2023",
         deleted: false,
         content: `Assignment: "Moduuli 5: Kirjoittaminen ja lukeminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616012716594',
+        id: "616012716594",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '17 Jul 2023',
+        date: "17 Jul 2023",
         deleted: false,
         content: `Assignment: "Moduuli 5: Kuunteleminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616119717898',
+        id: "616119717898",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '17 Jul 2023',
+        date: "17 Jul 2023",
         deleted: false,
         content: `Kuuntelutesti mun Zoomissa kello 9:00.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-07-24': {
-    display_name: 'Week 25 (Jul 24 - Jul 30)',
+  "2023-07-24": {
+    display_name: "Week 25 (Jul 24 - Jul 30)",
     items: [
       {
-        id: '633328985571',
+        id: "633328985571",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '28 Jul 2023',
+        date: "28 Jul 2023",
         deleted: false,
         content: `Perjantaikuulutukset!\n**\nEnsi viikolla...\n**\nMaanantain aihe on kulttuuri. Katso sanasto.\nTiistaina aihe on vammaisten oikeudet. Me luetaan tunnilla aika pitkä ja vaikea teksti.\nKatso ja käännä sanat ihan oikeasti. Make sure you understand the vocabulary!\n**\nMaanantain ja tiistain tunnit on mun Zoomissa.\n**\nKeskviikkona on kielioppia! Aihe on vA-partisiippi. Diat on tässä.\nTorstaina aihe on palkat ja verot. Katso sanasto.\n**\nMarie opettaa keskiviikon ja torstain.\n**\nMuistakaa, että tunneilla on hyvä olla aktiivinen ja puhua paljon. :) Remember that is would\nbe good to be very active during lessons and speak Fas much as you can!\n**\nSpoken Skills to the MAX!\n**\nKeskiviikkona klo 12.30 mun Zoomissa.\nAihe on hyvinvointi.\n**\nModuulin 6 testit\n**\n**\n21.8.\n**\n9:00-10:00 Kuunteleminen, Tiinan Zoom\n12:00-13:30 Lukeminen ja kirjoittaminen, Classroom\n**\n25.8. Puhetestit\n**\nVaraa aika taulukosta:\nNähdään maanantain, hyvää viikonloppua!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `2.2. kultturin sanasto.png`, url: `https://drive.google.com/file/d/145Bb7kVxyknKmfMchgmnDaH9Z5gMbaa4/view` }, { type: AttachmentType.IMAGE, title: `2.3. Vammaisuus. Oikeudet ja esteettömyys.png`, url: `https://drive.google.com/file/d/1rntvpw5ww52342O25UuBcbo6tITCfMfQ/view` }, { type: AttachmentType.PDF, title: `vA-partisiippi CLASS.pdf`, url: `https://drive.google.com/file/d/1WU_H69zigANAnDCBt8OLzRUgVUKMUJ-z/view` }, { type: AttachmentType.IMAGE, title: `3.1. Palkat ja verot sanasto.png`, url: `https://drive.google.com/file/d/1YQh2yp6IldcDlOGJfDDmbPWeK3WBdSng/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1-GPmq5_3DsjSEw5KEjRcmXm4Zy7WK2f6Sm_TYB6I594/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `2.2. kultturin sanasto.png`,
+            url: `https://drive.google.com/file/d/145Bb7kVxyknKmfMchgmnDaH9Z5gMbaa4/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `2.3. Vammaisuus. Oikeudet ja esteettömyys.png`,
+            url: `https://drive.google.com/file/d/1rntvpw5ww52342O25UuBcbo6tITCfMfQ/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `vA-partisiippi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1WU_H69zigANAnDCBt8OLzRUgVUKMUJ-z/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `3.1. Palkat ja verot sanasto.png`,
+            url: `https://drive.google.com/file/d/1YQh2yp6IldcDlOGJfDDmbPWeK3WBdSng/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1-GPmq5_3DsjSEw5KEjRcmXm4Zy7WK2f6Sm_TYB6I594/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view`,
+          },
+        ],
       },
       {
-        id: '616759520486',
+        id: "616759520486",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '27 Jul 2023',
+        date: "27 Jul 2023",
         deleted: false,
         content: `Torstain materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot harrastaa`, url: `https://docs.google.com/document/d/1JDoou-mOg8_0st0SNBG8nfCyruJ3VXXh5pPAyOGia9o/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot harrastaa.mp4`, url: `https://drive.google.com/file/d/1u90SDRDYx5dmhvuqbjhMwBvSlEMIXccF/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot harrastaa`,
+            url: `https://docs.google.com/document/d/1JDoou-mOg8_0st0SNBG8nfCyruJ3VXXh5pPAyOGia9o/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot harrastaa.mp4`,
+            url: `https://drive.google.com/file/d/1u90SDRDYx5dmhvuqbjhMwBvSlEMIXccF/view`,
+          },
+        ],
       },
       {
-        id: '616016730240',
+        id: "616016730240",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '27 Jul 2023',
+        date: "27 Jul 2023",
         deleted: false,
         content: `Assignment: "74. Harrastukset (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '633314754844',
+        id: "633314754844",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '26 Jul 2023',
+        date: "26 Jul 2023",
         deleted: false,
         content: `Tässä keskiviikon materiaalit. Mukavaa päivää kaikille!`,
-        attachments: [{ type: AttachmentType.PDF, title: `26.7._1.3 Apuvälineet.pdf`, url: `https://drive.google.com/file/d/10x6Is4bo-FLTeLS6xvVxzt2mbyD5U1Z3/view` }, { type: AttachmentType.VIDEO, title: `26.7._1.3. Apuvälineet.mp4`, url: `https://drive.google.com/file/d/1NWkBKKi396qH-QbTpYzoxntpBAcb8DbU/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `26.7._1.3 Apuvälineet.pdf`,
+            url: `https://drive.google.com/file/d/10x6Is4bo-FLTeLS6xvVxzt2mbyD5U1Z3/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `26.7._1.3. Apuvälineet.mp4`,
+            url: `https://drive.google.com/file/d/1NWkBKKi396qH-QbTpYzoxntpBAcb8DbU/view`,
+          },
+        ],
       },
       {
-        id: '616015609034',
+        id: "616015609034",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '26 Jul 2023',
+        date: "26 Jul 2023",
         deleted: false,
         content: `Assignment: "70. Apuvälineet (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616683451581',
+        id: "616683451581",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '26 Jul 2023',
+        date: "26 Jul 2023",
         deleted: false,
         content: `Spoken skills to the MAXissa me puhuimme rahasta.\nI forgot to record this session... I am super sorry! But here are excellent notes of\neverything though.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `2607 ke A2 06 Raha`, url: `https://docs.google.com/document/d/1_jY6LBsLibPbxZgYXEpcCQEbjIGbECyxIYbE1UX9JkQ/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `2607 ke A2 06 Raha`,
+            url: `https://docs.google.com/document/d/1_jY6LBsLibPbxZgYXEpcCQEbjIGbECyxIYbE1UX9JkQ/edit`,
+          },
+        ],
       },
       {
-        id: '633314518949',
+        id: "633314518949",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '26 Jul 2023',
+        date: "26 Jul 2023",
         deleted: false,
         content: `Huomenta! Tänään ollaan mun Zoomissa klo 10.30!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616623441960',
+        id: "616623441960",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '25 Jul 2023',
+        date: "25 Jul 2023",
         deleted: false,
         content: `Tässä tiistain materiaalit. Mukavaa päivanjatkoa kaikille!`,
-        attachments: [{ type: AttachmentType.VIDEO, title: `25.7._1.2. Asumisen ongelmat.mp4`, url: `https://drive.google.com/file/d/1bhhiM_VNIiMH9srTqvXYqS-G95zAX-7_/view` }, { type: AttachmentType.PDF, title: `25.7._1.2. Asumisen ongelmat.docx.pdf`, url: `https://drive.google.com/file/d/1r0N_3wArj3th5k9tuHWQmLa89rDoTv66/view` }]
+        attachments: [
+          {
+            type: AttachmentType.VIDEO,
+            title: `25.7._1.2. Asumisen ongelmat.mp4`,
+            url: `https://drive.google.com/file/d/1bhhiM_VNIiMH9srTqvXYqS-G95zAX-7_/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `25.7._1.2. Asumisen ongelmat.docx.pdf`,
+            url: `https://drive.google.com/file/d/1r0N_3wArj3th5k9tuHWQmLa89rDoTv66/view`,
+          },
+        ],
       },
       {
-        id: '616015797562',
+        id: "616015797562",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '25 Jul 2023',
+        date: "25 Jul 2023",
         deleted: false,
         content: `Assignment: "69. Viesti huoltoyhtiöön (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616619556387',
+        id: "616619556387",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '25 Jul 2023',
+        date: "25 Jul 2023",
         deleted: false,
         content: `Huomenta! Tänään ollaan mun Zoomissa klo 9.00!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '554574792690',
+        id: "554574792690",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '24 Jul 2023',
+        date: "24 Jul 2023",
         deleted: false,
         content: `Assignment: "68. Mielipide asumisesta (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616562619941',
+        id: "616562619941",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '24 Jul 2023',
+        date: "24 Jul 2023",
         deleted: false,
         content: `Maanantain materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot koti ja asuminen`, url: `https://docs.google.com/document/d/1FUkbZtoPhiQQUeP_uyeS20WCbrv8XbOkGbnSL2TxxHc/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot koti ja asuminen.mp4`, url: `https://drive.google.com/file/d/1ZEutQwxHi0SfR3glxzoQqzqND5FspvW6/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot koti ja asuminen`,
+            url: `https://docs.google.com/document/d/1FUkbZtoPhiQQUeP_uyeS20WCbrv8XbOkGbnSL2TxxHc/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot koti ja asuminen.mp4`,
+            url: `https://drive.google.com/file/d/1ZEutQwxHi0SfR3glxzoQqzqND5FspvW6/view`,
+          },
+        ],
       },
       {
-        id: '616015507826',
+        id: "616015507826",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '24 Jul 2023',
+        date: "24 Jul 2023",
         deleted: false,
         content: `Assignment: "72. Tukiviittomat (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616016252398',
+        id: "616016252398",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '24 Jul 2023',
+        date: "24 Jul 2023",
         deleted: false,
         content: `Assignment: "73. Vammaispalveluhakemus (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616015530559',
+        id: "616015530559",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '24 Jul 2023',
+        date: "24 Jul 2023",
         deleted: false,
         content: `Assignment: "71. Toimintarajoitteisuus (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-07-31': {
-    display_name: 'Week 26 (Jul 31 - Aug 06)',
+  "2023-07-31": {
+    display_name: "Week 26 (Jul 31 - Aug 06)",
     items: [
       {
-        id: '617265627555',
+        id: "617265627555",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '4 Aug 2023',
+        date: "4 Aug 2023",
         deleted: false,
         content: `Perjantaikuulutukset!\n**\nEnsi viikolla...\n**\nMaanantaina aihe on työ- ja koulutushistoria.\nTiistaina jutellaan työvuorossa. (Mieti vastaus ennakkokysymykseen, think what to answer to\nthe pre-assigment attached here.)\nMaanantain ja tiistaina tunnit on Marien Zoomissa.\nKeskiviikkona kerrataan verbejä ja kirjoitetaan mun Zoomissa. Kertaa\n**\nkaikki\n**\nvanhat verbiluennot. Mä laitan diat tähän.\nTorstaina te harjoittelette soittamaan hätänumeroon Marien kanssa.\n**\nSpoken Skills to the MAX\n**\non keskiviikkona klo 12.30.\nAihe on Oppiminen. Ollaan taas mun Zoomissa.\n**\nTestit lähestyy...\n**\n**\n21.8.\n**\n9:00-10:00 Kuunteleminen, Tiinan Zoom\n12:00-13:30 Lukeminen ja kirjoittaminen, Classroom\n**\n25.8.\n**\nPuhetestit, Tiinan Zoom\nLista on valmis. Jos jotain täytyy muuttaa, kysy minulta. (If changes are needed, ask me,\nyou can't edit the list anymore)\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `3.2. työhistoria.png`, url: `https://drive.google.com/file/d/1-CpXVNdjKxKEBjaTepl5vd6StRL4Tozp/view` }, { type: AttachmentType.IMAGE, title: `3.3. Työpäivän ennakkokysymys.png`, url: `https://drive.google.com/file/d/1uaVV8iL8cldgkfzSGdiSyuDUzqV6xPjw/view` }, { type: AttachmentType.PDF, title: `luento4vt1eikpt cl.pdf`, url: `https://drive.google.com/file/d/1RncrjC6Gft_vNuaa7eJqTYJG0nhc596a/view` }, { type: AttachmentType.PDF, title: `luento5vt1av cl.pdf`, url: `https://drive.google.com/file/d/1Cvo6qa5sfJShrkRJh1gM5v4Uigj6qZbd/view` }, { type: AttachmentType.PDF, title: `luento6vt2j5 cl.pdf`, url: `https://drive.google.com/file/d/1yYqiRH2TG1L5Swm6BcwZ8T9FpnPP2dYo/view` }, { type: AttachmentType.PDF, title: `luento7kokys cl.pdf`, url: `https://drive.google.com/file/d/1v7Ils9HTDaq2Ig5uCqPglsdqnjC40nZg/view` }, { type: AttachmentType.PDF, title: `Verbityypit 3 ja 4 - ei kpt cl.pdf`, url: `https://drive.google.com/file/d/1qqY1sTBM95BmmGLC-Ey2HwucVHK7dR2v/view` }, { type: AttachmentType.PDF, title: `luento14VT34kpt cl.pdf`, url: `https://drive.google.com/file/d/1V4WySXB1vGwTnZ7zEAi713Rc0nmExPs3/view` }, { type: AttachmentType.PDF, title: `luento24imperfekti1 CL.pdf`, url: `https://drive.google.com/file/d/15pKdDSRbYWlvFhphRMlPcyO4juj0P-Ww/view` }, { type: AttachmentType.PDF, title: `Imperfekti 2 CLASS.pdf`, url: `https://drive.google.com/file/d/1atzxkpw1qNgpxb17kv7U_44rUu7GZnNV/view` }, { type: AttachmentType.PDF, title: `Imperfekti.pdf`, url: `https://drive.google.com/file/d/1h6HD21P1_gxFEHK2UqEEcgf0uoKmHuCO/view` }, { type: AttachmentType.PDF, title: `luento34vt6CL.pdf`, url: `https://drive.google.com/file/d/12KMFcUvsYeVB_dZ7-KDg0F4ai0jmaXcg/view` }, { type: AttachmentType.PDF, title: `Luento38perfektiCL.pdf`, url: `https://drive.google.com/file/d/1ARudosxcJB6Be1gjLT3Se2U3CZbaWgE-/view` }, { type: AttachmentType.PDF, title: `Luento40halutavoidaosataCL.pdf`, url: `https://drive.google.com/file/d/1XFJFD9T6RmaAXNKF2iwrG76SXK5btQD9/view` }, { type: AttachmentType.PDF, title: `Luento53passiivi CL.pdf`, url: `https://drive.google.com/file/d/1k8uM4TEI_oSf_xFE-UGCqTAUCRn4Gp4i/view` }, { type: AttachmentType.IMAGE, title: `4.1. hätänumeron sanasto.png`, url: `https://drive.google.com/file/d/1pElRSwTCwgAeJxUE4dVkvNTpbKhdtjdv/view` }, { type: AttachmentType.IMAGE, title: `lumikot 2508.png`, url: `https://drive.google.com/file/d/1dbEFQyGiaB1c9Rj7ujDC3IUs6Gd7UmGU/view` }, { type: AttachmentType.DOCS, title: `A2 08 Oppiminen`, url: `https://docs.google.com/document/d/1Kp-f3AjEbqrZfuY9X8bLayCs9P6Tpwhg9FpPkxK_m6I/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `3.2. työhistoria.png`,
+            url: `https://drive.google.com/file/d/1-CpXVNdjKxKEBjaTepl5vd6StRL4Tozp/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `3.3. Työpäivän ennakkokysymys.png`,
+            url: `https://drive.google.com/file/d/1uaVV8iL8cldgkfzSGdiSyuDUzqV6xPjw/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento4vt1eikpt cl.pdf`,
+            url: `https://drive.google.com/file/d/1RncrjC6Gft_vNuaa7eJqTYJG0nhc596a/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento5vt1av cl.pdf`,
+            url: `https://drive.google.com/file/d/1Cvo6qa5sfJShrkRJh1gM5v4Uigj6qZbd/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento6vt2j5 cl.pdf`,
+            url: `https://drive.google.com/file/d/1yYqiRH2TG1L5Swm6BcwZ8T9FpnPP2dYo/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento7kokys cl.pdf`,
+            url: `https://drive.google.com/file/d/1v7Ils9HTDaq2Ig5uCqPglsdqnjC40nZg/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Verbityypit 3 ja 4 - ei kpt cl.pdf`,
+            url: `https://drive.google.com/file/d/1qqY1sTBM95BmmGLC-Ey2HwucVHK7dR2v/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento14VT34kpt cl.pdf`,
+            url: `https://drive.google.com/file/d/1V4WySXB1vGwTnZ7zEAi713Rc0nmExPs3/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento24imperfekti1 CL.pdf`,
+            url: `https://drive.google.com/file/d/15pKdDSRbYWlvFhphRMlPcyO4juj0P-Ww/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Imperfekti 2 CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1atzxkpw1qNgpxb17kv7U_44rUu7GZnNV/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Imperfekti.pdf`,
+            url: `https://drive.google.com/file/d/1h6HD21P1_gxFEHK2UqEEcgf0uoKmHuCO/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `luento34vt6CL.pdf`,
+            url: `https://drive.google.com/file/d/12KMFcUvsYeVB_dZ7-KDg0F4ai0jmaXcg/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento38perfektiCL.pdf`,
+            url: `https://drive.google.com/file/d/1ARudosxcJB6Be1gjLT3Se2U3CZbaWgE-/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento40halutavoidaosataCL.pdf`,
+            url: `https://drive.google.com/file/d/1XFJFD9T6RmaAXNKF2iwrG76SXK5btQD9/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Luento53passiivi CL.pdf`,
+            url: `https://drive.google.com/file/d/1k8uM4TEI_oSf_xFE-UGCqTAUCRn4Gp4i/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `4.1. hätänumeron sanasto.png`,
+            url: `https://drive.google.com/file/d/1pElRSwTCwgAeJxUE4dVkvNTpbKhdtjdv/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `lumikot 2508.png`,
+            url: `https://drive.google.com/file/d/1dbEFQyGiaB1c9Rj7ujDC3IUs6Gd7UmGU/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `A2 08 Oppiminen`,
+            url: `https://docs.google.com/document/d/1Kp-f3AjEbqrZfuY9X8bLayCs9P6Tpwhg9FpPkxK_m6I/edit`,
+          },
+        ],
       },
       {
-        id: '616017151266',
+        id: "616017151266",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '3 Aug 2023',
+        date: "3 Aug 2023",
         deleted: false,
         content: `Assignment: "82. Palkat ja verot (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617200399984',
+        id: "617200399984",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '3 Aug 2023',
+        date: "3 Aug 2023",
         deleted: false,
         content: `Moikka! Tässä torstain materiaalit:`,
-        attachments: [{ type: AttachmentType.PDF, title: `3.1._Palkat ja verot 3.8. .pdf`, url: `https://drive.google.com/file/d/1FdnFgsxd45DrRy1AMbXU-7fdzUbKly2l/view` }, { type: AttachmentType.VIDEO, title: `3.1_Palkat ja verot_3.8..mp4`, url: `https://drive.google.com/file/d/1GxC8gNAIRiiw8irc-4ZH9yVYMFlsnX3s/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `3.1._Palkat ja verot 3.8. .pdf`,
+            url: `https://drive.google.com/file/d/1FdnFgsxd45DrRy1AMbXU-7fdzUbKly2l/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `3.1_Palkat ja verot_3.8..mp4`,
+            url: `https://drive.google.com/file/d/1GxC8gNAIRiiw8irc-4ZH9yVYMFlsnX3s/view`,
+          },
+        ],
       },
       {
-        id: '617197795351',
+        id: "617197795351",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '3 Aug 2023',
+        date: "3 Aug 2023",
         deleted: false,
         content: `Huomenta! Nähdään pian mun Zoomissa klo 10.30!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '617116120120',
+        id: "617116120120",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '2 Aug 2023',
+        date: "2 Aug 2023",
         deleted: false,
         content: `Moikka! Tässä keskiviikon materiaalit:`,
-        attachments: [{ type: AttachmentType.PDF, title: `Muistiinpanot_2.4.-vA partisiippi_2.8.2023.pdf`, url: `https://drive.google.com/file/d/18fr1ZP-sJ3kmBkJHwnCdoeXELTuwtUA5/view` }, { type: AttachmentType.PDF, title: `va-tehtävä.pdf`, url: `https://drive.google.com/file/d/1iJ5XZGLV3b6d-J1vOPw0ErQnC8rUNfCm/view` }, { type: AttachmentType.PDF, title: `2.4. vA-partisiippi luento.pdf`, url: `https://drive.google.com/file/d/1wylY-w00p1OiqoCrs4UUPfrbBJzSGYde/view` }, { type: AttachmentType.VIDEO, title: `2.4. -vA partisiippi 2.8.2023.mp4`, url: `https://drive.google.com/file/d/1o6zd99O6oHYzxZqTjjbVAdwNnL33QbIn/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `Muistiinpanot_2.4.-vA partisiippi_2.8.2023.pdf`,
+            url: `https://drive.google.com/file/d/18fr1ZP-sJ3kmBkJHwnCdoeXELTuwtUA5/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `va-tehtävä.pdf`,
+            url: `https://drive.google.com/file/d/1iJ5XZGLV3b6d-J1vOPw0ErQnC8rUNfCm/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `2.4. vA-partisiippi luento.pdf`,
+            url: `https://drive.google.com/file/d/1wylY-w00p1OiqoCrs4UUPfrbBJzSGYde/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `2.4. -vA partisiippi 2.8.2023.mp4`,
+            url: `https://drive.google.com/file/d/1o6zd99O6oHYzxZqTjjbVAdwNnL33QbIn/view`,
+          },
+        ],
       },
       {
-        id: '617109114022',
+        id: "617109114022",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '2 Aug 2023',
+        date: "2 Aug 2023",
         deleted: false,
         content: `Spoken Skills to the MAX -materiaali!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `0208 ke A2 07 Hyvinvointi`, url: `https://docs.google.com/document/d/1RiSziu4kbue0hpJVlLaQ2ULX20qzIz0qEZwzNED0VJA/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/GCtsNM9hDhQ7J1UZBEdxmJv1YzZEAfGt9MaK7Zzcxb9A-Z0KyHBNt8qV0PB47aCG.rGPhynjeQ7w3X3H1?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `0208 ke A2 07 Hyvinvointi`,
+            url: `https://docs.google.com/document/d/1RiSziu4kbue0hpJVlLaQ2ULX20qzIz0qEZwzNED0VJA/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/GCtsNM9hDhQ7J1UZBEdxmJv1YzZEAfGt9MaK7Zzcxb9A-Z0KyHBNt8qV0PB47aCG.rGPhynjeQ7w3X3H1?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616016861068',
+        id: "616016861068",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '2 Aug 2023',
+        date: "2 Aug 2023",
         deleted: false,
         content: `Assignment: "80. vA-partisiippi (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617112220843',
+        id: "617112220843",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '2 Aug 2023',
+        date: "2 Aug 2023",
         deleted: false,
         content: `Huomenta! Nähdään tänään mun Zoomissa klo 10.30!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '617028244210',
+        id: "617028244210",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '1 Aug 2023',
+        date: "1 Aug 2023",
         deleted: false,
         content: `Tiistain materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot Vammaisuus ja oikeudet`, url: `https://docs.google.com/document/d/1-oCsrIA4c1SXNMQv5SQISe8yaAqp1q7-tMv-yWASV8U/edit` }, { type: AttachmentType.VIDEO, title: `Vammaisten oikeudet Lumikot.mp4`, url: `https://drive.google.com/file/d/126PKzjNG_lh1AUBFkIcy5KzXVcdeKV9p/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot Vammaisuus ja oikeudet`,
+            url: `https://docs.google.com/document/d/1-oCsrIA4c1SXNMQv5SQISe8yaAqp1q7-tMv-yWASV8U/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Vammaisten oikeudet Lumikot.mp4`,
+            url: `https://drive.google.com/file/d/126PKzjNG_lh1AUBFkIcy5KzXVcdeKV9p/view`,
+          },
+        ],
       },
       {
-        id: '616017092528',
+        id: "616017092528",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '1 Aug 2023',
+        date: "1 Aug 2023",
         deleted: false,
         content: `Assignment: "81. Vammaisuus ja esteettömyys (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616936119564',
+        id: "616936119564",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Maanantain materiaalit!\nMä kirjoitin kommentit dialogiin. Lue sieltä. :)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot ja kulttuuri`, url: `https://docs.google.com/document/d/1ZKpHomb87M5vAD8nAJgTyWoGZtinY77TtYE5isyBKGU/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot ja kulttuuri.mp4`, url: `https://drive.google.com/file/d/1avgqXrfY4mJUeurdIJFnHo6I8myh6lIq/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot ja kulttuuri`,
+            url: `https://docs.google.com/document/d/1ZKpHomb87M5vAD8nAJgTyWoGZtinY77TtYE5isyBKGU/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot ja kulttuuri.mp4`,
+            url: `https://drive.google.com/file/d/1avgqXrfY4mJUeurdIJFnHo6I8myh6lIq/view`,
+          },
+        ],
       },
       {
-        id: '616017052325',
+        id: "616017052325",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Assignment: "75. Kulttuuri (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616017102546',
+        id: "616017102546",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Assignment: "77. Hoitorektioita (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616016252641',
+        id: "616016252641",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Assignment: "79. Tunneverbien kertaus (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616016819183',
+        id: "616016819183",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Assignment: "78. Potilastyö ja vuorovaikutus (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616014920797',
+        id: "616014920797",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Jul 2023',
+        date: "31 Jul 2023",
         deleted: false,
         content: `Assignment: "76. Toimintakyky (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-08-07': {
-    display_name: 'Week 27 (Aug 07 - Aug 13)',
+  "2023-08-07": {
+    display_name: "Week 27 (Aug 07 - Aug 13)",
     items: [
       {
-        id: '617740410581',
+        id: "617740410581",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '11 Aug 2023',
+        date: "11 Aug 2023",
         deleted: false,
         content: `Perjantaikuulutukset!\nEnsi viikolla...\nEnsi viikolla meillä on sijaisena\n**\nHilma\n**\n. Hän opettaa kaikki teidän tunnit.\nMaanantaina aihe on terveydenhuolto.\nTiistaina ja keskiviikkona aihe on ajanvaraus ja lääkärikäynti.\nTorstaina on kielioppia. Te opiskelette essiivin ja translatiivin.\nHilma laittaa hänen Zoom-linkin maanantaina Skypeen ja tänne.\nSpoke Skill to the MAX on\n**\nmun Zoomissa\n**\nkeskiviikkona klo 12.30.\nAihe on uutiset.\n**\nTestit lähestyy...\n**\n**\n21.8.\n**\n9:00-10:00 Kuunteleminen, Tiinan Zoom\n12:00-13:30 Lukeminen ja kirjoittaminen, Classroom\n**\n25.8.\n**\nPuhetestit, Tiinan Zoom\nLista on valmis. Jos jotain täytyy muuttaa, kysy minulta. (If changes are needed, ask me,\nyou can't edit the list anymore.) You'll get the possible topics next week, but they are\ntopics that we have discussed in lessons and the system is same as in M5 tests-.\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `4.3. Terveydenhuollon sanasto.png`, url: `https://drive.google.com/file/d/1uUzgCvC8RZHU8PBYgVpGgjrOfuRzP7Bz/view` }, { type: AttachmentType.IMAGE, title: `lääkärissä 4.2.png`, url: `https://drive.google.com/file/d/1_6r7d3BmxB7RfMvAH66QPGPhjaoLQOlj/view` }, { type: AttachmentType.PDF, title: `4.4. essiivi ja translatiivi.pdf`, url: `https://drive.google.com/file/d/17EyHENW5JOObh9vstHYzVr4gEWC0Ydja/view` }, { type: AttachmentType.DOCS, title: `A2 09 Uutiset`, url: `https://docs.google.com/document/d/1tbVax2Dsy3cndv3ExOe9Rp5850rqOLAq4_YvOv2yRvc/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `4.3. Terveydenhuollon sanasto.png`,
+            url: `https://drive.google.com/file/d/1uUzgCvC8RZHU8PBYgVpGgjrOfuRzP7Bz/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `lääkärissä 4.2.png`,
+            url: `https://drive.google.com/file/d/1_6r7d3BmxB7RfMvAH66QPGPhjaoLQOlj/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `4.4. essiivi ja translatiivi.pdf`,
+            url: `https://drive.google.com/file/d/17EyHENW5JOObh9vstHYzVr4gEWC0Ydja/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `A2 09 Uutiset`,
+            url: `https://docs.google.com/document/d/1tbVax2Dsy3cndv3ExOe9Rp5850rqOLAq4_YvOv2yRvc/edit`,
+          },
+        ],
       },
       {
-        id: '617732765712',
+        id: "617732765712",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '10 Aug 2023',
+        date: "10 Aug 2023",
         deleted: false,
         content: `Tänään teillä oli viimeinen oppitunti minun kanssa. Kiitos kaikille, että olitte todella\nmukavia ja fiksuja opiskelijoita koko kesän! Tsemppiä suomen kielen opiskeluun! Tässä on\ntorstain materiaalit:`,
-        attachments: [{ type: AttachmentType.PDF, title: `10.8._4.1. Hätänumero.docx.pdf`, url: `https://drive.google.com/file/d/13h5HqPn37JcLaXZQEN8ZyZ0ViTmFf0KB/view` }, { type: AttachmentType.VIDEO, title: `10.8._4.1 Hätäpuhelu.mp4`, url: `https://drive.google.com/file/d/1IvWhw386IIlnLaTSgSXN2_cxvbuGizc0/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `10.8._4.1. Hätänumero.docx.pdf`,
+            url: `https://drive.google.com/file/d/13h5HqPn37JcLaXZQEN8ZyZ0ViTmFf0KB/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `10.8._4.1 Hätäpuhelu.mp4`,
+            url: `https://drive.google.com/file/d/1IvWhw386IIlnLaTSgSXN2_cxvbuGizc0/view`,
+          },
+        ],
       },
       {
-        id: '616016841441',
+        id: "616016841441",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '10 Aug 2023',
+        date: "10 Aug 2023",
         deleted: false,
         content: `Assignment: "88. Hätänumero (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617729739558',
+        id: "617729739558",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '10 Aug 2023',
+        date: "10 Aug 2023",
         deleted: false,
         content: `Huomenta! Nähdään pian mun Zoomissa tänään klo 10.30!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616016386722',
+        id: "616016386722",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '9 Aug 2023',
+        date: "9 Aug 2023",
         deleted: false,
         content: `Assignment: "87. Verbejä (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617624881116',
+        id: "617624881116",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '9 Aug 2023',
+        date: "9 Aug 2023",
         deleted: false,
         content: `Keskiviikon materiaali. Linkit teidän teksteihin on muistiinpanoissa. :)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot kirjoittaa`, url: `https://docs.google.com/document/d/1Bz_6VNfKOaE_slYASpfhOcgwKxEi_DE1pYJ6ZAanSls/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot kirjottaa.mp4`, url: `https://drive.google.com/file/d/1djS1rb_HYUq54nZeXPZQw64ZLm1GwZxT/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot kirjoittaa`,
+            url: `https://docs.google.com/document/d/1Bz_6VNfKOaE_slYASpfhOcgwKxEi_DE1pYJ6ZAanSls/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot kirjottaa.mp4`,
+            url: `https://drive.google.com/file/d/1djS1rb_HYUq54nZeXPZQw64ZLm1GwZxT/view`,
+          },
+        ],
       },
       {
-        id: '617619272749',
+        id: "617619272749",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '9 Aug 2023',
+        date: "9 Aug 2023",
         deleted: false,
         content: `Spoken Skill to the MAXin aihe oli oppiminen!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1nMBWtSNlz-922hyOILVLa-k8ea2IUDj6Gu9z4p5T7jM/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/rRZLhi5DSVURPoxT4LzMxjRS4oHF_yXdpxjvp6IxDSRC1Sh2LTs7yCG1L_LS9AD9.yT3-fNvIW6b7Z61u?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1nMBWtSNlz-922hyOILVLa-k8ea2IUDj6Gu9z4p5T7jM/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/rRZLhi5DSVURPoxT4LzMxjRS4oHF_yXdpxjvp6IxDSRC1Sh2LTs7yCG1L_LS9AD9.yT3-fNvIW6b7Z61u?authuser=0`,
+          },
+        ],
       },
       {
-        id: '617513065603',
+        id: "617513065603",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '8 Aug 2023',
+        date: "8 Aug 2023",
         deleted: false,
         content: `Moikka! Tässä tiistain materiaalit:`,
-        attachments: [{ type: AttachmentType.PDF, title: `8.8._3.3. Työpaikalla jutustelua.pdf`, url: `https://drive.google.com/file/d/1gCKG9eQG6LULcGUCk5qzJ2H2En6IzIc2/view` }, { type: AttachmentType.VIDEO, title: `8.8._3.3- Työpaikalla jutustelua.mp4`, url: `https://drive.google.com/file/d/1zGQbEHYcrUOvbSXsA9ZvHQUYq-X_QG0E/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `8.8._3.3. Työpaikalla jutustelua.pdf`,
+            url: `https://drive.google.com/file/d/1gCKG9eQG6LULcGUCk5qzJ2H2En6IzIc2/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `8.8._3.3- Työpaikalla jutustelua.mp4`,
+            url: `https://drive.google.com/file/d/1zGQbEHYcrUOvbSXsA9ZvHQUYq-X_QG0E/view`,
+          },
+        ],
       },
       {
-        id: '616017301177',
+        id: "616017301177",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Aug 2023',
+        date: "8 Aug 2023",
         deleted: false,
         content: `Assignment: "86. Miten pääsee? (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617509288582',
+        id: "617509288582",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '8 Aug 2023',
+        date: "8 Aug 2023",
         deleted: false,
         content: `Huomenta! Nähdään pian mun Zoomissa tänään myös klo 9.00!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '617420832046',
+        id: "617420832046",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '7 Aug 2023',
+        date: "7 Aug 2023",
         deleted: false,
         content: `Moikka ja mukavaa uutta viikkoa! Tässä maanantain materiaalit:`,
-        attachments: [{ type: AttachmentType.PDF, title: `7.8.2023_3.2. Työ- ja koulutushistoria.pdf`, url: `https://drive.google.com/file/d/1pL2dRR4Gcfog_Ik1onmPe_gbaoAeSBOS/view` }, { type: AttachmentType.VIDEO, title: `3.2. Työ- ja koulutushistoria pt1.mp4`, url: `https://drive.google.com/file/d/1Nun15ktwOKdDp7rCLzJfkl-bZi5vjxiO/view` }, { type: AttachmentType.VIDEO, title: `3.2- Työ ja koulutushistoria pt2.mp4`, url: `https://drive.google.com/file/d/14R-lfSt10lsYsxhWt3zn5VJN_d3rKwok/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `7.8.2023_3.2. Työ- ja koulutushistoria.pdf`,
+            url: `https://drive.google.com/file/d/1pL2dRR4Gcfog_Ik1onmPe_gbaoAeSBOS/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `3.2. Työ- ja koulutushistoria pt1.mp4`,
+            url: `https://drive.google.com/file/d/1Nun15ktwOKdDp7rCLzJfkl-bZi5vjxiO/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `3.2- Työ ja koulutushistoria pt2.mp4`,
+            url: `https://drive.google.com/file/d/14R-lfSt10lsYsxhWt3zn5VJN_d3rKwok/view`,
+          },
+        ],
       },
       {
-        id: '616017461377',
+        id: "616017461377",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '7 Aug 2023',
+        date: "7 Aug 2023",
         deleted: false,
         content: `Assignment: "83. Työhaastattelu (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '617416007325',
+        id: "617416007325",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Marie Habartová`,
-        date: '7 Aug 2023',
+        date: "7 Aug 2023",
         deleted: false,
         content: `Huomenta! Nähdään pian mun Zoomissa klo 9.00!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/mariehabartova?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/mariehabartova?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616015140691',
+        id: "616015140691",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '7 Aug 2023',
+        date: "7 Aug 2023",
         deleted: false,
         content: `Assignment: "84. Asuminen maalla ja kaupungissa (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616017777206',
+        id: "616017777206",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '7 Aug 2023',
+        date: "7 Aug 2023",
         deleted: false,
         content: `Assignment: "85. Kotisairaanhoitajana (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
-    ]
+    ],
   },
-  '2023-08-14': {
-    display_name: 'Week 28 (Aug 14 - Aug 20)',
+  "2023-08-14": {
+    display_name: "Week 28 (Aug 14 - Aug 20)",
     items: [
       {
-        id: '618554177021',
+        id: "618554177021",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '18 Aug 2023',
+        date: "18 Aug 2023",
         deleted: false,
         content: `Perjantaikuulutukset!\nEnsi viikolla...\n**\nTiina tulee takaisin!\n**\nMaanantaina kuuntelutesti on klo 9.00\n**\nTiinan Zoomissa.\n**\nKirjoittamisen ja lukemisen testi on klo 12.00.\n**\nTiina laittaa linkin tänne ja Skypeen.\n**\nTiistaina tunnin aihe on Lähipiiri.\n**\nTiina opettaa tämän.\n**\nKeskiviikkona on kielioppia\n**\nmun kanssa\n**\n. Aihe on tavan adverbit.\nTorstaina te harjoittelette puhetestiin\n**\nTiinan kanssa\n**\n.\nPerjantaina on puhetestit! Ne on\n**\nTiinan Zoomissa.\n**\n**Puhetestin aiheet on kaikki moduulista 6.\n**\nMieti, mitä me ollaan puhuttu tunneilla, ja mitä on ollut itsenäisissä.\nAll topics of spoken test are from module 6 themes. Think: What we have talked about during\nlessons and what things you have learned in independents.\n**\nAiheita on ollut esim.\n**\nAsuminen\nErilaiset toimintarajoitteet ja toimintakyky\nKulttuuri ja vapaa-aika\nTöissä\nPalkka ja verot\nHätätilanne\nLääkäriaika\nIn Module 6 we don't do full language assessments, this is strictly pass/fail -test. We are\nstill hanging somewhere around A2.2.-levels, so if you tested A2.2. after Module 5, there\nshould not be any worries (if something very dramatic doesn't happen or has happened). After\nthis test everybody should be strongly over A2.2, since there is very little time to your\nB1-tests. If you have been active in lessons, done all the assignments with thought and\nstudied independents thoroughly, you'll be just fine. If you give your studies the time and\neffort they need, don't worry.\n**\nSpoken Skills to the MAX A2\n**\nwill start from the beginning and Saukot will join you. Even though we start doing same\nmaterials, do not overlook them. You can improve and change your answers, kertaus on\nopintojen äiti!\n**\nKeskiiviikkona nähdään mun Zoomissa klo 12.30!\n**\nAihe on Minä.\nYou finals exams will be perjantaina 15. syyskuuta (puhe) ja keskiviikkkona 20. syyskuuta\n(muut, if I remember correctly, Tiina will confirm this next week.)\nHyvää viikonloppua, nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `5.1. lähipiiri sanasto.png`, url: `https://drive.google.com/file/d/16a1UyZThDhEUzBs3QbwLJNWFVCzcdTSi/view` }, { type: AttachmentType.PDF, title: `6.4. Adverbit CLASS.pdf`, url: `https://drive.google.com/file/d/1dFEBGwGFu5qw-yH813PH7819vIlhE14G/view` }, { type: AttachmentType.DOCS, title: `A2 01 Minä`, url: `https://docs.google.com/document/d/1APAIkLluYHONOanN_IISFKYFjNzDvQWDg0e3W2I1XzQ/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `5.1. lähipiiri sanasto.png`,
+            url: `https://drive.google.com/file/d/16a1UyZThDhEUzBs3QbwLJNWFVCzcdTSi/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `6.4. Adverbit CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1dFEBGwGFu5qw-yH813PH7819vIlhE14G/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `A2 01 Minä`,
+            url: `https://docs.google.com/document/d/1APAIkLluYHONOanN_IISFKYFjNzDvQWDg0e3W2I1XzQ/edit`,
+          },
+        ],
       },
       {
-        id: '616017936700',
+        id: "616017936700",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '17 Aug 2023',
+        date: "17 Aug 2023",
         deleted: false,
         content: `Assignment: "91. Essiivi ja translatiivi (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618416385766',
+        id: "618416385766",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '17 Aug 2023',
+        date: "17 Aug 2023",
         deleted: false,
         content: `Tässä torstain tunnin materiaalit.`,
-        attachments: [{ type: AttachmentType.PDF, title: `4.4. translatiiviharjoitus.pdf`, url: `https://drive.google.com/file/d/1oQkLWKWw3yTXuQyNaVffT-6rf4a4FiF1/view` }, { type: AttachmentType.PDF, title: `4.4. essiivi harjoitus.pdf`, url: `https://drive.google.com/file/d/1GRBqt6QE_mkfeCUPdOQ-JH-cjqf1Rc4x/view` }, { type: AttachmentType.PDF, title: `4.4. essiivi ja translatiivi CLASS.pdf`, url: `https://drive.google.com/file/d/1PMliky7UIWQQGKmsb_E__4T0SC-UNvmt/view` }, { type: AttachmentType.DOCS, title: `Lumikot: muistiinpanot 17.8.`, url: `https://docs.google.com/document/d/1YN4xl_APfb7gM5wgAqL_aHgvku6XAkxQaCtS3hKPjDA/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/kRr_OvjKg1OBkER3hSqev1Az_vjncqMvoG1kMlcKiY4cNLvSiN3w_2TOsHSoShkb.9HSSkk1ox2PtzWwJ?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `4.4. translatiiviharjoitus.pdf`,
+            url: `https://drive.google.com/file/d/1oQkLWKWw3yTXuQyNaVffT-6rf4a4FiF1/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `4.4. essiivi harjoitus.pdf`,
+            url: `https://drive.google.com/file/d/1GRBqt6QE_mkfeCUPdOQ-JH-cjqf1Rc4x/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `4.4. essiivi ja translatiivi CLASS.pdf`,
+            url: `https://drive.google.com/file/d/1PMliky7UIWQQGKmsb_E__4T0SC-UNvmt/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot: muistiinpanot 17.8.`,
+            url: `https://docs.google.com/document/d/1YN4xl_APfb7gM5wgAqL_aHgvku6XAkxQaCtS3hKPjDA/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/kRr_OvjKg1OBkER3hSqev1Az_vjncqMvoG1kMlcKiY4cNLvSiN3w_2TOsHSoShkb.9HSSkk1ox2PtzWwJ?authuser=0`,
+          },
+        ],
       },
       {
-        id: '618287698967',
+        id: "618287698967",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '16 Aug 2023',
+        date: "16 Aug 2023",
         deleted: false,
         content: `Spoken Skills MAX -materiaalit!\n(This is the last one of this set, next week Saukot will join you and we start the material\nfrom the beginning of A2.)`,
-        attachments: [{ type: AttachmentType.DOCS, title: `ke 1608 A2 09 Uutiset`, url: `https://docs.google.com/document/d/1qbYvJXihxfhnRM5DVplLjaOo97n6aiKiKYf0_pQi4eg/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/lw_tVwByXznw5VkLriOTGS4OUDe1UinQpp0oK7swEXGnrscvROEPszl8pzZkfNEk.gMMzzkVqpdDLzcCs?startTime=1692180337000&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `ke 1608 A2 09 Uutiset`,
+            url: `https://docs.google.com/document/d/1qbYvJXihxfhnRM5DVplLjaOo97n6aiKiKYf0_pQi4eg/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/lw_tVwByXznw5VkLriOTGS4OUDe1UinQpp0oK7swEXGnrscvROEPszl8pzZkfNEk.gMMzzkVqpdDLzcCs?startTime=1692180337000&authuser=0`,
+          },
+        ],
       },
       {
-        id: '618286634925',
+        id: "618286634925",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '16 Aug 2023',
+        date: "16 Aug 2023",
         deleted: false,
         content: `Materiaalit tänään!`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/my/hilmareittola?authuser=0` }, { type: AttachmentType.DOCS, title: `Lumikot: Ajanvaraus ja lääkäriaika 2`, url: `https://docs.google.com/document/d/1jjZvPk0NjEh5uB5i6uqWaeL0ZwFiudV6gPctWuHNuAY/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/ctnMYUoz4uv9CehcIJWrAsVIHCLR2f8lmQK0DPH11UU_Y9DILWtEO2aMYRMSvuID.TJtUTpqZbUQkUslk?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/my/hilmareittola?authuser=0`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot: Ajanvaraus ja lääkäriaika 2`,
+            url: `https://docs.google.com/document/d/1jjZvPk0NjEh5uB5i6uqWaeL0ZwFiudV6gPctWuHNuAY/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/ctnMYUoz4uv9CehcIJWrAsVIHCLR2f8lmQK0DPH11UU_Y9DILWtEO2aMYRMSvuID.TJtUTpqZbUQkUslk?authuser=0`,
+          },
+        ],
       },
       {
-        id: '616017517263',
+        id: "616017517263",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '15 Aug 2023',
+        date: "15 Aug 2023",
         deleted: false,
         content: `Assignment: "90. Aamu hoivakodissa (luento"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618145673939',
+        id: "618145673939",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '15 Aug 2023',
+        date: "15 Aug 2023",
         deleted: false,
         content: `Huomenta! Tässä on linkki minun Zoomiin ja päivän materiaali.`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/my/hilmareittola?authuser=0` }, { type: AttachmentType.IMAGE, title: `Lumikot: 4.2. Ajanvaraus ja päivystys.docx`, url: `https://docs.google.com/document/d/1bATJ-ep650h6ijR9kdibvKmhZ8VutKfC/edit` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/my/hilmareittola?authuser=0`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `Lumikot: 4.2. Ajanvaraus ja päivystys.docx`,
+            url: `https://docs.google.com/document/d/1bATJ-ep650h6ijR9kdibvKmhZ8VutKfC/edit`,
+          },
+        ],
       },
       {
-        id: '616017737999',
+        id: "616017737999",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '14 Aug 2023',
+        date: "14 Aug 2023",
         deleted: false,
         content: `Assignment: "89. Ajanvaraus ja päivystys (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618001236075',
+        id: "618001236075",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Hilma Reittola`,
-        date: '14 Aug 2023',
+        date: "14 Aug 2023",
         deleted: false,
         content: `Huomenta kaikille! Tässä on linkki minun Zoomiin ja päivän materiaali sekä tallenne.`,
-        attachments: [{ type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/my/hilmareittola?authuser=0` }, { type: AttachmentType.IMAGE, title: `4.3. Terveydenhuolto.docx`, url: `https://docs.google.com/document/d/1Yt50tw7ENFDt91G5t1b4VDh8kFwYjy73/edit` }, { type: AttachmentType.LINK, title: `Hilma Reittola's Personal Meeting Room - Zoom`, url: `https://arffman.zoom.us/rec/share/Em9WZCYdBCI6hWgnWO2LrotX9cTvwesZxxY-9BC3pc6cjaw-9nIfHbYck5vUvvmd.OEfQBFbzZJ_yNySv?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/my/hilmareittola?authuser=0`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `4.3. Terveydenhuolto.docx`,
+            url: `https://docs.google.com/document/d/1Yt50tw7ENFDt91G5t1b4VDh8kFwYjy73/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Hilma Reittola's Personal Meeting Room - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/Em9WZCYdBCI6hWgnWO2LrotX9cTvwesZxxY-9BC3pc6cjaw-9nIfHbYck5vUvvmd.OEfQBFbzZJ_yNySv?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-08-21': {
-    display_name: 'Week 29 (Aug 21 - Aug 27)',
+  "2023-08-21": {
+    display_name: "Week 29 (Aug 21 - Aug 27)",
     items: [
       {
-        id: '619311206619',
+        id: "619311206619",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '25 Aug 2023',
+        date: "25 Aug 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\n**\nEnsi viikolla…\n**\nmaanantai: Työturvallisuus 1, Tiina\ntiistai: Työturvallisuus 2, Tiina\nkeskiviikko: Asiointi ja reklamaatio, Netta\ntorstai: Poliisi, Tiina\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Perhe, Tiina\n**\nItsenäiset tehtävät\n**\nI didn’t want to stress you guys before the tests, but the first set of Module 7 independant\nassignments are now available in Classroom. Remember to do the assignments every week, don’t\nlet them pile up until the end of the Module. One more month of hard work! You guys can do\nit!\n**\nModuulin 7 testit\n**\n**\n15.9. Puhetestit\n**\n**20.9. Muut testit\n**\n9:00-10:00 Kirjoittaminen\n10:30-11:30 Kuunteleminen\n12:00-13:00 Lukeminen\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `työturvallisuus_sanasto.png`, url: `https://drive.google.com/file/d/1noydssgTry88SoJ2h28qStuwdULlKsz2/view` }, { type: AttachmentType.IMAGE, title: `asiointi_sanasto.png`, url: `https://drive.google.com/file/d/1kUhYyoSZEMRQoHp-Fsre_9tjePamoIli/view` }, { type: AttachmentType.IMAGE, title: `poliisi_sanasto.png`, url: `https://drive.google.com/file/d/1STJBVLeXf2iG0y1c_AjRkWWoLiJFnCaW/view` }, { type: AttachmentType.PDF, title: `A2 02 Perhe (1).pdf`, url: `https://drive.google.com/file/d/1hLB0UIAzdiGmNMa4iCkbutRFophLdByR/view` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `työturvallisuus_sanasto.png`,
+            url: `https://drive.google.com/file/d/1noydssgTry88SoJ2h28qStuwdULlKsz2/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `asiointi_sanasto.png`,
+            url: `https://drive.google.com/file/d/1kUhYyoSZEMRQoHp-Fsre_9tjePamoIli/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `poliisi_sanasto.png`,
+            url: `https://drive.google.com/file/d/1STJBVLeXf2iG0y1c_AjRkWWoLiJFnCaW/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 02 Perhe (1).pdf`,
+            url: `https://drive.google.com/file/d/1hLB0UIAzdiGmNMa4iCkbutRFophLdByR/view`,
+          },
+        ],
       },
       {
-        id: '619142718772',
+        id: "619142718772",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '25 Aug 2023',
+        date: "25 Aug 2023",
         deleted: false,
         content: `Assignment: "95. Potilasohjeita (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619146243195',
+        id: "619146243195",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '25 Aug 2023',
+        date: "25 Aug 2023",
         deleted: false,
         content: `Assignment: "94. Työergonomia (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619145645348',
+        id: "619145645348",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '25 Aug 2023',
+        date: "25 Aug 2023",
         deleted: false,
         content: `Assignment: "96. Kuuntelu (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619311031553',
+        id: "619311031553",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '25 Aug 2023',
+        date: "25 Aug 2023",
         deleted: false,
         content: `Hyvää huomenta! Tänään on puhetestipäivä. Tarkista sun aika taulukosta. Ole ajoissa!\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '619297818304',
+        id: "619297818304",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '24 Aug 2023',
+        date: "24 Aug 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Puhetestin harjoitus, lumikot`, url: `https://docs.google.com/document/d/1qR4Kq-_565fub480fkYYw-icWAYzVhMjc_m4SaVwljQ/edit` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view` }, { type: AttachmentType.VIDEO, title: `puhetestin kertaus, lumikot.mp4`, url: `https://drive.google.com/file/d/1uQNWDVigDiS0079Ft2TrF45C6m9v_xrJ/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Puhetestin harjoitus, lumikot`,
+            url: `https://docs.google.com/document/d/1qR4Kq-_565fub480fkYYw-icWAYzVhMjc_m4SaVwljQ/edit`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1a4OyghZOOEozo8hRuaxXTWi5yvktYmBvz_-UK4JrSng/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `puhetestin kertaus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1uQNWDVigDiS0079Ft2TrF45C6m9v_xrJ/view`,
+          },
+        ],
       },
       {
-        id: '619145475094',
+        id: "619145475094",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '23 Aug 2023',
+        date: "23 Aug 2023",
         deleted: false,
         content: `Keskiviikon kielioppitunnin mateiaali`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikosti`, url: `https://docs.google.com/document/d/1LKP0HPlHlOuptcGLZ3Pto7OQGWO6TAf-O9WF0NmigsY/edit` }, { type: AttachmentType.PDF, title: `6.4. Adverbit.pdf`, url: `https://drive.google.com/file/d/1SPXoUGDiSeqQnPLrY475M_YVPA3Kuixf/view` }, { type: AttachmentType.VIDEO, title: `Tavan adverbit.mp4`, url: `https://drive.google.com/file/d/13uq2OATzt1U5cgC44Mqb3v3Gkz7nGOf-/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikosti`,
+            url: `https://docs.google.com/document/d/1LKP0HPlHlOuptcGLZ3Pto7OQGWO6TAf-O9WF0NmigsY/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `6.4. Adverbit.pdf`,
+            url: `https://drive.google.com/file/d/1SPXoUGDiSeqQnPLrY475M_YVPA3Kuixf/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Tavan adverbit.mp4`,
+            url: `https://drive.google.com/file/d/13uq2OATzt1U5cgC44Mqb3v3Gkz7nGOf-/view`,
+          },
+        ],
       },
       {
-        id: '619141217769',
+        id: "619141217769",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '23 Aug 2023',
+        date: "23 Aug 2023",
         deleted: false,
         content: `Spoken skills to the MAXin materaalit`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1A92iiwqKqcOb6Ye1L753wTAnCVYGj_40UeYJj2oT96s/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/t-qgTe1kgqFsUlq1yxE7DfE01nGoKwbRTT_YVXhvCPxsW_IzQ3JD_gwqx5sKttzY.msYXhX1-Ed4N-F22?startTime=1692783081000&authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1A92iiwqKqcOb6Ye1L753wTAnCVYGj_40UeYJj2oT96s/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/t-qgTe1kgqFsUlq1yxE7DfE01nGoKwbRTT_YVXhvCPxsW_IzQ3JD_gwqx5sKttzY.msYXhX1-Ed4N-F22?startTime=1692783081000&authuser=0`,
+          },
+        ],
       },
       {
-        id: '619129632051',
+        id: "619129632051",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '23 Aug 2023',
+        date: "23 Aug 2023",
         deleted: false,
         content: `Assignment: "93. Tavan adverbit (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618798248646',
+        id: "618798248646",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '22 Aug 2023',
+        date: "22 Aug 2023",
         deleted: false,
         content: `Assignment: "92. Henkilöhistoria (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618945798348',
+        id: "618945798348",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '22 Aug 2023',
+        date: "22 Aug 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lähipiiri, lumikot`, url: `https://docs.google.com/document/d/1Mh_FxQwYywiTbxE1lDi2FoqLU75qCr2kTwFKqsHjFVk/edit` }, { type: AttachmentType.VIDEO, title: `lähipiiri, lumikot.mp4`, url: `https://drive.google.com/file/d/1BtdZFPsnUNnu8pMuIlYixUUBCh13_xHy/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lähipiiri, lumikot`,
+            url: `https://docs.google.com/document/d/1Mh_FxQwYywiTbxE1lDi2FoqLU75qCr2kTwFKqsHjFVk/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `lähipiiri, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1BtdZFPsnUNnu8pMuIlYixUUBCh13_xHy/view`,
+          },
+        ],
       },
       {
-        id: '616401087001',
+        id: "616401087001",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Aug 2023',
+        date: "21 Aug 2023",
         deleted: false,
         content: `Assignment: "Moduuli 6: Kirjoittaminen ja lukeminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '616402590345',
+        id: "616402590345",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Aug 2023',
+        date: "21 Aug 2023",
         deleted: false,
         content: `Assignment: "Moduuli 6: Kuunteleminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '618783493433',
+        id: "618783493433",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Aug 2023',
+        date: "21 Aug 2023",
         deleted: false,
         content: `Kuuntelutesti mun Zoomissa kello 9:00.\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-08-28': {
-    display_name: 'Week 30 (Aug 28 - Sep 03)',
+  "2023-08-28": {
+    display_name: "Week 30 (Aug 28 - Sep 03)",
     items: [
       {
-        id: '620606426581',
+        id: "620606426581",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '1 Sept 2023',
+        date: "1 Sept 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!**\n**\nEnsi viikolla…\n**\nmaanantai: Oikeudet ja velvollisuudet, Netta\ntiistai: Toivelaulut, Tiina\nYou guys get to decide what we study on this lesson! Please, send me a message and let me\nknow, what you would like to learn. We can review some old materials or study something new\nyou are curious about. It can be grammar or anything about Finnish or Finland. Let me know,\nwhat you want to do.\nkeskiviikko: -malla/-matta, Netta\ntorstai: Kela, Netta\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Ruoka, Netta\n**\nModuulin 7 testit\n**\n**\n15.9. Puhetestit\n**\nThere won’t be a sign up sheet this time. I will be pairing you guys and give you a time\nslot. I am not doing this to be mean, but I want to have balanced pairs for the final test.\nI will listen to your wishes, so if you want to do the test with a specific person, let me\nknow. Also let me know about any time restrictions you might have on 15th.\n**\n20.9. Muut testit\n**\n9:00-10:00 Kirjoittaminen10:30-11:30 Kuunteleminen\n12:00-13:00 Lukeminen\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `oikeudet_sanasto.png`, url: `https://drive.google.com/file/d/1YrHUmjJQ5KXxb6M6jAHFY-8PHHCOeSeu/view` }, { type: AttachmentType.PDF, title: `6.4. malla matta CLASS.pptx.pdf`, url: `https://drive.google.com/file/d/1VOJWCqVUoCUTgVR7fidxwAqPn8MxCgwr/view` }, { type: AttachmentType.IMAGE, title: `kela_sanasto.png`, url: `https://drive.google.com/file/d/193tR68elI8YtrH8qaIN-zgpoQRkrzUYM/view` }, { type: AttachmentType.PDF, title: `A2 03 Ruoka - Google Docs.pdf`, url: `https://drive.google.com/file/d/15LRBhNer29nU5MMkAgMu3KxWj5fFif04/view` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `oikeudet_sanasto.png`,
+            url: `https://drive.google.com/file/d/1YrHUmjJQ5KXxb6M6jAHFY-8PHHCOeSeu/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `6.4. malla matta CLASS.pptx.pdf`,
+            url: `https://drive.google.com/file/d/1VOJWCqVUoCUTgVR7fidxwAqPn8MxCgwr/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `kela_sanasto.png`,
+            url: `https://drive.google.com/file/d/193tR68elI8YtrH8qaIN-zgpoQRkrzUYM/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 03 Ruoka - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/15LRBhNer29nU5MMkAgMu3KxWj5fFif04/view`,
+          },
+        ],
       },
       {
-        id: '619148692015',
+        id: "619148692015",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '1 Sept 2023',
+        date: "1 Sept 2023",
         deleted: false,
         content: `Assignment: "103. Hoitaja somessa (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619148679634',
+        id: "619148679634",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '1 Sept 2023',
+        date: "1 Sept 2023",
         deleted: false,
         content: `Assignment: "100. Työn tavoitteet (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619147687499',
+        id: "619147687499",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '1 Sept 2023',
+        date: "1 Sept 2023",
         deleted: false,
         content: `Assignment: "101. Työn suunnittelu (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619144618858',
+        id: "619144618858",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '31 Aug 2023',
+        date: "31 Aug 2023",
         deleted: false,
         content: `Assignment: "99. Tilanteita (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '620386796486',
+        id: "620386796486",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '31 Aug 2023',
+        date: "31 Aug 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Poliisi, lumikot`, url: `https://docs.google.com/document/d/1-1LC90PbB5YETzI22wsvwjUeaT5V2hU7yWSemj1VsP8/edit` }, { type: AttachmentType.VIDEO, title: `poliisi, lumikot.mp4`, url: `https://drive.google.com/file/d/17g7--Uk2u-PusJ1WG9C8g1wP7Zr-1LTL/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Poliisi, lumikot`,
+            url: `https://docs.google.com/document/d/1-1LC90PbB5YETzI22wsvwjUeaT5V2hU7yWSemj1VsP8/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `poliisi, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/17g7--Uk2u-PusJ1WG9C8g1wP7Zr-1LTL/view`,
+          },
+        ],
       },
       {
-        id: '620193517042',
+        id: "620193517042",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '30 Aug 2023',
+        date: "30 Aug 2023",
         deleted: false,
         content: `Tässä on keskiviikin materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot valittaa`, url: `https://docs.google.com/document/d/1BZge9kdOnHTECCsU4HTkbs00DY_qCCk91K8c1lffPgo/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot valittaa ja asioi ravintolassa.mp4`, url: `https://drive.google.com/file/d/1LtzFEfVii9e980PdR3fQ151MJrNqP4WD/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot valittaa`,
+            url: `https://docs.google.com/document/d/1BZge9kdOnHTECCsU4HTkbs00DY_qCCk91K8c1lffPgo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot valittaa ja asioi ravintolassa.mp4`,
+            url: `https://drive.google.com/file/d/1LtzFEfVii9e980PdR3fQ151MJrNqP4WD/view`,
+          },
+        ],
       },
       {
-        id: '619987416121',
+        id: "619987416121",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '30 Aug 2023',
+        date: "30 Aug 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/19umuz2_GAk_AtGb8IdZ65Bk-iASrIqde0feE5u4MOAs/view` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/fzZEaUpPk5xbCQijGgYlDR7EXqFC7Ni8W-lvCioeEQeAcFS-6PQHRYR6dQGOvcep.oFY_Ljsl5fy4goLB?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/19umuz2_GAk_AtGb8IdZ65Bk-iASrIqde0feE5u4MOAs/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/fzZEaUpPk5xbCQijGgYlDR7EXqFC7Ni8W-lvCioeEQeAcFS-6PQHRYR6dQGOvcep.oFY_Ljsl5fy4goLB?authuser=0`,
+          },
+        ],
       },
       {
-        id: '619147778293',
+        id: "619147778293",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '29 Aug 2023',
+        date: "29 Aug 2023",
         deleted: false,
         content: `Assignment: "98. Asiointi ja reklamaatio (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619776077242',
+        id: "619776077242",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '29 Aug 2023',
+        date: "29 Aug 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Työturvallisuus, lumikot`, url: `https://docs.google.com/document/d/1ldtQDE7LjWHhWOa1w6HKtRv6wZaVNfHgmmQD2CpYiBk/edit` }, { type: AttachmentType.VIDEO, title: `työturvallisuus 2, lumikot.mp4`, url: `https://drive.google.com/file/d/118zBw-MaEdKt_0LN2k1sB07utYoal5-n/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Työturvallisuus, lumikot`,
+            url: `https://docs.google.com/document/d/1ldtQDE7LjWHhWOa1w6HKtRv6wZaVNfHgmmQD2CpYiBk/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `työturvallisuus 2, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/118zBw-MaEdKt_0LN2k1sB07utYoal5-n/view`,
+          },
+        ],
       },
       {
-        id: '619148066155',
+        id: "619148066155",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '28 Aug 2023',
+        date: "28 Aug 2023",
         deleted: false,
         content: `Assignment: "97. Työturvallisuus (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '619741396152',
+        id: "619741396152",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '28 Aug 2023',
+        date: "28 Aug 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Työturvallisuus, lumikot`, url: `https://docs.google.com/document/d/1ldtQDE7LjWHhWOa1w6HKtRv6wZaVNfHgmmQD2CpYiBk/edit` }, { type: AttachmentType.VIDEO, title: `työturvallisuus, lumikot.mp4`, url: `https://drive.google.com/file/d/1KyA6mPjcFCQ6b9q4b8YH8tpc5Om6ZzGW/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Työturvallisuus, lumikot`,
+            url: `https://docs.google.com/document/d/1ldtQDE7LjWHhWOa1w6HKtRv6wZaVNfHgmmQD2CpYiBk/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `työturvallisuus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1KyA6mPjcFCQ6b9q4b8YH8tpc5Om6ZzGW/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-09-04': {
-    display_name: 'Week 31 (Sep 04 - Sep 10)',
+  "2023-09-04": {
+    display_name: "Week 31 (Sep 04 - Sep 10)",
     items: [
       {
-        id: '621989894757',
+        id: "621989894757",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '8 Sept 2023',
+        date: "8 Sept 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!Ensi viikolla…\n**\nmaanantai:Työvuorossa 1, Tiina\ntiistai: Työvuorossa 2, Tiina\nkeskiviikko: Työvuorossa 3, Netta\ntorstai: Puhetestin harjoitus, Tiina\nOlisi tosi hyvä, jos kaikki pääsevät paikalle. Käytämme samanlaista materiaalia kuin\nperjantain testissä (check more on that below). Aihe on\n**\nOngelmatilanteita töissä\n**\n.\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Asuminen, Tiina\n**\nPerjantaina on puhetesti!\n**\nKatso sun aika taulukosta.\n**\nPuhetesti\n**\nLast time you had a bunch of questions to answer together. Now you will have a couple of\nquestions, maybe a statement and some key words and then you will talk about the given\ntopic. I'll show example material on Thursday. Otherwise the system is the same as before: a\ncouple of minutes to prepare yourself and then talk, given material will be visible to you\nfor the whole time. (The example of what the test material looks like is posted here,\nPuhetestin ja treenin esimerkki, we are not going to use that material for anything, it is\njust an example.)\n**\nPossible topics of the test are:\n**\n1. Ikääntyneen henkinen ja fyysinen aktiivisuus\n2. Ikääntyneen haasteet ja toimintakunto\n3. Ikääntyneen potilaan yleiset sairaudet ja niiden hoito\n4. Ikäystävällinen koti\nWhen the test starts you will be given one topic and some material for that. The topics\nmight look complicated at the first glance, but we have been practicing all of those.\n**\n20.9. Muut testit\n**\n9:00-10:00 Kirjoittaminen\n10:30-11:30 Kuunteleminen\n12:00-13:00 Lukeminen\n**\nKaikki tehtävät täytyy olla tehtynä torstaina 21.9. kello 8:00!\n**\nThat is an actual, absolutely final deadline. If you wish to pass the training, all of your\nMod 6 and 7 assignments need to be done. The assignments I posted today are your last\nindependant assignments. There will be 3 more assignments about lessons, so the final\nassignment will be number 112.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.IMAGE, title: `työvuorossa.png`, url: `https://drive.google.com/file/d/1odjJEt5lCUIHnf8MKGYY7iV65ITdBRNk/view` }, { type: AttachmentType.PDF, title: `Puhetestin ja treenin esimerkki.pdf`, url: `https://drive.google.com/file/d/1RmHvV7YLK_dBxxDrPL9_T2tHO_DzzzXa/view` }, { type: AttachmentType.PDF, title: `A2 04 Asuminen.pdf`, url: `https://drive.google.com/file/d/1kTwIkOkL2dnlXsAwJEtL9c1BQ0Of68vj/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view` }, { type: AttachmentType.IMAGE, title: `Työvuoron kysymykset.png`, url: `https://drive.google.com/file/d/12i-0FUNCHzFwKidqOInsytdA_-h0gaxY/view` }]
+        attachments: [
+          {
+            type: AttachmentType.IMAGE,
+            title: `työvuorossa.png`,
+            url: `https://drive.google.com/file/d/1odjJEt5lCUIHnf8MKGYY7iV65ITdBRNk/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Puhetestin ja treenin esimerkki.pdf`,
+            url: `https://drive.google.com/file/d/1RmHvV7YLK_dBxxDrPL9_T2tHO_DzzzXa/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 04 Asuminen.pdf`,
+            url: `https://drive.google.com/file/d/1kTwIkOkL2dnlXsAwJEtL9c1BQ0Of68vj/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `Työvuoron kysymykset.png`,
+            url: `https://drive.google.com/file/d/12i-0FUNCHzFwKidqOInsytdA_-h0gaxY/view`,
+          },
+        ],
       },
       {
-        id: '621960651534',
+        id: "621960651534",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Sept 2023',
+        date: "8 Sept 2023",
         deleted: false,
         content: `Assignment: "109. Muistisairaudet (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '621960811182',
+        id: "621960811182",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Sept 2023',
+        date: "8 Sept 2023",
         deleted: false,
         content: `Assignment: "108. Lue (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '621961176279',
+        id: "621961176279",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '8 Sept 2023',
+        date: "8 Sept 2023",
         deleted: false,
         content: `Assignment: "107. Kuunteluita (itsenäinen)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '621713293802',
+        id: "621713293802",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '7 Sept 2023',
+        date: "7 Sept 2023",
         deleted: false,
         content: `Assignment: "106. tOn- ja jA-sanat (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '621690944155',
+        id: "621690944155",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '7 Sept 2023',
+        date: "7 Sept 2023",
         deleted: false,
         content: `Tässä on torstain materiaali!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot Kelassa`, url: `https://docs.google.com/document/d/10ggMyHwse8_vcj5eK9CSRDvPD0QVXh5sj3zxg7FjEZo/edit` }, { type: AttachmentType.LINK, title: `Link`, url: `https://www.kela.fi/web/selkosuomi/selkosuomi?authuser=0` }, { type: AttachmentType.VIDEO, title: `Lumikot Kelassa.mp4`, url: `https://drive.google.com/file/d/18z1ctHdeVCPT2-3S7DapwdbpmNypxxW7/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot Kelassa`,
+            url: `https://docs.google.com/document/d/10ggMyHwse8_vcj5eK9CSRDvPD0QVXh5sj3zxg7FjEZo/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Link`,
+            url: `https://www.kela.fi/web/selkosuomi/selkosuomi?authuser=0`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot Kelassa.mp4`,
+            url: `https://drive.google.com/file/d/18z1ctHdeVCPT2-3S7DapwdbpmNypxxW7/view`,
+          },
+        ],
       },
       {
-        id: '621389790984',
+        id: "621389790984",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '6 Sept 2023',
+        date: "6 Sept 2023",
         deleted: false,
         content: `Assignment: "105. mA-muotoja (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '621382228671',
+        id: "621382228671",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '6 Sept 2023',
+        date: "6 Sept 2023",
         deleted: false,
         content: `Päivän kielioppitunnin materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot oppivat puhumalla, eivät puhumatta`, url: `https://docs.google.com/document/d/1kyUg184qZfdKunZ6FhyYXSPO_h-HJzVI5gbJCnpxZIM/edit` }, { type: AttachmentType.PDF, title: `5.4. malla matta OPE.pdf`, url: `https://drive.google.com/file/d/1dPs6813izrpiNwGBqWuJEddMfZozUkNT/view` }, { type: AttachmentType.PDF, title: `kumpi on oikein malla matta.pdf`, url: `https://drive.google.com/file/d/18CRnffgcvrCq34G_8v1YC4uvb-7hHMMt/view` }, { type: AttachmentType.VIDEO, title: `Lumikot malla matta.mp4`, url: `https://drive.google.com/file/d/1xvHBLy5pf5zlRXBA1xbr0RJISq2IOLZw/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot oppivat puhumalla, eivät puhumatta`,
+            url: `https://docs.google.com/document/d/1kyUg184qZfdKunZ6FhyYXSPO_h-HJzVI5gbJCnpxZIM/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `5.4. malla matta OPE.pdf`,
+            url: `https://drive.google.com/file/d/1dPs6813izrpiNwGBqWuJEddMfZozUkNT/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `kumpi on oikein malla matta.pdf`,
+            url: `https://drive.google.com/file/d/18CRnffgcvrCq34G_8v1YC4uvb-7hHMMt/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot malla matta.mp4`,
+            url: `https://drive.google.com/file/d/1xvHBLy5pf5zlRXBA1xbr0RJISq2IOLZw/view`,
+          },
+        ],
       },
       {
-        id: '621375946460',
+        id: "621375946460",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '6 Sept 2023',
+        date: "6 Sept 2023",
         deleted: false,
         content: `Spoken Skill to the MAXin materiaalit! Aihe oli ruoka.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `ke 0609 A2 03 Ruoka`, url: `https://docs.google.com/document/d/1xoDEtQmVvoThIva9QHcvV4LbluClxQl-_fcYMg5Ckdw/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/PKkT7SnZqR-RG5IvZWCQ3nwwtLTcjy6RvF-UjkctwGbXgeNVu3eHrkIfyWJZKfs.beIOnOxtUxVRq_oT?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `ke 0609 A2 03 Ruoka`,
+            url: `https://docs.google.com/document/d/1xoDEtQmVvoThIva9QHcvV4LbluClxQl-_fcYMg5Ckdw/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/PKkT7SnZqR-RG5IvZWCQ3nwwtLTcjy6RvF-UjkctwGbXgeNVu3eHrkIfyWJZKfs.beIOnOxtUxVRq_oT?authuser=0`,
+          },
+        ],
       },
       {
-        id: '621072075632',
+        id: "621072075632",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '5 Sept 2023',
+        date: "5 Sept 2023",
         deleted: false,
         content: `Tisitain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Toivelaulut, lumikot`, url: `https://docs.google.com/document/d/1gCuYlwZMlR4UuWxcbP5Yugk2dbMEuI9Szm5ZBW2l4oQ/edit` }, { type: AttachmentType.PDF, title: `Imperfekti (pdf kuvista) (3).pdf`, url: `https://drive.google.com/file/d/1Tu71AoiUU5hYJKLS7rCBnFnpq4WSd4EC/view` }, { type: AttachmentType.VIDEO, title: `toivelaulut, lumikot.mp4`, url: `https://drive.google.com/file/d/1KkXLPZqugVa1wL1h8Sq7YmHsLRweYLgw/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Toivelaulut, lumikot`,
+            url: `https://docs.google.com/document/d/1gCuYlwZMlR4UuWxcbP5Yugk2dbMEuI9Szm5ZBW2l4oQ/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `Imperfekti (pdf kuvista) (3).pdf`,
+            url: `https://drive.google.com/file/d/1Tu71AoiUU5hYJKLS7rCBnFnpq4WSd4EC/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `toivelaulut, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1KkXLPZqugVa1wL1h8Sq7YmHsLRweYLgw/view`,
+          },
+        ],
       },
       {
-        id: '620914707142',
+        id: "620914707142",
         type: StreamItemType.ASSIGNMENT,
         author: `Netta Kivimäki`,
-        date: '4 Sept 2023',
+        date: "4 Sept 2023",
         deleted: false,
         content: `Assignment: "104. Oikeudet ja velvollisuudet (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '620919083091',
+        id: "620919083091",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '4 Sept 2023',
+        date: "4 Sept 2023",
         deleted: false,
         content: `Tässä on maanantain materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikkoin oikeudet ja velvollisuudet`, url: `https://docs.google.com/document/d/1_zvx5FittI3S8MNLY8kwAyf_VylNWHRr9J44XIM-3Yw/edit` }, { type: AttachmentType.VIDEO, title: `Lumikkoin oikeudet ja velvollisuudet.mp4`, url: `https://drive.google.com/file/d/1_fxxNHJcEUZxpaWg4BrM4VMp62euex6U/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikkoin oikeudet ja velvollisuudet`,
+            url: `https://docs.google.com/document/d/1_zvx5FittI3S8MNLY8kwAyf_VylNWHRr9J44XIM-3Yw/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikkoin oikeudet ja velvollisuudet.mp4`,
+            url: `https://drive.google.com/file/d/1_fxxNHJcEUZxpaWg4BrM4VMp62euex6U/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-09-11': {
-    display_name: 'Week 32 (Sep 11 - Sep 17)',
+  "2023-09-11": {
+    display_name: "Week 32 (Sep 11 - Sep 17)",
     items: [
       {
-        id: '623829206750',
+        id: "623829206750",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '16 Sept 2023',
+        date: "16 Sept 2023",
         deleted: false,
         content: `**\nPerjantaikuulutukset! Friday Announcements!\n**\nSo sorry for the late Friday announcements! My computer was not working properly yesterday\nand I couldn’t post this earlier.\n**\nEnsi viikolla…\n**\nmaanantai:DVV; Tiina\ntiistai: Luonto, Tiina\nkeskiviikko: Testit,Tiina\ntorstai: Viimeinen oppitunti, Tiina\n**\nSpoken skills to the MAX kello 12:30\n**\nkeskiviikko: Shoppailu, Netta\n**\n20.9.Testit\n**\n9:00-10:00 Kirjoittaminen\n10:30-11:30 Kuunteleminen\n12:00-13:00 Lukeminen\n**\nKaikki tehtävät täytyy olla tehtynä torstaina 21.9. kello 8:00!\n**\nThat is an actual, absolutely final deadline. If you wish to pass the training, all of your\nMod 6 and 7 assignments need to be done.\n**\nKurssi loppuu!\n**\nWe will have our final lesson after the tests on Thursday. I will give you some tips on how\nto continue studying and you can ask me questions about Finnish or Finland if you want.\nI am gonna grade your finals right away on Wednesday.  Mä lähetän tulokset heti, kun tiedän.\nI am sure that there will be some results I can't give out without consulting Netta and/or\nBarona, but if this is the situation with your scoring, I'll let you know about that too.\nBasically possibilities are:\n1. Yay, you passed!\n2. Sorry, you did not pass, Moduuli 7 again with Saukot.\n3. Grading is still pending, I'll get back to you ASAP next week.\n4. You did not pass and have been transferred a couple times before, need to check with\nBarona, I'll get back to you ASAP.\nI will also you give some personal feedback despite the result or the situation.\nHyvää viikonloppua! Nähdään ensi viikolla!`,
-        attachments: [{ type: AttachmentType.PDF, title: `dvv_sanasto.pdf`, url: `https://drive.google.com/file/d/1rLD-76oVuzKg5wenBBwogdI7lyV2Z8Bg/view` }, { type: AttachmentType.IMAGE, title: `luonto_sanasto.PNG`, url: `https://drive.google.com/file/d/1sJNdp69NnQmL4dOIG9oB9tgxaBqTB0g0/view` }, { type: AttachmentType.PDF, title: `A2 05 Shoppailu - Google Docs.pdf`, url: `https://drive.google.com/file/d/1rrRxocZ_NPDnekYPjgiktDs_55D_WER9/view` }]
+        attachments: [
+          {
+            type: AttachmentType.PDF,
+            title: `dvv_sanasto.pdf`,
+            url: `https://drive.google.com/file/d/1rLD-76oVuzKg5wenBBwogdI7lyV2Z8Bg/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `luonto_sanasto.PNG`,
+            url: `https://drive.google.com/file/d/1sJNdp69NnQmL4dOIG9oB9tgxaBqTB0g0/view`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `A2 05 Shoppailu - Google Docs.pdf`,
+            url: `https://drive.google.com/file/d/1rrRxocZ_NPDnekYPjgiktDs_55D_WER9/view`,
+          },
+        ],
       },
       {
-        id: '623569506849',
+        id: "623569506849",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '15 Sept 2023',
+        date: "15 Sept 2023",
         deleted: false,
         content: `Hyvää huomenta! Tänään on puhetestipäivä! Tule mun Zoomiin, kun on sun aika. Ole ajoissa!\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view` }, { type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '633516355401',
+        id: "633516355401",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '14 Sept 2023',
+        date: "14 Sept 2023",
         deleted: false,
         content: `Torstain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Puhetestiharjoitus, lumikot`, url: `https://docs.google.com/document/d/15RvWSRKIC8VMOsir2PG3bLVqal7Uf-WqG-kkw-2gcp8/edit` }, { type: AttachmentType.PDF, title: `puhetestin esimerkki.pdf`, url: `https://drive.google.com/file/d/1agDdnu-s5aCNsmmNLVvNIMYgkq2bj5pE/view` }, { type: AttachmentType.DOCS, title: `Drive file`, url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view` }, { type: AttachmentType.IMAGE, title: `puhetestin harjoitus.png`, url: `https://drive.google.com/file/d/1rPjB2KRkBn3i_sonKTYlopMCj_gckUpD/view` }, { type: AttachmentType.VIDEO, title: `puhetestin harjoitus, lumikot.mp4`, url: `https://drive.google.com/file/d/16L-0hy1KBSDPeSxJGlGrERkic3LuSyvg/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Puhetestiharjoitus, lumikot`,
+            url: `https://docs.google.com/document/d/15RvWSRKIC8VMOsir2PG3bLVqal7Uf-WqG-kkw-2gcp8/edit`,
+          },
+          {
+            type: AttachmentType.PDF,
+            title: `puhetestin esimerkki.pdf`,
+            url: `https://drive.google.com/file/d/1agDdnu-s5aCNsmmNLVvNIMYgkq2bj5pE/view`,
+          },
+          {
+            type: AttachmentType.DOCS,
+            title: `Drive file`,
+            url: `https://drive.google.com/file/d/1dgHPAjhj-OyI4jRaDbZvpXHq9iLJ34Qq8l9HGjyE0G0/view`,
+          },
+          {
+            type: AttachmentType.IMAGE,
+            title: `puhetestin harjoitus.png`,
+            url: `https://drive.google.com/file/d/1rPjB2KRkBn3i_sonKTYlopMCj_gckUpD/view`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `puhetestin harjoitus, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/16L-0hy1KBSDPeSxJGlGrERkic3LuSyvg/view`,
+          },
+        ],
       },
       {
-        id: '622687246016',
+        id: "622687246016",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '13 Sept 2023',
+        date: "13 Sept 2023",
         deleted: false,
         content: `Spoken skills to the MAX muistiinpanot ja tallenne.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `13.9. A2 04 Asuminen`, url: `https://docs.google.com/document/d/14C66cff9ECVKkuSC2ekHHt12FkmOoVM0nAkWVYziv7Q/edit` }, { type: AttachmentType.LINK, title: `Error - Zoom`, url: `https://arffman.zoom.us/rec/share/tYiX5pX0-o48Qc5XaFvVm0KWrl9drkyjIyeuIYgNdzh-oCDMjZIhajyPUjhThm4.yck1Hi0Gkqy-yVxS?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `13.9. A2 04 Asuminen`,
+            url: `https://docs.google.com/document/d/14C66cff9ECVKkuSC2ekHHt12FkmOoVM0nAkWVYziv7Q/edit`,
+          },
+          {
+            type: AttachmentType.LINK,
+            title: `Error - Zoom`,
+            url: `https://arffman.zoom.us/rec/share/tYiX5pX0-o48Qc5XaFvVm0KWrl9drkyjIyeuIYgNdzh-oCDMjZIhajyPUjhThm4.yck1Hi0Gkqy-yVxS?authuser=0`,
+          },
+        ],
       },
       {
-        id: '621963446442',
+        id: "621963446442",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '13 Sept 2023',
+        date: "13 Sept 2023",
         deleted: false,
         content: `Assignment: "111. Kirjaaminen (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '622924011792',
+        id: "622924011792",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Netta Kivimäki`,
-        date: '13 Sept 2023',
+        date: "13 Sept 2023",
         deleted: false,
         content: `Tässä on keskiviikon materiaalit!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Lumikot työvuorossa 3`, url: `https://docs.google.com/document/d/1ZAlGnJ01FnyU_c2arwAgwtmwsXjJiVKEKQ507atL0fs/edit` }, { type: AttachmentType.VIDEO, title: `Lumikot työvuorossa 3.mp4`, url: `https://drive.google.com/file/d/1976oo6Zs1BC4fVIu66SQKqcF3jGQx3Q5/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Lumikot työvuorossa 3`,
+            url: `https://docs.google.com/document/d/1ZAlGnJ01FnyU_c2arwAgwtmwsXjJiVKEKQ507atL0fs/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `Lumikot työvuorossa 3.mp4`,
+            url: `https://drive.google.com/file/d/1976oo6Zs1BC4fVIu66SQKqcF3jGQx3Q5/view`,
+          },
+        ],
       },
       {
-        id: '622371846005',
+        id: "622371846005",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '12 Sept 2023',
+        date: "12 Sept 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Työvuorossa 2, lumikot`, url: `https://docs.google.com/document/d/15sl0uBXb7oVCIdznAlwbSePhH8FPQNSxSzerIs9x6Y8/edit` }, { type: AttachmentType.VIDEO, title: `työvuorossa 2, lumikot.mp4`, url: `https://drive.google.com/file/d/17Rhy8JY_85IImIRs4kTUS4ZHG-8X2eib/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Työvuorossa 2, lumikot`,
+            url: `https://docs.google.com/document/d/15sl0uBXb7oVCIdznAlwbSePhH8FPQNSxSzerIs9x6Y8/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `työvuorossa 2, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/17Rhy8JY_85IImIRs4kTUS4ZHG-8X2eib/view`,
+          },
+        ],
       },
       {
-        id: '621961774150',
+        id: "621961774150",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '11 Sept 2023',
+        date: "11 Sept 2023",
         deleted: false,
         content: `Assignment: "110. Tilanteita työvuorossa (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '622344852687',
+        id: "622344852687",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '11 Sept 2023',
+        date: "11 Sept 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Työvuorossa, lumikot`, url: `https://docs.google.com/document/d/1zLlvuTWCO2Z6H2vgBY4YmRBn9A7Bk0J4nJYoQmhb2eo/edit` }, { type: AttachmentType.VIDEO, title: `työvuorossa 1, lumikot.mp4`, url: `https://drive.google.com/file/d/1GFMBWh4q67A5gA5BUU_j4tbXDtOZCG2t/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Työvuorossa, lumikot`,
+            url: `https://docs.google.com/document/d/1zLlvuTWCO2Z6H2vgBY4YmRBn9A7Bk0J4nJYoQmhb2eo/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `työvuorossa 1, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1GFMBWh4q67A5gA5BUU_j4tbXDtOZCG2t/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
-  '2023-09-18': {
-    display_name: 'Week 33 (Sep 18 - Sep 24)',
+  "2023-09-18": {
+    display_name: "Week 33 (Sep 18 - Sep 24)",
     items: [
       {
-        id: '624885605915',
+        id: "624885605915",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '21 Sept 2023',
+        date: "21 Sept 2023",
         deleted: false,
         content: `Assignment: "Palaute / Feedback"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '624876252507',
+        id: "624876252507",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '21 Sept 2023',
+        date: "21 Sept 2023",
         deleted: false,
         content: `Viimeinen tallenne ja viimeiset vinkit! Kiitos kaikille, nähdään Suomessa!`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Viimeiset vinkit`, url: `https://docs.google.com/document/d/1nJqLk7cKWO4n5kXfzO3Htgy6um_Te5jRub0_jzG0jkQ/edit` }, { type: AttachmentType.VIDEO, title: `viimeiset vinkit, lumikot.mp4`, url: `https://drive.google.com/file/d/1qzlJHGz0Sv3eLLSL4OIAI87-wuvs1zgL/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Viimeiset vinkit`,
+            url: `https://docs.google.com/document/d/1nJqLk7cKWO4n5kXfzO3Htgy6um_Te5jRub0_jzG0jkQ/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `viimeiset vinkit, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1qzlJHGz0Sv3eLLSL4OIAI87-wuvs1zgL/view`,
+          },
+        ],
       },
       {
-        id: '624429070232',
+        id: "624429070232",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '20 Sept 2023',
+        date: "20 Sept 2023",
         deleted: false,
         content: `Assignment: "Moduuli 7: Lukeminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '624411708646',
+        id: "624411708646",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '20 Sept 2023',
+        date: "20 Sept 2023",
         deleted: false,
         content: `Assignment: "Moduuli 7: Kuunteleminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '624611055389',
+        id: "624611055389",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '20 Sept 2023',
+        date: "20 Sept 2023",
         deleted: false,
         content: `Kuuntelutesti alkaa mun Zoomissa kello 10:30!\nhttps://arffman.zoom.us/my/tiinalampen\nMy meeting ID is: 806 378 7231`,
-        attachments: [{ type: AttachmentType.LINK, title: `Launch Meeting - Zoom`, url: `https://arffman.zoom.us/my/tiinalampen?authuser=0` }]
+        attachments: [
+          {
+            type: AttachmentType.LINK,
+            title: `Launch Meeting - Zoom`,
+            url: `https://arffman.zoom.us/my/tiinalampen?authuser=0`,
+          },
+        ],
       },
       {
-        id: '624406100303',
+        id: "624406100303",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '20 Sept 2023',
+        date: "20 Sept 2023",
         deleted: false,
         content: `Assignment: "Moduuli 7: Kirjoittaminen"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '624302339606',
+        id: "624302339606",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '19 Sept 2023',
+        date: "19 Sept 2023",
         deleted: false,
         content: `Tiistain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `Luonto, lumikot`, url: `https://docs.google.com/document/d/1IOyvNOMqNLZQxtuQlS-QdfOKh2jJItqSdhNfJdSh4LY/edit` }, { type: AttachmentType.VIDEO, title: `luonto, lumikot.mp4`, url: `https://drive.google.com/file/d/1Od2cPL8D4gIPyG7fZfFQP0R-JtAt0rVg/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `Luonto, lumikot`,
+            url: `https://docs.google.com/document/d/1IOyvNOMqNLZQxtuQlS-QdfOKh2jJItqSdhNfJdSh4LY/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `luonto, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1Od2cPL8D4gIPyG7fZfFQP0R-JtAt0rVg/view`,
+          },
+        ],
       },
       {
-        id: '621962269042',
+        id: "621962269042",
         type: StreamItemType.ASSIGNMENT,
         author: `Tiina Lampen`,
-        date: '18 Sept 2023',
+        date: "18 Sept 2023",
         deleted: false,
         content: `Assignment: "112. Muuttoilmoitus (luento)"`,
-        attachments: []
+        attachments: [],
       },
       {
-        id: '623985134493',
+        id: "623985134493",
         type: StreamItemType.ANNOUNCEMENT,
         author: `Tiina Lampen`,
-        date: '18 Sept 2023',
+        date: "18 Sept 2023",
         deleted: false,
         content: `Maanantain materiaalit.`,
-        attachments: [{ type: AttachmentType.DOCS, title: `DVV, lumikot`, url: `https://docs.google.com/document/d/1WZZZneQrdfPB_EEI7hsbigqsVrpfyCT70RPO6p0C2Ao/edit` }, { type: AttachmentType.VIDEO, title: `DVV, lumikot.mp4`, url: `https://drive.google.com/file/d/1vBikENJ-25-p-Lm7Ch7c8hj5jYyW8ZK0/view` }]
+        attachments: [
+          {
+            type: AttachmentType.DOCS,
+            title: `DVV, lumikot`,
+            url: `https://docs.google.com/document/d/1WZZZneQrdfPB_EEI7hsbigqsVrpfyCT70RPO6p0C2Ao/edit`,
+          },
+          {
+            type: AttachmentType.VIDEO,
+            title: `DVV, lumikot.mp4`,
+            url: `https://drive.google.com/file/d/1vBikENJ-25-p-Lm7Ch7c8hj5jYyW8ZK0/view`,
+          },
+        ],
       },
-    ]
+    ],
   },
 };
 
@@ -3369,29 +7052,37 @@ export function get_week_data(week_key: string): WeeklyData | undefined {
 }
 
 export function get_all_items(): StreamItem[] {
-  return Object.values(classroom_data).flatMap(week => week.items);
+  return Object.values(classroom_data).flatMap((week) => week.items);
 }
 
 export function get_items_by_type(type: StreamItemType): StreamItem[] {
-  return get_all_items().filter(item => item.type === type);
+  return get_all_items().filter((item) => item.type === type);
 }
 
 export function get_items_by_author(author: string): StreamItem[] {
-  return get_all_items().filter(item => item.author === author);
+  return get_all_items().filter((item) => item.author === author);
 }
 
 export function search_items(query: string): StreamItem[] {
   const lowercaseQuery = query.toLowerCase();
-  return get_all_items().filter(item => 
-    item.content.toLowerCase().includes(lowercaseQuery) ||
-    item.author.toLowerCase().includes(lowercaseQuery) ||
-    item.attachments.some(att => att.title.toLowerCase().includes(lowercaseQuery))
+  return get_all_items().filter(
+    (item) =>
+      item.content.toLowerCase().includes(lowercaseQuery) ||
+      item.author.toLowerCase().includes(lowercaseQuery) ||
+      item.attachments.some((att) =>
+        att.title.toLowerCase().includes(lowercaseQuery)
+      )
   );
 }
 
 // Export for debugging
 export const debug_info = {
-  parser_version: '2.0.0-enhanced',
-  features: ['enhanced_date_parsing', 'google_drive_support', 'schema_validation', 'snake_case_naming'],
+  parser_version: "2.0.0-enhanced",
+  features: [
+    "enhanced_date_parsing",
+    "google_drive_support",
+    "schema_validation",
+    "snake_case_naming",
+  ],
   week_keys: Object.keys(classroom_data).sort(),
 };

@@ -1,9 +1,0 @@
-@charset "utf-8";
-
-:root { --boq-chrometransition-background: #eee; --boq-chrometransition-active-background-opacity: 0.8; }
-
-.KL4X6e { background: var(--boq-chrometransition-background); inset: 0px; opacity: 0; position: absolute; }
-
-.TuA45b { opacity: var(--boq-chrometransition-active-background-opacity); }
-
-sentinel { }
